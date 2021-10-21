@@ -1,2 +1,1 @@
-# paid-vs-free-apps
-Comparing free v.s. paid Android applications on Google Play Store
+# To Pay or Not to Pay? Comparing Free v.s. Paid Android Applications on Google Play Store
