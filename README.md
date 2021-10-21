@@ -30,3 +30,8 @@ We use the publicly available data on Kaggle which can be found here https://www
 ### Post Processing
 
 - visualizing our results we intend to use D3.js(https://d3js.org/)
+
+## Biblography
+
+[1] R. Uday Kiran and P. Krishna Reddy. 2011. Novel techniques to reduce search space in multiple minimum supports-based frequent pattern mining algorithms. In EDBT 2011, 14th International Conference on Extending Database Technology, Uppsala, Sweden, March 21-24, 2011, Proceedings, Anastasia Ailamaki, Sihem AmerYahia, Jignesh M. Patel, Tore Risch, Pierre Senellart, and Julia Stoyanovich (Eds.). ACM, 11–20. https://doi.org/10.1145/1951365.1951370
+
