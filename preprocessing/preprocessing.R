@@ -5,7 +5,7 @@ setwd("D:/DDSE project/data/")
 getwd()
 dataset = read.csv("Google-Playstore.csv", na.strings = c("", "NA"), header=TRUE)
 
-#removing the null
+#removing the missing data
 clean_dataset <- na.omit(dataset)
 
 #saving the data
