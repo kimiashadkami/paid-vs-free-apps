@@ -3,35 +3,35 @@ getwd()
 #please put in your own directory
 setwd("D:/DDSE project/data/")
 getwd()
-dataset = read.csv("Google-Playstore.csv", header=TRUE)
+dataset = read.csv("Google-Playstore.csv", na.strings = c("", "NA"), header=TRUE)
 #View(dataset)
 
 #column and row
-column_num <- ncol(dataset)
-row_num <- nrow(dataset)
+#column_num <- ncol(dataset)
+#row_num <- nrow(dataset)
 
-print(column_num)
-print(row_num)
+#print(column_num)
+#print(row_num)
 
 #the classes of each column
-for(i in 1:column_num){
-  print(class(dataset[,i])) 
-}
+#for(i in 1:column_num){
+#  print(class(dataset[,i])) 
+#}
 
 #seeing if there is any null value in the data
-for(i in 1:column_num){
-  if(any(is.na(dataset[,i]))){
-    print(i)
-    k = 0
-    print(names(dataset[i]))
-    for(j in 1:row_num){
-      if(any(is.na(dataset[j,i]))){
-        k = k+1
-      }
-    }
-    print(k)
-  }
-}
+#for(i in 1:column_num){
+#  if(any(is.na(dataset[,i]))){
+#    print(i)
+#    k = 0
+#    print(names(dataset[i]))
+#    for(j in 1:row_num){
+#      if(any(is.na(dataset[j,i]))){
+#        k = k+1
+#      }
+#    }
+#    print(k)
+#  }
+#}
 
 #1
 #"App.Name"
@@ -53,26 +53,26 @@ for(i in 1:column_num){
 clean_dataset <- na.omit(dataset)
 
 #column and row for clean dataset
-clean_column_num <- ncol(clean_dataset)
-clean_row_num <- nrow(clean_dataset)
+#clean_column_num <- ncol(clean_dataset)
+#clean_row_num <- nrow(clean_dataset)
 
-print(clean_column_num)
-print(clean_row_num)
+#print(clean_column_num)
+#print(clean_row_num)
 
 #checking to see if there is any null value in the data
-for(i in 1:clean_column_num){
-  if(any(is.na(clean_dataset[,i]))){
-    print(i)
-    k = 0
-    print(names(clean_dataset[i]))
-    for(j in 1:clean_row_num){
-      if(any(is.na(clean_dataset[j,i]))){
-        k = k+1
-      }
-    }
-    print(k)
-  }
-}
+#for(i in 1:clean_column_num){
+#  if(any(is.na(clean_dataset[,i]))){
+#    print(i)
+#    k = 0
+#    print(names(clean_dataset[i]))
+#    for(j in 1:clean_row_num){
+#      if(any(is.na(clean_dataset[j,i]))){
+#        k = k+1
+#      }
+#    }
+#    print(k)
+#  }
+#}
 
 #saving the data
 #please put in your own directory
