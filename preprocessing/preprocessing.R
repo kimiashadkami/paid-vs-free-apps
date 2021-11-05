@@ -73,19 +73,19 @@ nrow(no_outliers_paid_high_rated)
 #######################discretization for SPMF#######################
 
 #category, factor to numeric values
+k <- 0
 require(plyr)
 preprocessing_category <- function(dt_category){
-  dt_category$Category <- revalue(x = dt_category$Category, c("Action" = 1, "Adventure" = 2, "Arcade" = 3, "Art & Design" = 4, "Auto & Vehicles" = 5,
-                                                              "Beauty" = 6, "Board" = 7, "Books & Reference" = 8, "Business" = 9, "Card" = 10,
-                                                              "Casino" = 11, "Casual" = 12, "Comics" = 13, "Communication" = 14, "Dating" = 15,
-                                                              "Education" = 16, "Educational" = 17, "Entertainment" = 18, "Events" = 19, "Finance" = 20,
-                                                              "Food & Drink" = 21,  "Health & Fitness" = 22, "House & Home" = 23, "Libraries & Demo" = 24, 
-                                                              "Lifestyle" = 25, "Maps & Navigation" = 26, "Medical" = 27, "Music" = 28, "Music & Audio" = 29,
-                                                              "News & Magazines" = 30, "Parenting" = 31, "Personalization" = 32, "Photography" = 33, 
-                                                              "Productivity" = 34, "Puzzle" = 35, "Racing" = 36, "Role Playing" = 37, "Shopping" = 38, 
-                                                              "Simulation" = 39, "Social" = 40, "Sports" = 41, "Strategy" = 42, "Tools" = 43, 
-                                                              "Travel & Local" = 44, "Trivia" = 45, "Video Players & Editors" = 46, "Weather" = 47, "Word" = 48 ))
-  print(dt_category$Category)
+  dt_category$Category <- revalue(x = dt_category$Category, c("Action" = k+1, "Adventure" = k+2, "Arcade" = k+3, "Art & Design" = k+4, "Auto & Vehicles" = k+5,
+                                                              "Beauty" = k+6, "Board" = k+7, "Books & Reference" = k+8, "Business" = k+9, "Card" = k+10,
+                                                              "Casino" = k+11, "Casual" = k+12, "Comics" = k+13, "Communication" = k+14, "Dating" = k+15,
+                                                              "Education" = k+16, "Educational" = k+17, "Entertainment" = k+18, "Events" = k+19, "Finance" = k+20,
+                                                              "Food & Drink" = k+21,  "Health & Fitness" = k+22, "House & Home" = k+23, "Libraries & Demo" = k+24, 
+                                                              "Lifestyle" = k+25, "Maps & Navigation" = k+26, "Medical" = k+27, "Music" = k+28, "Music & Audio" = k+29,
+                                                              "News & Magazines" = k+30, "Parenting" = k+31, "Personalization" = k+32, "Photography" = k+33, 
+                                                              "Productivity" = k+34, "Puzzle" = k+35, "Racing" = k+36, "Role Playing" = k+37, "Shopping" = k+38, 
+                                                              "Simulation" = k+39, "Social" = k+40, "Sports" = k+41, "Strategy" = k+42, "Tools" = k+43, 
+                                                              "Travel & Local" = k+44, "Trivia" = k+45, "Video Players & Editors" = k+46, "Weather" = k+47, "Word" = k+48 ))
   dt_category$Category <- as.numeric(dt_category$Category)
 }
 
@@ -94,17 +94,82 @@ paid_high_rated$Category <- preprocessing_category(paid_high_rated)
 no_outliers_free_high_rated$Category <- preprocessing_category(no_outliers_free_high_rated)
 no_outliers_paid_high_rated$Category <- preprocessing_category(no_outliers_paid_high_rated)
 
+sink(paste0("D:/DDSE project/R code/postprocessing_category.txt"))
+categories <- c("Action", "Adventure", "Arcade", "Art & Design", "Auto & Vehicles", "Beauty", "Board", "Books & Reference", "Business",
+                "Card", "Casino", "Casual", "Comics", "Communication", "Dating", "Education", "Educational", "Entertainment", "Events", 
+                "Finance", "Food & Drink", "Health & Fitness", "House & Home", "Libraries & Demo", "Lifestyle", "Maps & Navigation", 
+                "Medical", "Music", "Music & Audio", "News & Magazines", "Parenting", "Personalization", "Photography", "Productivity", 
+                "Puzzle", "Racing", "Role Playing", "Shopping", "Simulation", "Social", "Sports", "Strategy", "Tools", "Travel & Local", 
+                "Trivia", "Video Players & Editors", "Weather", "Word")
+for(i in 1:48){
+  cat(k+i)
+  cat("\n")
+  cat(categories[i])
+  cat("\n")
+}
+sink();
+k <- k+48
+
 #rating count, numeric values to numeric ranges
 #get the quarters to discretisize it
+preprocessing_ratingcount <- function(dt_ratingcount){
+  ratingcount <- which(colnames(dt_ratingcount)=="Rating.Count")
+  q0 <- quantile(dt_ratingcount$Rating.Count, 0)
+  q1 <- quantile(dt_ratingcount$Rating.Count, .25)
+  q2 <- quantile(dt_ratingcount$Rating.Count, 0.5)
+  q3 <- quantile(dt_ratingcount$Rating.Count, .75)
+  q4 <- quantile(dt_ratingcount$Rating.Count, 1)
+  
+  print(deparse(substitute(dt_ratingcount)))
+  print(quantile(dt_ratingcount$Rating.Count))
+  
+  for(i in 1:nrow(dt_ratingcount)){
+    if(dt_ratingcount[i, ratingcount] < q1){
+      dt_ratingcount[i, ratingcount] = k+1
+    }
+    else if(q1 <= dt_ratingcount[i, ratingcount] && dt_ratingcount[i, ratingcount] < q2){
+      dt_ratingcount[i, ratingcount] = k+2
+    }
+    else if(q2 <= dt_ratingcount[i, ratingcount] && dt_ratingcount[i, ratingcount] < q3){
+      dt_ratingcount[i, ratingcount] = k+3
+    }
+    else{
+      dt_ratingcount[i, ratingcount] = k+4
+    }
+  }
+  dt_ratingcount$Rating.Count <- as.integer(dt_ratingcount$Rating.Count)
+}
+
+free_high_rated$Rating.Count = preprocessing_ratingcount(free_high_rated)
+paid_high_rated$Rating.Count = preprocessing_ratingcount(paid_high_rated)
+no_outliers_free_high_rated$Rating.Count = preprocessing_ratingcount(no_outliers_free_high_rated)
+no_outliers_paid_high_rated$Rating.Count = preprocessing_ratingcount(no_outliers_paid_high_rated)
+
+sink("D:/DDSE project/R code/postprocessing_ratingcount.txt")
+cat(k+1, k+2, k+3, k+4)
+cat("\n")
+cat("Category.Count")
+sink()
+
+k <- k+4
 
 ##installs, removing the + and , sign
 preprocessing_installs <- function(dt_install){
+  k <- 52
   installs <- which(colnames(dt_install)=="Installs")
   dt_install$Installs <- as.character(dt_install$Installs)
   for(i in 1:nrow(dt_install)){
     dt_install[i,installs] <- substr(dt_install[i,installs], 1, nchar(as.character(dt_install[i,installs]))-1)
   }
-  dt_install$Installs <- as.numeric(gsub("\\,", "", dt_install$Installs))  
+  dt_install$Installs <- as.factor(gsub("\\,", "", dt_install$Installs))
+  #levels: "5", "50", "100", "500", "5000", "50000", "100000"
+  dt_install$Installs <- revalue(x = dt_install$Installs, c("0" = k+1, "1" = k+2, "5" = k+3, "10" = k+4,
+                                                            "50" = k+5, "100" = k+6, "500" = k+7, "1000" = k+8,
+                                                            "5000" = k+9, "10000" = k+10, "50000" = k+11, "100000" = k+12,
+                                                            "500000" = k+13, "1000000" = k+14, "5000000" = k+15, "10000000" = k+16,
+                                                            "50000000" = k+17, "100000000" = k+18, "500000000" = k+19, "1000000000" = k+20,
+                                                            "5000000000" = k+21, "10000000000" = k+22))
+  dt_install$Installs <- as.numeric(dt_install$Installs)
 }
 
 free_high_rated$Installs <- preprocessing_installs(free_high_rated)
