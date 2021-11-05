@@ -73,8 +73,29 @@ nrow(no_outliers_paid_high_rated)
 #######################discretization for SPMF#######################
 
 #category, factor to numeric values
+require(plyr)
+preprocessing_category <- function(dt_category){
+  dt_category$Category <- revalue(x = dt_category$Category, c("Action" = 1, "Adventure" = 2, "Arcade" = 3, "Art & Design" = 4, "Auto & Vehicles" = 5,
+                                                              "Beauty" = 6, "Board" = 7, "Books & Reference" = 8, "Business" = 9, "Card" = 10,
+                                                              "Casino" = 11, "Casual" = 12, "Comics" = 13, "Communication" = 14, "Dating" = 15,
+                                                              "Education" = 16, "Educational" = 17, "Entertainment" = 18, "Events" = 19, "Finance" = 20,
+                                                              "Food & Drink" = 21,  "Health & Fitness" = 22, "House & Home" = 23, "Libraries & Demo" = 24, 
+                                                              "Lifestyle" = 25, "Maps & Navigation" = 26, "Medical" = 27, "Music" = 28, "Music & Audio" = 29,
+                                                              "News & Magazines" = 30, "Parenting" = 31, "Personalization" = 32, "Photography" = 33, 
+                                                              "Productivity" = 34, "Puzzle" = 35, "Racing" = 36, "Role Playing" = 37, "Shopping" = 38, 
+                                                              "Simulation" = 39, "Social" = 40, "Sports" = 41, "Strategy" = 42, "Tools" = 43, 
+                                                              "Travel & Local" = 44, "Trivia" = 45, "Video Players & Editors" = 46, "Weather" = 47, "Word" = 48 ))
+  print(dt_category$Category)
+  dt_category$Category <- as.numeric(dt_category$Category)
+}
+
+free_high_rated$Category <- preprocessing_category(free_high_rated)
+paid_high_rated$Category <- preprocessing_category(paid_high_rated)
+no_outliers_free_high_rated$Category <- preprocessing_category(no_outliers_free_high_rated)
+no_outliers_paid_high_rated$Category <- preprocessing_category(no_outliers_paid_high_rated)
 
 #rating count, numeric values to numeric ranges
+#get the quarters to discretisize it
 
 ##installs, removing the + and , sign
 preprocessing_installs <- function(dt_install){
@@ -86,14 +107,16 @@ preprocessing_installs <- function(dt_install){
   dt_install$Installs <- as.numeric(gsub("\\,", "", dt_install$Installs))  
 }
 
-preprocessing_installs(free_high_rated)
-preprocessing_installs(paid_high_rated)
-preprocessing_installs(no_outliers_free_high_rated)
-preprocessing_installs(no_outliers_paid_high_rated)
+free_high_rated$Installs <- preprocessing_installs(free_high_rated)
+paid_high_rated$Installs <- preprocessing_installs(paid_high_rated)
+no_outliers_free_high_rated$Installs <- preprocessing_installs(no_outliers_free_high_rated)
+no_outliers_paid_high_rated$Installs <- preprocessing_installs(no_outliers_paid_high_rated)
 
 #price, numeric values to numeric ranges
+#round up, to integer, and use quarters
 
 ##size, turning M to 1000000 and K to 1000 and varries with device to -1
+#use quarters
 preprocessing_size <- function(dt_size){
   dt_size$Size[dt_size$Size == "Varies with device"] <- "-1"
   #removing commas
@@ -120,10 +143,10 @@ preprocessing_size <- function(dt_size){
   
 }
 
-preprocessing_size(free_high_rated)
-preprocessing_size(paid_high_rated)
-preprocessing_size(no_outliers_free_high_rated)
-preprocessing_size(no_outliers_paid_high_rated)
+free_high_rated$Size <- preprocessing_size(free_high_rated)
+paid_high_rated$Size <- preprocessing_size(paid_high_rated)
+no_outliers_free_high_rated$Size <- preprocessing_size(no_outliers_free_high_rated)
+no_outliers_paid_high_rated$Size <- preprocessing_size(no_outliers_paid_high_rated)
 
 ##min.android getting the minimum
 preprocessing_minandroid <- function(dt_minandroid){
@@ -140,10 +163,10 @@ preprocessing_minandroid <- function(dt_minandroid){
   dt_minandroid$Minimum.Android <- as.numeric(dt_minandroid$Minimum.Android)
 }
 
-preprocessing_minandroid(free_high_rated)
-preprocessing_minandroid(paid_high_rated)
-preprocessing_minandroid(no_outliers_free_high_rated)
-preprocessing_minandroid(no_outliers_paid_high_rated)
+free_high_rated$Minimum.Android <- preprocessing_minandroid(free_high_rated)
+paid_high_rated$Minimum.Android <- preprocessing_minandroid(paid_high_rated)
+no_outliers_free_high_rated$Minimum.Android <- preprocessing_minandroid(no_outliers_free_high_rated)
+no_outliers_paid_high_rated$Minimum.Android <- preprocessing_minandroid(no_outliers_paid_high_rated)
 
 #release, date to quarters to numeric values
 
