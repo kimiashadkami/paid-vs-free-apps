@@ -83,6 +83,8 @@ saveRDS(no_outliers_paid_high_rated, file="D:/DDSE project/data/no_outliers_paid
 
 #######################discretization for SPMF#######################
 
+universal_k <- 0
+
 #category, factor to numeric values
 require(plyr)
 preprocessing_category <- function(dt_category, k1){
@@ -99,26 +101,23 @@ preprocessing_category <- function(dt_category, k1){
   dt_category$Category <- as.numeric(dt_category$Category)
 }
 
-free_high_rated$Category <- preprocessing_category(free_high_rated, 0)
-paid_high_rated$Category <- preprocessing_category(paid_high_rated, 0)
-no_outliers_free_high_rated$Category <- preprocessing_category(no_outliers_free_high_rated, 0)
-no_outliers_paid_high_rated$Category <- preprocessing_category(no_outliers_paid_high_rated, 0)
+free_high_rated$Category <- preprocessing_category(free_high_rated, universal_k)
+paid_high_rated$Category <- preprocessing_category(paid_high_rated, universal_k)
+no_outliers_free_high_rated$Category <- preprocessing_category(no_outliers_free_high_rated, universal_k)
+no_outliers_paid_high_rated$Category <- preprocessing_category(no_outliers_paid_high_rated, universal_k)
 
 sink(paste0("D:/DDSE project/R code/postprocessing_category.txt"))
-categories <- c("Action", "Adventure", "Arcade", "Art & Design", "Auto & Vehicles", "Beauty", "Board", "Books & Reference", "Business",
-                "Card", "Casino", "Casual", "Comics", "Communication", "Dating", "Education", "Educational", "Entertainment", "Events", 
-                "Finance", "Food & Drink", "Health & Fitness", "House & Home", "Libraries & Demo", "Lifestyle", "Maps & Navigation", 
-                "Medical", "Music", "Music & Audio", "News & Magazines", "Parenting", "Personalization", "Photography", "Productivity", 
-                "Puzzle", "Racing", "Role Playing", "Shopping", "Simulation", "Social", "Sports", "Strategy", "Tools", "Travel & Local", 
-                "Trivia", "Video Players & Editors", "Weather", "Word")
+categories <- levels(clean_dataset$Category)
 
-for(i in 1:48){
+for(i in 1:length(level(clean_dataset$Category))){
   cat(i)
   cat("\n")
-  cat(categories[i])
+  cat(categories[universal_k+i])
   cat("\n")
 }
 sink();
+
+universal_k <- universal_k + length(level(clean_dataset$Category))
 
 #rating count, numeric values to numeric ranges
 #get the quarters to discretisize it
@@ -150,16 +149,18 @@ preprocessing_ratingcount <- function(dt_ratingcount, k2){
   dt_ratingcount$Rating.Count <- as.integer(dt_ratingcount$Rating.Count)
 }
 
-free_high_rated$Rating.Count = preprocessing_ratingcount(free_high_rated, 48)
-paid_high_rated$Rating.Count = preprocessing_ratingcount(paid_high_rated, 48)
-no_outliers_free_high_rated$Rating.Count = preprocessing_ratingcount(no_outliers_free_high_rated, 48)
-no_outliers_paid_high_rated$Rating.Count = preprocessing_ratingcount(no_outliers_paid_high_rated, 48)
+free_high_rated$Rating.Count = preprocessing_ratingcount(free_high_rated, universal_k)
+paid_high_rated$Rating.Count = preprocessing_ratingcount(paid_high_rated, universal_k)
+no_outliers_free_high_rated$Rating.Count = preprocessing_ratingcount(no_outliers_free_high_rated, universal_k)
+no_outliers_paid_high_rated$Rating.Count = preprocessing_ratingcount(no_outliers_paid_high_rated, universal_k)
 
 sink("D:/DDSE project/R code/postprocessing_ratingcount.txt")
-cat(49, 50, 51, 52)
+cat(universal_k+1, universal_k+2, universal_k+3, universal_k+4)
 cat("\n")
 cat("Rating.Count")
 sink()
+
+universal_k <- universal_k + 4
 
 ##installs, removing the + and , sign
 preprocessing_installs <- function(dt_install, k3){
@@ -176,13 +177,12 @@ preprocessing_installs <- function(dt_install, k3){
                                                             "500000" = k3+13, "1000000" = k3+14, "5000000" = k3+15, "10000000" = k3+16,
                                                             "50000000" = k3+17, "100000000" = k3+18, "500000000" = k3+19, "1000000000" = k3+20,
                                                             "5000000000" = k3+21, "10000000000" = k3+22))
-  print(dt_install$Installs)
 }
 
-free_high_rated$Installs <- preprocessing_installs(free_high_rated, 52)
-paid_high_rated$Installs <- preprocessing_installs(paid_high_rated, 52)
-no_outliers_free_high_rated$Installs <- preprocessing_installs(no_outliers_free_high_rated, 52)
-no_outliers_paid_high_rated$Installs <- preprocessing_installs(no_outliers_paid_high_rated, 52)
+free_high_rated$Installs <- preprocessing_installs(free_high_rated, universal_k)
+paid_high_rated$Installs <- preprocessing_installs(paid_high_rated, universal_k)
+no_outliers_free_high_rated$Installs <- preprocessing_installs(no_outliers_free_high_rated, universal_k)
+no_outliers_paid_high_rated$Installs <- preprocessing_installs(no_outliers_paid_high_rated, universal_k)
 
 install_levels <- c("0", "1", "5", "10",
                     "50", "100", "500", "1000",
@@ -190,15 +190,17 @@ install_levels <- c("0", "1", "5", "10",
                     "500000", "1000000", "5000000", "10000000",
                     "50000000", "100000000", "500000000", "1000000000",
                     "5000000000", "10000000000")
+
 sink("D:/DDSE project/R code/postprocessing_installs.txt")
-for(i in 1:22){
-  cat(52+i)
+for(i in 1:length(levels(clean_dataset$Installs))){
+  cat(universal_k+i)
   cat("\n")
   cat(install_levels[i])
   cat("\n")
 }
 sink();
-#74
+
+universal_k <- universal_k + length(levels(clean_dataset$Installs))
 
 #price, numeric values to numeric ranges
 #round up, to integer, and use quarters
@@ -227,25 +229,25 @@ preprocessing_price <- function(dt_price, k4){
   dt_price$Price <- as.integer(dt_price$Price)
 }
 
-free_high_rated$Price <- preprocessing_price(free_high_rated, 74)
-paid_high_rated$Price <- preprocessing_price(paid_high_rated, 74)
-no_outliers_free_high_rated$Price <- preprocessing_price(no_outliers_free_high_rated, 74)
-no_outliers_paid_high_rated$Price <- preprocessing_price(no_outliers_paid_high_rated, 74)
+free_high_rated$Price <- preprocessing_price(free_high_rated, universal_k)
+paid_high_rated$Price <- preprocessing_price(paid_high_rated, universal_k)
+no_outliers_free_high_rated$Price <- preprocessing_price(no_outliers_free_high_rated, universal_k)
+no_outliers_paid_high_rated$Price <- preprocessing_price(no_outliers_paid_high_rated, universal_k)
 
 sink("D:/DDSE project/R code/postprocessing_price.txt")
-cat(75, 76, 77, 78)
+cat(universal_k+1, universal_k+2, universal_k+3, universal_k+4)
 cat("\n")
 cat("Price")
 sink()
 
-#k <- 78
+universal_k <- universal_k + 4
 
 ##size, turning M to 1000000 and K to 1000 and varries with device to -1
 #use quarters
 preprocessing_size <- function(dt_size, k5){
+  dt_size$Size <- as.character(gsub("\\,", "", dt_size$Size))
   dt_size$Size[dt_size$Size == "Varies with device"] <- "-1"
   #removing commas
-  dt_size$Size <- as.character(gsub("\\,", "", dt_size$Size))
   size <- which(colnames(dt_size)=="Size")
   for(i in 1:nrow(dt_size)){
     last_char <- strsplit(dt_size[i,size], '')[[1]][nchar(dt_size[i,size])]
@@ -287,20 +289,22 @@ preprocessing_size <- function(dt_size, k5){
   dt_size$Size <- as.integer(dt_size$Size)
 }
 
-free_high_rated$Size <- preprocessing_size(free_high_rated, 78)
-paid_high_rated$Size <- preprocessing_size(paid_high_rated, 78)
-no_outliers_free_high_rated$Size <- preprocessing_size(no_outliers_free_high_rated, 78)
-no_outliers_paid_high_rated$Size <- preprocessing_size(no_outliers_paid_high_rated, 78)
+free_high_rated$Size <- preprocessing_size(free_high_rated, universal_k)
+paid_high_rated$Size <- preprocessing_size(paid_high_rated, universal_k)
+no_outliers_free_high_rated$Size <- preprocessing_size(no_outliers_free_high_rated, universal_k)
+no_outliers_paid_high_rated$Size <- preprocessing_size(no_outliers_paid_high_rated, universal_k)
 
 sink("D:/DDSE project/R code/postprocessing_size.txt")
-cat(79, 80, 81, 82)
+cat(universal_k+1, universal_k+2, universal_k+3, universal_k+4)
 cat("\n")
 cat("Size")
 sink()
-#82
+
+universal_k <- universal_k + 4
 
 ##min.android getting the minimum
 preprocessing_minandroid <- function(dt_minandroid, k6){
+  print(k6)
   dt_minandroid$Minimum.Android <- as.character(dt_minandroid$Minimum.Android)
   dt_minandroid$Minimum.Android[dt_minandroid$Minimum.Android == "Varies with device"] <- "-1"
   minandroid <- which(colnames(dt_minandroid) == "Minimum.Android")
@@ -310,30 +314,33 @@ preprocessing_minandroid <- function(dt_minandroid, k6){
       dt_minandroid[i,minandroid] <- first_char
     }
   }
+  print(dt_minandroid$Minimum.Android)
   dt_minandroid$Minimum.Android <- as.factor(dt_minandroid$Minimum.Android)
+  print(dt_minandroid$Minimum.Android)
   
   dt_minandroid$Minimum.Android <- revalue(x = dt_minandroid$Minimum.Android,
                                            c("-1" = k6+1, "2" = k6+2, "3" = k6+3, "4" = k6+4, "5" = k6+5, "6" = k6+6, "7" = k6+7, "8" = k6+8))
-  dt_minandroid$Minimum.Android <- as.numeric(dt_minandroid$Minimum.Android)
+  print(dt_minandroid$Minimum.Android)
 }
 
-free_high_rated$Minimum.Android <- preprocessing_minandroid(free_high_rated, 82)
-paid_high_rated$Minimum.Android <- preprocessing_minandroid(paid_high_rated, 82)
-no_outliers_free_high_rated$Minimum.Android <- preprocessing_minandroid(no_outliers_free_high_rated, 82)
-no_outliers_paid_high_rated$Minimum.Android <- preprocessing_minandroid(no_outliers_paid_high_rated, 82)
+free_high_rated$Minimum.Android <- preprocessing_minandroid(free_high_rated, universal_k)
+paid_high_rated$Minimum.Android <- preprocessing_minandroid(paid_high_rated, universal_k)
+no_outliers_free_high_rated$Minimum.Android <- preprocessing_minandroid(no_outliers_free_high_rated, universal_k)
+no_outliers_paid_high_rated$Minimum.Android <- preprocessing_minandroid(no_outliers_paid_high_rated, universal_k)
 
 minandroid_levels <- c("-1", "2", "3", "4", "5", "6", "7", "8")
 sink("D:/DDSE project/R code/postprocessing_minandroid.txt")
-for(i in 1:8){
-  cat(82+i)
+for(i in 1:length(minandroid_levels)){
+  cat(universal_k+i)
   cat("\n")
   cat(minandroid_levels[i])
   cat("\n")
 }
 sink();
-#90
 
-#release, date to quarters to numeric values
+universal_k <- universal_k + length(minandroid_levels)
+
+#release, date to years
 preprocessing_release <- function(dt_release){
   released <- which(colnames(dt_release) == "Released")
   dt_release$Released <- as.character(dt_release$Released)
@@ -349,14 +356,13 @@ paid_high_rated$Released <- preprocessing_release(paid_high_rated)
 no_outliers_free_high_rated$Released <- preprocessing_release(no_outliers_free_high_rated)
 no_outliers_paid_high_rated$Released <- preprocessing_release(no_outliers_paid_high_rated)
 
-#last.update, date to quarters to numeric values
+#last.update, date to years
 preprocessing_lastupdate <- function(dt_lastupdate){
   lastupdate <- which(colnames(dt_lastupdate) == "Last.Updated")
   dt_lastupdate$Last.Updated <- as.character(dt_lastupdate$Last.Updated)
   for(i in 1:nrow(dt_lastupdate)){
     year <- substr(dt_lastupdate[i, lastupdate], nchar(dt_lastupdate[i, lastupdate])-3, nchar(dt_lastupdate[i, lastupdate]))
     year0 <- paste0("9", year)
-    print(year0)
     dt_lastupdate[i, lastupdate] <- year0
   }
   dt_lastupdate$Last.Updated <- as.numeric(dt_lastupdate$Last.Updated)
@@ -376,21 +382,22 @@ preprocessing_contentrating <- function(dt_contentrating, k7){
                                                                      "Teen" = k7+5, "Unrated" = k7+6))
 }
 
-free_high_rated$Content.Rating <- preprocessing_contentrating(free_high_rated, 90)
-paid_high_rated$Content.Rating <- preprocessing_contentrating(paid_high_rated, 90)
-no_outliers_free_high_rated$Content.Rating <- preprocessing_contentrating(no_outliers_free_high_rated, 90)
-no_outliers_paid_high_rated$Content.Rating <- preprocessing_contentrating(no_outliers_paid_high_rated, 90)
+free_high_rated$Content.Rating <- preprocessing_contentrating(free_high_rated, universal_k)
+paid_high_rated$Content.Rating <- preprocessing_contentrating(paid_high_rated, universal_k)
+no_outliers_free_high_rated$Content.Rating <- preprocessing_contentrating(no_outliers_free_high_rated, universal_k)
+no_outliers_paid_high_rated$Content.Rating <- preprocessing_contentrating(no_outliers_paid_high_rated, universal_k)
 
 sink("D:/DDSE project/R code/postprocessing_contentrating.txt")
-contentrating_levels <- c("Adults only 18+", "Everyone", "Everyone 10+", "Mature 17+", "Teen", "Unrated")
-for(i in 1:6){
-  cat(90+i)
+contentrating_levels <- levels(clean_dataset$Content.Rating)
+for(i in 1:length(contentrating_levels)){
+  cat(universal_k+i)
   cat("\n")
   cat(contentrating_levels[i])
   cat("\n")
 }
 sink()
-#96
+
+universal_k <- universal_k + length(contentrating_levels)
 
 #ad-support, boolean to numeric
 preprocessing_ad <- function(dt_ad, k8){
@@ -398,21 +405,22 @@ preprocessing_ad <- function(dt_ad, k8){
   dt_ad$Ad.Supported <- revalue(x = dt_ad$Ad.Supported, c("True" = k8+1, "False" = k8+2))
 }
 
-free_high_rated$Ad.Supported <- preprocessing_ad(free_high_rated, 96)
-paid_high_rated$Ad.Supported <- preprocessing_ad(paid_high_rated, 96)
-no_outliers_free_high_rated$Ad.Supported <- preprocessing_ad(no_outliers_free_high_rated, 96)
-no_outliers_paid_high_rated$Ad.Supported <- preprocessing_ad(no_outliers_paid_high_rated, 96)
+free_high_rated$Ad.Supported <- preprocessing_ad(free_high_rated, universal_k)
+paid_high_rated$Ad.Supported <- preprocessing_ad(paid_high_rated, universal_k)
+no_outliers_free_high_rated$Ad.Supported <- preprocessing_ad(no_outliers_free_high_rated, universal_k)
+no_outliers_paid_high_rated$Ad.Supported <- preprocessing_ad(no_outliers_paid_high_rated, universal_k)
 
 sink("D:/DDSE project/R code/postprocessing_adsupported.txt")
-adsupported_levels <- c("True", "False")
-for(i in 1:2){
-  cat(96+i)
+adsupported_levels <- levels(clean_dataset$Ad.Supported)
+for(i in 1:length(adsupported_levels)){
+  cat(universal_k+i)
   cat("\n")
   cat(adsupported_levels[i])
   cat("\n")
 }
 sink()
-#98
+
+universal_k <- universal_k + length(adsupported_levels)
 
 #in-app purchases, boolean to numeric
 preprocessing_inapp <- function(dt_inapp, k9){
@@ -420,21 +428,22 @@ preprocessing_inapp <- function(dt_inapp, k9){
   dt_inapp$In.App.Purchases <- revalue(x = dt_inapp$In.App.Purchases, c("True" = k9+1, "False" = k9+2))
 }
 
-free_high_rated$In.App.Purchases <- preprocessing_inapp(free_high_rated, 98)
-paid_high_rated$In.App.Purchases <- preprocessing_inapp(paid_high_rated, 98)
-no_outliers_free_high_rated$In.App.Purchases <- preprocessing_inapp(no_outliers_free_high_rated, 98)
-no_outliers_paid_high_rated$In.App.Purchases <- preprocessing_inapp(no_outliers_paid_high_rated, 98)
+free_high_rated$In.App.Purchases <- preprocessing_inapp(free_high_rated, universal_k)
+paid_high_rated$In.App.Purchases <- preprocessing_inapp(paid_high_rated, universal_k)
+no_outliers_free_high_rated$In.App.Purchases <- preprocessing_inapp(no_outliers_free_high_rated, universal_k)
+no_outliers_paid_high_rated$In.App.Purchases <- preprocessing_inapp(no_outliers_paid_high_rated, universal_k)
 
 sink("D:/DDSE project/R code/postprocessing_inapp_purchases.txt")
-inapp_levels <- c("True", "False")
-for(i in 1:2){
-  cat(98+i)
+inapp_levels <- levels(clean_dataset$In.App.Purchases)
+for(i in 1:length(inapp_levels)){
+  cat(universal_k+i)
   cat("\n")
   cat(inapp_levels[i])
   cat("\n")
 }
 sink()
-#100
+
+universal_k <- universal_k + length(inapp_levels)
 
 #editor choice, boolean to numeric
 preprocessing_editor <- function(dt_editor, k10){
@@ -442,21 +451,22 @@ preprocessing_editor <- function(dt_editor, k10){
   dt_editor$Editors.Choice <- revalue(x = dt_editor$Editors.Choice, c("True" = k10+1, "False" = k10+2))
 }
 
-free_high_rated$Editors.Choice <- preprocessing_editor(free_high_rated, 100)
-paid_high_rated$Editors.Choice <- preprocessing_editor(paid_high_rated, 100)
-no_outliers_free_high_rated$Editors.Choice <- preprocessing_editor(no_outliers_free_high_rated, 100)
-no_outliers_paid_high_rated$Editors.Choice <- preprocessing_editor(no_outliers_paid_high_rated, 100)
+free_high_rated$Editors.Choice <- preprocessing_editor(free_high_rated, universal_k)
+paid_high_rated$Editors.Choice <- preprocessing_editor(paid_high_rated, universal_k)
+no_outliers_free_high_rated$Editors.Choice <- preprocessing_editor(no_outliers_free_high_rated, universal_k)
+no_outliers_paid_high_rated$Editors.Choice <- preprocessing_editor(no_outliers_paid_high_rated, universal_k)
 
 sink("D:/DDSE project/R code/postprocessing_editorchoice.txt")
-editorchoice_levels <- c("True", "False")
-for(i in 1:2){
-  cat(100+i)
+editorchoice_levels <- levels(clean_dataset$Editors.Choice)
+for(i in 1:length(editorchoice_levels)){
+  cat(universal_k+i)
   cat("\n")
   cat(editorchoice_levels[i])
   cat("\n")
 }
 sink()
-#102
+
+universal_k <- universal_k + length(editorchoice_levels)
 
 #######################saving datasets#######################
 
