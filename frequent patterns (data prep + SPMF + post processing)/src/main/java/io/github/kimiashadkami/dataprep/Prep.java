@@ -24,7 +24,10 @@ public class Prep {
     // D:/eclipse/workspace/freevspaidapps/src/main/resources/no_outliers_paid_high_rated_spmf.xlsx
     // D:/eclipse/workspace/freevspaidapps/src/main/resources/no_outliers_paid_high_rated_spmf.txt
 
-    public void prepData(String dir_read, String dir_write) {
+    public int prepData(String dir_read, String dir_write) {
+
+        int row_num = 0;
+
         try {
 
             File file = new File(dir_read);
@@ -42,6 +45,8 @@ public class Prep {
             int value = 0;
 
             while (iterator_row.hasNext()) {
+
+                row_num++;
 
                 Row row = iterator_row.next();
                 Iterator<Cell> iterator_col = row.cellIterator();
@@ -67,5 +72,6 @@ public class Prep {
             System.out.println("An error occured.");
             e.printStackTrace();
         }
+        return row_num;
     }
 }

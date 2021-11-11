@@ -16,16 +16,22 @@ public class Main {
         String str7 = "D:/eclipse/workspace/freevspaidapps/src/main/resources/no_outliers_paid_high_rated_spmf.xlsx";
         String str8 = "D:/eclipse/workspace/freevspaidapps/src/main/resources/no_outliers_paid_high_rated_spmf.txt";
 
-        String str = "D:/eclipse/workspace/freevspaidapps/src/main/resources/MIS.txt";
+        String mis1 = "D:/eclipse/workspace/freevspaidapps/src/main/resources/free_high_rated_MIS.txt";
+        String mis2 = "D:/eclipse/workspace/freevspaidapps/src/main/resources/paid_high_rated_MIS.txt";
+        String mis3 = "D:/eclipse/workspace/freevspaidapps/src/main/resources/no_outliers_free_high_rated_MIS.txt";
+        String mis4 = "D:/eclipse/workspace/freevspaidapps/src/main/resources/no_outliers_paid_high_rated_MIS.txt";
 
         Prep prep = new Prep();
-        prep.prepData(str1, str2);
-        prep.prepData(str3, str4);
-        prep.prepData(str5, str6);
-        prep.prepData(str7, str8);
+        int row_num1 = prep.prepData(str1, str2);
+        int row_num2 = prep.prepData(str3, str4);
+        int row_num3 = prep.prepData(str5, str6);
+        int row_num4 = prep.prepData(str7, str8);
 
         MIS mis = new MIS();
-        mis.generateMIS(str, 50);
+        mis.generateMIS(mis1, (int) (row_num1 * 0.20));
+        mis.generateMIS(mis2, (int) (row_num2 * 0.20));
+        mis.generateMIS(mis3, (int) (row_num3 * 0.20));
+        mis.generateMIS(mis4, (int) (row_num4 * 0.20));
     }
 
 }
