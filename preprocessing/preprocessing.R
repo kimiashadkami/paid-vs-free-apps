@@ -112,7 +112,7 @@ for(i in 1:length(categories)){
   postprocessing_info <- paste0(postprocessing_info, i, "\n", "Category: ", categories[universal_k+i], "\n")
 }
 
-universal_k <- universal_k + length(levels(clean_dataset$Category))
+universal_k <- universal_k + length(categories)
 
 #rating count, numeric values to numeric ranges
 #get the quarters to discretisize it
@@ -146,7 +146,7 @@ paid_high_rated$Rating.Count = preprocessing_ratingcount(paid_high_rated, univer
 no_outliers_free_high_rated$Rating.Count = preprocessing_ratingcount(no_outliers_free_high_rated, universal_k)
 no_outliers_paid_high_rated$Rating.Count = preprocessing_ratingcount(no_outliers_paid_high_rated, universal_k)
 
-postprocessing_info <- paste0(postprocessing_info, universal_k+1, universal_k+2, universal_k+3, universal_k+4, "\n", "Rating.Count")
+postprocessing_info <- paste0(postprocessing_info, universal_k+1, " ", universal_k+2, " ", universal_k+3, " ", universal_k+4, "\n", "Rating.Count")
 
 universal_k <- universal_k + 4
 
@@ -158,7 +158,6 @@ preprocessing_installs <- function(dt_install, k3){
     dt_install[i,installs] <- substr(dt_install[i,installs], 1, nchar(as.character(dt_install[i,installs]))-1)
   }
   dt_install$Installs <- gsub("\\,", "", dt_install$Installs)
-  dt_install <- dt_install[(dt_install$Installs > 100 ), ]
   #levels
   dt_install$Installs <- revalue(x = dt_install$Installs, c("0" = k3+1, "1" = k3+2, "5" = k3+3, "10" = k3+4,
                                                             "50" = k3+5, "100" = k3+6, "500" = k3+7, "1000" = k3+8,
@@ -169,9 +168,13 @@ preprocessing_installs <- function(dt_install, k3){
 }
 
 free_high_rated$Installs <- preprocessing_installs(free_high_rated, universal_k)
+free_high_rated <- free_high_rated[(free_high_rated$Installs > 100 ), ]
 paid_high_rated$Installs <- preprocessing_installs(paid_high_rated, universal_k)
+paid_high_rated <- paid_high_rated[(paid_high_rated$Installs > 100 ), ]
 no_outliers_free_high_rated$Installs <- preprocessing_installs(no_outliers_free_high_rated, universal_k)
+no_outliers_free_high_rated <- no_outliers_free_high_rated[(no_outliers_free_high_rated$Installs > 100 ), ]
 no_outliers_paid_high_rated$Installs <- preprocessing_installs(no_outliers_paid_high_rated, universal_k)
+no_outliers_paid_high_rated <- no_outliers_paid_high_rated[(no_outliers_paid_high_rated$Installs > 100 ), ]
 
 install_levels <- c("0", "1", "5", "10",
                     "50", "100", "500", "1000",
@@ -185,14 +188,15 @@ for(i in 1:length(levels(clean_dataset$Installs))){
   postprocessing_info <- paste0(postprocessing_info, universal_k+i, "\n", "Installs: ", install_levels[i], "\n")
 }
 
-universal_k <- universal_k + length(levels(clean_dataset$Installs))
+universal_k <- universal_k + length(install_levels)
 
 #price, numeric values to numeric ranges
 #round up, to integer, and use quarters
 preprocessing_price <- function(dt_price, k4){
+  print(class(dt_price$Price))
   dt_price$Price <- round(dt_price$Price)
   priceindex <- which(colnames(dt_price)=="Price")
-
+  print(class(dt_price$Price))
   q1 <- quantile(dt_price$Price, .25)
   q2 <- quantile(dt_price$Price, 0.5)
   q3 <- quantile(dt_price$Price, .75)
@@ -214,12 +218,10 @@ preprocessing_price <- function(dt_price, k4){
   dt_price$Price <- as.integer(dt_price$Price)
 }
 
-free_high_rated$Price <- preprocessing_price(free_high_rated, universal_k)
 paid_high_rated$Price <- preprocessing_price(paid_high_rated, universal_k)
-no_outliers_free_high_rated$Price <- preprocessing_price(no_outliers_free_high_rated, universal_k)
 no_outliers_paid_high_rated$Price <- preprocessing_price(no_outliers_paid_high_rated, universal_k)
 
-postprocessing_info <- paste0(postprocessing_info, universal_k+1, universal_k+2, universal_k+3, universal_k+4, "\n", "Price")
+postprocessing_info <- paste0(postprocessing_info, universal_k+1, " ", universal_k+2, " ", universal_k+3, " ", universal_k+4, "\n", "Price")
 
 universal_k <- universal_k + 4
 
@@ -235,18 +237,20 @@ preprocessing_size <- function(dt_size, k5){
     if(last_char == "M" || last_char =="m"){
       temp <- dt_size[i,size]
       temp <- as.numeric(substr(temp, 1, nchar(temp)-1))
-      dt_size[i,size] <- temp*1000000
+      temp <- temp*1000000
+      dt_size[i,size] <- as.character(temp)
     }
     else if(last_char == "K" || last_char == "k"){
       temp <- dt_size[i,size]
       temp <- as.numeric(substr(temp, 1, nchar(temp)-1))
-      dt_size[i,size] <- temp*1000
+      temp <- temp*1000
+      dt_size[i,size] <- as.character(temp) 
     }
     else if(last_char == "G" || last_char == "g"){
-      dt_size[i, size] <- -2
+      dt_size[i, size] <- "-2"
     }
   }
-  dt_size <- subset(dt_size, Size!=-2)
+  dt_size <- subset(dt_size, Size!="-2")
   dt_size$Size <- as.numeric(dt_size$Size)
   
   q1 <- quantile(dt_size$Size, .25)
@@ -267,7 +271,7 @@ preprocessing_size <- function(dt_size, k5){
       dt_size[i, size] = k5+4
     }
   }
-  dt_size$Size <- as.integer(dt_size$Size)
+  #dt_size$Size <- as.integer(dt_size$Size)
 }
 
 free_high_rated$Size <- preprocessing_size(free_high_rated, universal_k)
@@ -275,7 +279,7 @@ paid_high_rated$Size <- preprocessing_size(paid_high_rated, universal_k)
 no_outliers_free_high_rated$Size <- preprocessing_size(no_outliers_free_high_rated, universal_k)
 no_outliers_paid_high_rated$Size <- preprocessing_size(no_outliers_paid_high_rated, universal_k)
 
-postprocessing_info <- paste0(postprocessing_info, universal_k+1, universal_k+2, universal_k+3, universal_k+4, "\n", "Size")
+postprocessing_info <- paste0(postprocessing_info, universal_k+1, " ", universal_k+2, " ", universal_k+3, " ", universal_k+4, "\n", "Size")
 
 universal_k <- universal_k + 4
 
@@ -356,7 +360,7 @@ paid_high_rated$Content.Rating <- preprocessing_contentrating(paid_high_rated, u
 no_outliers_free_high_rated$Content.Rating <- preprocessing_contentrating(no_outliers_free_high_rated, universal_k)
 no_outliers_paid_high_rated$Content.Rating <- preprocessing_contentrating(no_outliers_paid_high_rated, universal_k)
 
-contentrating_levels <- levels(clean_dataset$Content.Rating)
+contentrating_levels <- c("Adults only 18+", "Everyone", "Everyone 10+", "Mature 17+", "Teen", "Unrated")
 for(i in 1:length(contentrating_levels)){
   postprocessing_info <- paste0(postprocessing_info, universal_k+i, "\n", "Content.Rating", contentrating_levels[i], "\n")
 }
@@ -374,7 +378,7 @@ paid_high_rated$Ad.Supported <- preprocessing_ad(paid_high_rated, universal_k)
 no_outliers_free_high_rated$Ad.Supported <- preprocessing_ad(no_outliers_free_high_rated, universal_k)
 no_outliers_paid_high_rated$Ad.Supported <- preprocessing_ad(no_outliers_paid_high_rated, universal_k)
 
-adsupported_levels <- levels(clean_dataset$Ad.Supported)
+adsupported_levels <- c("True", "False")
 for(i in 1:length(adsupported_levels)){
   postprocessing_info <- paste0(postprocessing_info, universal_k+i, "\n", "Ad.Supported: ", adsupported_levels[i], "\n")
 }
@@ -392,7 +396,7 @@ paid_high_rated$In.App.Purchases <- preprocessing_inapp(paid_high_rated, univers
 no_outliers_free_high_rated$In.App.Purchases <- preprocessing_inapp(no_outliers_free_high_rated, universal_k)
 no_outliers_paid_high_rated$In.App.Purchases <- preprocessing_inapp(no_outliers_paid_high_rated, universal_k)
 
-inapp_levels <- levels(clean_dataset$In.App.Purchases)
+inapp_levels <- c("True", "False")
 for(i in 1:length(inapp_levels)){
   postprocessing_info <- paste0(postprocessing_info, universal_k+i, "\n", "In.App.Purchases", inapp_levels[i], "\n")
 }
@@ -410,7 +414,7 @@ paid_high_rated$Editors.Choice <- preprocessing_editor(paid_high_rated, universa
 no_outliers_free_high_rated$Editors.Choice <- preprocessing_editor(no_outliers_free_high_rated, universal_k)
 no_outliers_paid_high_rated$Editors.Choice <- preprocessing_editor(no_outliers_paid_high_rated, universal_k)
 
-editorchoice_levels <- levels(clean_dataset$Editors.Choice)
+editorchoice_levels <- c("True", "False")
 for(i in 1:length(editorchoice_levels)){
   postprocessing_info <- paste0(postprocessing_info, universal_k+i, "\n", "Editor.Choice: ", editorchoice_levels[i], "\n")
 }
