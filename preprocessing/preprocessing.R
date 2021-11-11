@@ -26,7 +26,8 @@ drops <- c("Minimum.Installs", "Maximum.Installs", "Price", "Currency", "Scraped
 free_high_rated <- free_high_rated[ , !(names(free_high_rated) %in% drops) ]
 
 #feature selection (phase 1), paid, high rated apps
-paid_high_rated <- clean_dataset[(clean_dataset$Free == "False" ) & (clean_dataset$Rating >= 4) & (clean_dataset$Rating.Count > 10), ]
+paid_high_rated <- clean_dataset[(clean_dataset$Free == "False" ) & (clean_dataset$Rating >= 4) & (clean_dataset$Rating.Count > 10) 
+                                 & (clean_dataset$Currency == "USD"), ]
 drops <- c("Minimum.Installs", "Maximum.Installs", "Free", "Scraped.Time")
 paid_high_rated <- paid_high_rated[ , !(names(paid_high_rated) %in% drops) ]
 
@@ -183,7 +184,6 @@ install_levels <- c("0", "1", "5", "10",
                     "50000000", "100000000", "500000000", "1000000000",
                     "5000000000", "10000000000")
 
-
 for(i in 1:length(levels(clean_dataset$Installs))){
   postprocessing_info <- paste0(postprocessing_info, universal_k+i, "\n", "Installs: ", install_levels[i], "\n")
 }
@@ -228,7 +228,7 @@ universal_k <- universal_k + 4
 ##size, turning M to 1000000 and K to 1000 and varries with device to -1
 #use quarters
 preprocessing_size <- function(dt_size, k5){
-  dt_size$Size <- as.character(gsub("\\,", "", dt_size$Size))
+  dt_size$Size <- gsub("\\,", "", dt_size$Size)
   dt_size$Size[dt_size$Size == "Varies with device"] <- "-1"
   #removing commas
   size <- which(colnames(dt_size)=="Size")
@@ -236,13 +236,15 @@ preprocessing_size <- function(dt_size, k5){
     last_char <- strsplit(dt_size[i,size], '')[[1]][nchar(dt_size[i,size])]
     if(last_char == "M" || last_char =="m"){
       temp <- dt_size[i,size]
-      temp <- as.numeric(substr(temp, 1, nchar(temp)-1))
+      temp <- substr(temp, 1, nchar(temp)-1)
+      temp <- as.numeric(temp)
       temp <- temp*1000000
       dt_size[i,size] <- as.character(temp)
     }
     else if(last_char == "K" || last_char == "k"){
       temp <- dt_size[i,size]
-      temp <- as.numeric(substr(temp, 1, nchar(temp)-1))
+      temp <- substr(temp, 1, nchar(temp)-1)
+      temp <- as.numeric(temp)
       temp <- temp*1000
       dt_size[i,size] <- as.character(temp) 
     }
@@ -250,7 +252,6 @@ preprocessing_size <- function(dt_size, k5){
       dt_size[i, size] <- "-2"
     }
   }
-  dt_size <- subset(dt_size, Size!="-2")
   dt_size$Size <- as.numeric(dt_size$Size)
   
   q1 <- quantile(dt_size$Size, .25)
@@ -259,19 +260,19 @@ preprocessing_size <- function(dt_size, k5){
   
   for(i in 1:nrow(dt_size)){
     if(dt_size[i, size] < q1){
-      dt_size[i, size] = k5+1
+      dt_size[i, size] <- k5+1
     }
     else if(q1 <= dt_size[i, size] && dt_size[i, size] < q2){
-      dt_size[i, size] = k5+2
+      dt_size[i, size] <- k5+2
     }
     else if(q2 <= dt_size[i, size] && dt_size[i, size] < q3){
-      dt_size[i, size] = k5+3
+      dt_size[i, size] <- k5+3
     }
     else{
-      dt_size[i, size] = k5+4
+      dt_size[i, size] <- k5+4
     }
   }
-  #dt_size$Size <- as.integer(dt_size$Size)
+  dt_size$Size <- as.numeric(dt_size$Size)
 }
 
 free_high_rated$Size <- preprocessing_size(free_high_rated, universal_k)
@@ -426,16 +427,31 @@ sink("D:/DDSE project/R code/postprocessing.txt")
 cat(postprocessing_info)
 sink()
 
-
+write.csv(free_high_rated, file="D:/DDSE project/data/free_high_rated2.csv")
+saveRDS(free_high_rated, file="D:/DDSE project/data/free_high_rated2.rds")
+drops1 <- c("App.Id", "App.Name", "Free", "Developer.Id", "Developer.Website", "Developer.Email", "Privacy.Policy")
+free_high_rated <- free_high_rated[ , !(names(free_high_rated) %in% drops1) ]
 write.csv(free_high_rated, file="D:/DDSE project/data/free_high_rated_spmf.csv")
 saveRDS(free_high_rated, file="D:/DDSE project/data/free_high_rated_spmf.rds")
 
+write.csv(paid_high_rated, file="D:/DDSE project/data/paid_high_rated2.csv")
+saveRDS(paid_high_rated, file="D:/DDSE project/data/paid_high_rated2.rds")
+drops2 <- c("App.Id", "App.Name", "Currency", "Developer.Id", "Developer.Website", "Developer.Email", "Privacy.Policy")
+paid_high_rated <- paid_high_rated[ , !(names(paid_high_rated) %in% drops2) ]
 write.csv(paid_high_rated, file="D:/DDSE project/data/paid_high_rated_spmf.csv")
 saveRDS(paid_high_rated, file="D:/DDSE project/data/paid_high_rated_spmf.rds")
 
+write.csv(no_outliers_free_high_rated, file="D:/DDSE project/data/no_outliers_free_high_rated2.csv")
+saveRDS(no_outliers_free_high_rated, file="D:/DDSE project/data/no_outliers_free_high_rated2.rds")
+drops3 <- c("App.Id", "App.Name", "Free", "Developer.Id", "Developer.Website", "Developer.Email", "Privacy.Policy")
+no_outliers_free_high_rated <- no_outliers_free_high_rated[ , !(names(no_outliers_free_high_rated) %in% drops3) ]
 write.csv(no_outliers_free_high_rated, file="D:/DDSE project/data/no_outliers_free_high_rated_spmf.csv")
 saveRDS(no_outliers_free_high_rated, file="D:/DDSE project/data/no_outliers_free_high_rated_spmf.rds")
 
+write.csv(no_outliers_paid_high_rated, file="D:/DDSE project/data/no_outliers_paid_high_rated2.csv")
+saveRDS(no_outliers_paid_high_rated, file="D:/DDSE project/data/no_outliers_paid_high_rated2.rds")
+drops4 <- c("App.Id", "App.Name", "Currency", "Developer.Id", "Developer.Website", "Developer.Email", "Privacy.Policy")
+no_outliers_paid_high_rated <- no_outliers_paid_high_rated[ , !(names(no_outliers_paid_high_rated) %in% drops4) ]
 write.csv(no_outliers_paid_high_rated, file="D:/DDSE project/data/no_outliers_paid_high_rated_spmf.csv")
 saveRDS(no_outliers_paid_high_rated, file="D:/DDSE project/data/no_outliers_paid_high_rated_spmf.rds")
 
