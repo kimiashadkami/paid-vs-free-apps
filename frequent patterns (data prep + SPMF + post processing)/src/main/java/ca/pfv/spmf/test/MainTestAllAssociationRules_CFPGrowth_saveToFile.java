@@ -17,24 +17,36 @@ import ca.pfv.spmf.patterns.itemset_array_integers_with_count.Itemsets;
 public class MainTestAllAssociationRules_CFPGrowth_saveToFile {
 
 	public static void main(String [] arg) throws IOException{
-        String input1 = "D:/eclipse/workspace/freevspaidapps/src/main/resources/free_high_rated_spmf.txt";
-        String output1 = "D:/eclipse/workspace/freevspaidapps/src/main/resources/output/free_high_rated_rules_cfp.txt";
-        String MISfile1 = "D:/eclipse/workspace/freevspaidapps/src/main/resources/free_high_rated_MIS.txt";
+        String input1 = "D:/eclipse/workspace/paid-vs-free-apps/"
+                + "frequent patterns (data prep + SPMF + post processing)/src/main/resources/free_high_rated_spmf.txt";
+        String output1 = "D:/eclipse/workspace/paid-vs-free-apps/"
+                + "frequent patterns (data prep + SPMF + post processing)/src/main/resources/output/free_high_rated_rules_cfp.txt";
+        String MISfile1 = "D:/eclipse/workspace/paid-vs-free-apps/"
+                + "frequent patterns (data prep + SPMF + post processing)/src/main/resources/free_high_rated_MIS.txt";
         run(input1, output1, MISfile1);
 
-        String input2 = "D:/eclipse/workspace/freevspaidapps/src/main/resources/paid_high_rated_spmf.txt";
-        String output2 = "D:/eclipse/workspace/freevspaidapps/src/main/resources/output/paid_high_rated_rules_cfp.txt";
-        String MISfile2 = "D:/eclipse/workspace/freevspaidapps/src/main/resources/paid_high_rated_MIS.txt";
+        String input2 = "D:/eclipse/workspace/paid-vs-free-apps/"
+                + "frequent patterns (data prep + SPMF + post processing)/src/main/resources/paid_high_rated_spmf.txt";
+        String output2 = "D:/eclipse/workspace/paid-vs-free-apps/"
+                + "frequent patterns (data prep + SPMF + post processing)/src/main/resources/output/paid_high_rated_rules_cfp.txt";
+        String MISfile2 = "D:/eclipse/workspace/paid-vs-free-apps/"
+                + "frequent patterns (data prep + SPMF + post processing)/src/main/resources/paid_high_rated_MIS.txt";
         run(input2, output2, MISfile2);
 
-        String input3 = "D:/eclipse/workspace/freevspaidapps/src/main/resources/no_outliers_free_high_rated_spmf.txt";
-        String output3 = "D:/eclipse/workspace/freevspaidapps/src/main/resources/output/no_outliers_free_high_rated_rules_cfp.txt";
-        String MISfile3 = "D:/eclipse/workspace/freevspaidapps/src/main/resources/no_outliers_free_high_rated_MIS.txt";
+        String input3 = "D:/eclipse/workspace/paid-vs-free-apps/"
+                + "frequent patterns (data prep + SPMF + post processing)/src/main/resources/no_outliers_free_high_rated_spmf.txt";
+        String output3 = "D:/eclipse/workspace/paid-vs-free-apps/"
+                + "frequent patterns (data prep + SPMF + post processing)/src/main/resources/output/no_outliers_free_high_rated_rules_cfp.txt";
+        String MISfile3 = "D:/eclipse/workspace/paid-vs-free-apps/"
+                + "frequent patterns (data prep + SPMF + post processing)/src/main/resources/no_outliers_free_high_rated_MIS.txt";
         run(input3, output3, MISfile3);
 
-        String input4 = "D:/eclipse/workspace/freevspaidapps/src/main/resources/no_outliers_paid_high_rated_spmf.txt";
-        String output4 = "D:/eclipse/workspace/freevspaidapps/src/main/resources/output/no_outliers_paid_high_rated_rules_cfp.txt";
-        String MISfile4 = "D:/eclipse/workspace/freevspaidapps/src/main/resources/no_outliers_paid_high_rated_MIS.txt";
+        String input4 = "D:/eclipse/workspace/paid-vs-free-apps/"
+                + "frequent patterns (data prep + SPMF + post processing)/src/main/resources/no_outliers_paid_high_rated_spmf.txt";
+        String output4 = "D:/eclipse/workspace/paid-vs-free-apps/"
+                + "frequent patterns (data prep + SPMF + post processing)/src/main/resources/output/no_outliers_paid_high_rated_rules_cfp.txt";
+        String MISfile4 = "D:/eclipse/workspace/paid-vs-free-apps/"
+                + "frequent patterns (data prep + SPMF + post processing)/src/main/resources/no_outliers_paid_high_rated_MIS.txt";
         run(input4, output4, MISfile4);
     }
 

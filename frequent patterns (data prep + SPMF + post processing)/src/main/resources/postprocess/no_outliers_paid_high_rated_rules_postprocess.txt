@@ -1,0 +1,642 @@
+Rating.Count(49), ==>Content.Rating: Everyone(92), #SUP: 1545 #CONF: 0.9131205673758865
+Rating.Count(49), ==>Ad.Supported: False(98), #SUP: 1601 #CONF: 0.9462174940898345
+Rating.Count(49), ==>In.App.PurchasesFalse(100), #SUP: 1580 #CONF: 0.933806146572104
+Rating.Count(49), ==>Editor.Choice: False(102), #SUP: 1692 #CONF: 1.0
+Rating.Count(50), ==>Content.Rating: Everyone(92), #SUP: 1584 #CONF: 0.8854108440469536
+Rating.Count(50), ==>Ad.Supported: False(98), #SUP: 1668 #CONF: 0.9323644494130799
+Rating.Count(50), ==>In.App.PurchasesFalse(100), #SUP: 1649 #CONF: 0.9217439910564561
+Rating.Count(50), ==>Editor.Choice: False(102), #SUP: 1789 #CONF: 1.0
+Rating.Count(51), ==>Content.Rating: Everyone(92), #SUP: 1434 #CONF: 0.8222477064220184
+Rating.Count(51), ==>Ad.Supported: False(98), #SUP: 1605 #CONF: 0.9202981651376146
+Rating.Count(51), ==>In.App.PurchasesFalse(100), #SUP: 1531 #CONF: 0.8778669724770642
+Rating.Count(51), ==>Editor.Choice: False(102), #SUP: 1743 #CONF: 0.9994266055045872
+Installs: (52), ==>Ad.Supported: False(98), #SUP: 1552 #CONF: 0.8888888888888888
+Installs: (52), ==>In.App.PurchasesFalse(100), #SUP: 1408 #CONF: 0.8064146620847652
+Installs: (52), ==>Editor.Choice: False(102), #SUP: 1742 #CONF: 0.997709049255441
+Released(60), ==>Content.Rating: Everyone(92), #SUP: 2093 #CONF: 0.8388777555110221
+Released(60), ==>Ad.Supported: False(98), #SUP: 2307 #CONF: 0.9246492985971944
+Released(60), ==>In.App.PurchasesFalse(100), #SUP: 2233 #CONF: 0.8949899799599198
+Released(60), ==>Editor.Choice: False(102), #SUP: 2495 #CONF: 1.0
+Price(75), ==>Ad.Supported: False(98), #SUP: 1396 #CONF: 0.9178172255095332
+Price(75), ==>Editor.Choice: False(102), #SUP: 1521 #CONF: 1.0
+Price(76), ==>Content.Rating: Everyone(92), #SUP: 1398 #CONF: 0.8996138996138996
+Price(76), ==>Ad.Supported: False(98), #SUP: 1456 #CONF: 0.9369369369369369
+Price(76), ==>In.App.PurchasesFalse(100), #SUP: 1400 #CONF: 0.9009009009009009
+Price(76), ==>Editor.Choice: False(102), #SUP: 1554 #CONF: 1.0
+Price(77), ==>Content.Rating: Everyone(92), #SUP: 1462 #CONF: 0.8302101078932425
+Price(77), ==>Ad.Supported: False(98), #SUP: 1621 #CONF: 0.9204997160704146
+Price(77), ==>In.App.PurchasesFalse(100), #SUP: 1581 #CONF: 0.8977853492333902
+Price(77), ==>Editor.Choice: False(102), #SUP: 1759 #CONF: 0.9988642816581488
+Price(78), ==>Content.Rating: Everyone(92), #SUP: 1670 #CONF: 0.7822014051522248
+Price(78), ==>Ad.Supported: False(98), #SUP: 1953 #CONF: 0.9147540983606557
+Price(78), ==>In.App.PurchasesFalse(100), #SUP: 1862 #CONF: 0.8721311475409836
+Price(78), ==>Editor.Choice: False(102), #SUP: 2132 #CONF: 0.9985948477751756
+Size(79), ==>Content.Rating: Everyone(92), #SUP: 1590 #CONF: 0.9244186046511628
+Size(79), ==>Ad.Supported: False(98), #SUP: 1642 #CONF: 0.9546511627906977
+Size(79), ==>In.App.PurchasesFalse(100), #SUP: 1589 #CONF: 0.9238372093023256
+Size(79), ==>Editor.Choice: False(102), #SUP: 1720 #CONF: 1.0
+Size(80), ==>Content.Rating: Everyone(92), #SUP: 1518 #CONF: 0.9024970273483948
+Size(80), ==>Ad.Supported: False(98), #SUP: 1550 #CONF: 0.9215219976218787
+Size(80), ==>In.App.PurchasesFalse(100), #SUP: 1565 #CONF: 0.9304399524375743
+Size(80), ==>Editor.Choice: False(102), #SUP: 1682 #CONF: 1.0
+Size(81), ==>Content.Rating: Everyone(92), #SUP: 1452 #CONF: 0.8102678571428571
+Size(81), ==>Ad.Supported: False(98), #SUP: 1648 #CONF: 0.9196428571428571
+Size(81), ==>In.App.PurchasesFalse(100), #SUP: 1558 #CONF: 0.8694196428571429
+Size(81), ==>Editor.Choice: False(102), #SUP: 1790 #CONF: 0.9988839285714286
+Size(82), ==>Ad.Supported: False(98), #SUP: 1586 #CONF: 0.8925154755205402
+Size(82), ==>In.App.PurchasesFalse(100), #SUP: 1456 #CONF: 0.8193584693303321
+Size(82), ==>Editor.Choice: False(102), #SUP: 1774 #CONF: 0.9983117613956106
+Content.Rating: Everyone(92), ==>Minimum.Android: 4(86), #SUP: 3322 #CONF: 0.5673783091374893
+Minimum.Android: 4(86), ==>Content.Rating: Everyone(92), #SUP: 3322 #CONF: 0.8261626461079333
+Ad.Supported: False(98), ==>Minimum.Android: 4(86), #SUP: 3696 #CONF: 0.5751633986928104
+Minimum.Android: 4(86), ==>Ad.Supported: False(98), #SUP: 3696 #CONF: 0.9191743347426014
+In.App.PurchasesFalse(100), ==>Minimum.Android: 4(86), #SUP: 3582 #CONF: 0.580739299610895
+Minimum.Android: 4(86), ==>In.App.PurchasesFalse(100), #SUP: 3582 #CONF: 0.8908231783138523
+Editor.Choice: False(102), ==>Minimum.Android: 4(86), #SUP: 4018 #CONF: 0.5768016078093597
+Minimum.Android: 4(86), ==>Editor.Choice: False(102), #SUP: 4018 #CONF: 0.9992539169360856
+Ad.Supported: False(98), ==>Content.Rating: Everyone(92), #SUP: 5487 #CONF: 0.853874883286648
+Content.Rating: Everyone(92), ==>Ad.Supported: False(98), #SUP: 5487 #CONF: 0.9371477369769428
+In.App.PurchasesFalse(100), ==>Content.Rating: Everyone(92), #SUP: 5241 #CONF: 0.8497081712062257
+Content.Rating: Everyone(92), ==>In.App.PurchasesFalse(100), #SUP: 5241 #CONF: 0.895132365499573
+Editor.Choice: False(102), ==>Content.Rating: Everyone(92), #SUP: 5854 #CONF: 0.840367499282228
+Content.Rating: Everyone(92), ==>Editor.Choice: False(102), #SUP: 5854 #CONF: 0.9998292058070025
+Last.Update(2020), ==>Content.Rating: Everyone(92), #SUP: 1430 #CONF: 0.8466548253404381
+Last.Update(2021), ==>Content.Rating: Everyone(92), #SUP: 1662 #CONF: 0.8864
+In.App.PurchasesFalse(100), ==>Ad.Supported: False(98), #SUP: 5802 #CONF: 0.9406614785992218
+Ad.Supported: False(98), ==>In.App.PurchasesFalse(100), #SUP: 5802 #CONF: 0.9028944911297853
+Editor.Choice: False(102), ==>Ad.Supported: False(98), #SUP: 6421 #CONF: 0.9217628481194373
+Ad.Supported: False(98), ==>Editor.Choice: False(102), #SUP: 6421 #CONF: 0.9992219109866168
+Last.Update(2020), ==>Ad.Supported: False(98), #SUP: 1572 #CONF: 0.9307282415630551
+Last.Update(2021), ==>Ad.Supported: False(98), #SUP: 1766 #CONF: 0.9418666666666666
+Editor.Choice: False(102), ==>In.App.PurchasesFalse(100), #SUP: 6163 #CONF: 0.8847258110824002
+In.App.PurchasesFalse(100), ==>Editor.Choice: False(102), #SUP: 6163 #CONF: 0.999189364461738
+Last.Update(2020), ==>In.App.PurchasesFalse(100), #SUP: 1505 #CONF: 0.8910597986974541
+Last.Update(2021), ==>In.App.PurchasesFalse(100), #SUP: 1557 #CONF: 0.8304
+Last.Update(2020), ==>Editor.Choice: False(102), #SUP: 1688 #CONF: 0.9994079336885732
+Last.Update(2021), ==>Editor.Choice: False(102), #SUP: 1874 #CONF: 0.9994666666666666
+Rating.Count(49), Ad.Supported: False(98), ==>Content.Rating: Everyone(92), #SUP: 1470 #CONF: 0.9181761399125546
+Rating.Count(49), Content.Rating: Everyone(92), ==>Ad.Supported: False(98), #SUP: 1470 #CONF: 0.9514563106796117
+Rating.Count(49), ==>Content.Rating: Everyone(92), Ad.Supported: False(98), #SUP: 1470 #CONF: 0.8687943262411347
+Rating.Count(49), In.App.PurchasesFalse(100), ==>Content.Rating: Everyone(92), #SUP: 1447 #CONF: 0.9158227848101266
+Rating.Count(49), Content.Rating: Everyone(92), ==>In.App.PurchasesFalse(100), #SUP: 1447 #CONF: 0.9365695792880259
+Rating.Count(49), ==>Content.Rating: Everyone(92), In.App.PurchasesFalse(100), #SUP: 1447 #CONF: 0.8552009456264775
+Rating.Count(49), Editor.Choice: False(102), ==>Content.Rating: Everyone(92), #SUP: 1545 #CONF: 0.9131205673758865
+Rating.Count(49), Content.Rating: Everyone(92), ==>Editor.Choice: False(102), #SUP: 1545 #CONF: 1.0
+Rating.Count(49), ==>Content.Rating: Everyone(92), Editor.Choice: False(102), #SUP: 1545 #CONF: 0.9131205673758865
+Rating.Count(49), In.App.PurchasesFalse(100), ==>Ad.Supported: False(98), #SUP: 1499 #CONF: 0.9487341772151898
+Rating.Count(49), Ad.Supported: False(98), ==>In.App.PurchasesFalse(100), #SUP: 1499 #CONF: 0.9362898188632105
+Rating.Count(49), ==>Ad.Supported: False(98), In.App.PurchasesFalse(100), #SUP: 1499 #CONF: 0.8859338061465721
+Rating.Count(49), Editor.Choice: False(102), ==>Ad.Supported: False(98), #SUP: 1601 #CONF: 0.9462174940898345
+Rating.Count(49), Ad.Supported: False(98), ==>Editor.Choice: False(102), #SUP: 1601 #CONF: 1.0
+Rating.Count(49), ==>Ad.Supported: False(98), Editor.Choice: False(102), #SUP: 1601 #CONF: 0.9462174940898345
+Rating.Count(49), Editor.Choice: False(102), ==>In.App.PurchasesFalse(100), #SUP: 1580 #CONF: 0.933806146572104
+Rating.Count(49), In.App.PurchasesFalse(100), ==>Editor.Choice: False(102), #SUP: 1580 #CONF: 1.0
+Rating.Count(49), ==>In.App.PurchasesFalse(100), Editor.Choice: False(102), #SUP: 1580 #CONF: 0.933806146572104
+Rating.Count(50), Ad.Supported: False(98), ==>Content.Rating: Everyone(92), #SUP: 1484 #CONF: 0.8896882494004796
+Rating.Count(50), Content.Rating: Everyone(92), ==>Ad.Supported: False(98), #SUP: 1484 #CONF: 0.9368686868686869
+Rating.Count(50), ==>Content.Rating: Everyone(92), Ad.Supported: False(98), #SUP: 1484 #CONF: 0.8295136948015651
+Rating.Count(50), In.App.PurchasesFalse(100), ==>Content.Rating: Everyone(92), #SUP: 1462 #CONF: 0.8865979381443299
+Rating.Count(50), Content.Rating: Everyone(92), ==>In.App.PurchasesFalse(100), #SUP: 1462 #CONF: 0.922979797979798
+Rating.Count(50), ==>Content.Rating: Everyone(92), In.App.PurchasesFalse(100), #SUP: 1462 #CONF: 0.8172163219675797
+Rating.Count(50), Editor.Choice: False(102), ==>Content.Rating: Everyone(92), #SUP: 1584 #CONF: 0.8854108440469536
+Rating.Count(50), Content.Rating: Everyone(92), ==>Editor.Choice: False(102), #SUP: 1584 #CONF: 1.0
+Rating.Count(50), ==>Content.Rating: Everyone(92), Editor.Choice: False(102), #SUP: 1584 #CONF: 0.8854108440469536
+Rating.Count(50), In.App.PurchasesFalse(100), ==>Ad.Supported: False(98), #SUP: 1548 #CONF: 0.9387507580351728
+Rating.Count(50), Ad.Supported: False(98), ==>In.App.PurchasesFalse(100), #SUP: 1548 #CONF: 0.9280575539568345
+Rating.Count(50), ==>Ad.Supported: False(98), In.App.PurchasesFalse(100), #SUP: 1548 #CONF: 0.8652878703186138
+Rating.Count(50), Editor.Choice: False(102), ==>Ad.Supported: False(98), #SUP: 1668 #CONF: 0.9323644494130799
+Rating.Count(50), Ad.Supported: False(98), ==>Editor.Choice: False(102), #SUP: 1668 #CONF: 1.0
+Rating.Count(50), ==>Ad.Supported: False(98), Editor.Choice: False(102), #SUP: 1668 #CONF: 0.9323644494130799
+Rating.Count(50), Editor.Choice: False(102), ==>In.App.PurchasesFalse(100), #SUP: 1649 #CONF: 0.9217439910564561
+Rating.Count(50), In.App.PurchasesFalse(100), ==>Editor.Choice: False(102), #SUP: 1649 #CONF: 1.0
+Rating.Count(50), ==>In.App.PurchasesFalse(100), Editor.Choice: False(102), #SUP: 1649 #CONF: 0.9217439910564561
+Rating.Count(51), Editor.Choice: False(102), ==>Content.Rating: Everyone(92), #SUP: 1433 #CONF: 0.8221457257601836
+Rating.Count(51), Content.Rating: Everyone(92), ==>Editor.Choice: False(102), #SUP: 1433 #CONF: 0.999302649930265
+Rating.Count(51), ==>Content.Rating: Everyone(92), Editor.Choice: False(102), #SUP: 1433 #CONF: 0.8216743119266054
+Rating.Count(51), In.App.PurchasesFalse(100), ==>Ad.Supported: False(98), #SUP: 1447 #CONF: 0.9451338994121489
+Rating.Count(51), Ad.Supported: False(98), ==>In.App.PurchasesFalse(100), #SUP: 1447 #CONF: 0.9015576323987539
+Rating.Count(51), ==>Ad.Supported: False(98), In.App.PurchasesFalse(100), #SUP: 1447 #CONF: 0.8297018348623854
+Rating.Count(51), Editor.Choice: False(102), ==>Ad.Supported: False(98), #SUP: 1604 #CONF: 0.9202524383247275
+Rating.Count(51), Ad.Supported: False(98), ==>Editor.Choice: False(102), #SUP: 1604 #CONF: 0.9993769470404984
+Rating.Count(51), ==>Ad.Supported: False(98), Editor.Choice: False(102), #SUP: 1604 #CONF: 0.9197247706422018
+Rating.Count(51), Editor.Choice: False(102), ==>In.App.PurchasesFalse(100), #SUP: 1530 #CONF: 0.8777969018932874
+Rating.Count(51), In.App.PurchasesFalse(100), ==>Editor.Choice: False(102), #SUP: 1530 #CONF: 0.999346832135859
+Rating.Count(51), ==>In.App.PurchasesFalse(100), Editor.Choice: False(102), #SUP: 1530 #CONF: 0.8772935779816514
+Installs: (52), Editor.Choice: False(102), ==>Ad.Supported: False(98), #SUP: 1548 #CONF: 0.8886337543053962
+Installs: (52), Ad.Supported: False(98), ==>Editor.Choice: False(102), #SUP: 1548 #CONF: 0.9974226804123711
+Installs: (52), ==>Ad.Supported: False(98), Editor.Choice: False(102), #SUP: 1548 #CONF: 0.8865979381443299
+Installs: (52), Editor.Choice: False(102), ==>In.App.PurchasesFalse(100), #SUP: 1404 #CONF: 0.8059701492537313
+Installs: (52), In.App.PurchasesFalse(100), ==>Editor.Choice: False(102), #SUP: 1404 #CONF: 0.9971590909090909
+Installs: (52), ==>In.App.PurchasesFalse(100), Editor.Choice: False(102), #SUP: 1404 #CONF: 0.8041237113402062
+Released(60), Ad.Supported: False(98), ==>Content.Rating: Everyone(92), #SUP: 1978 #CONF: 0.8573905504984829
+Released(60), Content.Rating: Everyone(92), ==>Ad.Supported: False(98), #SUP: 1978 #CONF: 0.945054945054945
+Released(60), ==>Content.Rating: Everyone(92), Ad.Supported: False(98), #SUP: 1978 #CONF: 0.7927855711422845
+Released(60), In.App.PurchasesFalse(100), ==>Content.Rating: Everyone(92), #SUP: 1896 #CONF: 0.8490819525302284
+Released(60), Content.Rating: Everyone(92), ==>In.App.PurchasesFalse(100), #SUP: 1896 #CONF: 0.9058767319636885
+Released(60), ==>Content.Rating: Everyone(92), In.App.PurchasesFalse(100), #SUP: 1896 #CONF: 0.7599198396793587
+Released(60), Editor.Choice: False(102), ==>Content.Rating: Everyone(92), #SUP: 2093 #CONF: 0.8388777555110221
+Released(60), Content.Rating: Everyone(92), ==>Editor.Choice: False(102), #SUP: 2093 #CONF: 1.0
+Released(60), ==>Content.Rating: Everyone(92), Editor.Choice: False(102), #SUP: 2093 #CONF: 0.8388777555110221
+Released(60), In.App.PurchasesFalse(100), ==>Ad.Supported: False(98), #SUP: 2109 #CONF: 0.9444693237796686
+Released(60), Ad.Supported: False(98), ==>In.App.PurchasesFalse(100), #SUP: 2109 #CONF: 0.9141742522756827
+Released(60), ==>Ad.Supported: False(98), In.App.PurchasesFalse(100), #SUP: 2109 #CONF: 0.8452905811623247
+Released(60), Editor.Choice: False(102), ==>Ad.Supported: False(98), #SUP: 2307 #CONF: 0.9246492985971944
+Released(60), Ad.Supported: False(98), ==>Editor.Choice: False(102), #SUP: 2307 #CONF: 1.0
+Released(60), ==>Ad.Supported: False(98), Editor.Choice: False(102), #SUP: 2307 #CONF: 0.9246492985971944
+Released(60), Editor.Choice: False(102), ==>In.App.PurchasesFalse(100), #SUP: 2233 #CONF: 0.8949899799599198
+Released(60), In.App.PurchasesFalse(100), ==>Editor.Choice: False(102), #SUP: 2233 #CONF: 1.0
+Released(60), ==>In.App.PurchasesFalse(100), Editor.Choice: False(102), #SUP: 2233 #CONF: 0.8949899799599198
+Price(75), Editor.Choice: False(102), ==>Ad.Supported: False(98), #SUP: 1396 #CONF: 0.9178172255095332
+Price(75), Ad.Supported: False(98), ==>Editor.Choice: False(102), #SUP: 1396 #CONF: 1.0
+Price(75), ==>Ad.Supported: False(98), Editor.Choice: False(102), #SUP: 1396 #CONF: 0.9178172255095332
+Price(76), Editor.Choice: False(102), ==>Content.Rating: Everyone(92), #SUP: 1398 #CONF: 0.8996138996138996
+Price(76), Content.Rating: Everyone(92), ==>Editor.Choice: False(102), #SUP: 1398 #CONF: 1.0
+Price(76), ==>Content.Rating: Everyone(92), Editor.Choice: False(102), #SUP: 1398 #CONF: 0.8996138996138996
+Price(76), Editor.Choice: False(102), ==>Ad.Supported: False(98), #SUP: 1456 #CONF: 0.9369369369369369
+Price(76), Ad.Supported: False(98), ==>Editor.Choice: False(102), #SUP: 1456 #CONF: 1.0
+Price(76), ==>Ad.Supported: False(98), Editor.Choice: False(102), #SUP: 1456 #CONF: 0.9369369369369369
+Price(76), Editor.Choice: False(102), ==>In.App.PurchasesFalse(100), #SUP: 1400 #CONF: 0.9009009009009009
+Price(76), In.App.PurchasesFalse(100), ==>Editor.Choice: False(102), #SUP: 1400 #CONF: 1.0
+Price(76), ==>In.App.PurchasesFalse(100), Editor.Choice: False(102), #SUP: 1400 #CONF: 0.9009009009009009
+Price(77), Editor.Choice: False(102), ==>Content.Rating: Everyone(92), #SUP: 1461 #CONF: 0.8305855599772598
+Price(77), Content.Rating: Everyone(92), ==>Editor.Choice: False(102), #SUP: 1461 #CONF: 0.9993160054719562
+Price(77), ==>Content.Rating: Everyone(92), Editor.Choice: False(102), #SUP: 1461 #CONF: 0.8296422487223168
+Price(77), In.App.PurchasesFalse(100), ==>Ad.Supported: False(98), #SUP: 1477 #CONF: 0.9342188488298545
+Price(77), Ad.Supported: False(98), ==>In.App.PurchasesFalse(100), #SUP: 1477 #CONF: 0.9111659469463295
+Price(77), ==>Ad.Supported: False(98), In.App.PurchasesFalse(100), #SUP: 1477 #CONF: 0.8387279954571266
+Price(77), Editor.Choice: False(102), ==>Ad.Supported: False(98), #SUP: 1619 #CONF: 0.9204093234792495
+Price(77), Ad.Supported: False(98), ==>Editor.Choice: False(102), #SUP: 1619 #CONF: 0.9987661937075879
+Price(77), ==>Ad.Supported: False(98), Editor.Choice: False(102), #SUP: 1619 #CONF: 0.9193639977285634
+Price(77), Editor.Choice: False(102), ==>In.App.PurchasesFalse(100), #SUP: 1579 #CONF: 0.8976691301876066
+Price(77), In.App.PurchasesFalse(100), ==>Editor.Choice: False(102), #SUP: 1579 #CONF: 0.9987349778621126
+Price(77), ==>In.App.PurchasesFalse(100), Editor.Choice: False(102), #SUP: 1579 #CONF: 0.8966496308915389
+Price(78), Ad.Supported: False(98), ==>Content.Rating: Everyone(92), #SUP: 1589 #CONF: 0.8136200716845878
+Price(78), Content.Rating: Everyone(92), ==>Ad.Supported: False(98), #SUP: 1589 #CONF: 0.951497005988024
+Price(78), ==>Content.Rating: Everyone(92), Ad.Supported: False(98), #SUP: 1589 #CONF: 0.7442622950819672
+Price(78), In.App.PurchasesFalse(100), ==>Content.Rating: Everyone(92), #SUP: 1495 #CONF: 0.8029001074113856
+Price(78), Content.Rating: Everyone(92), ==>In.App.PurchasesFalse(100), #SUP: 1495 #CONF: 0.8952095808383234
+Price(78), ==>Content.Rating: Everyone(92), In.App.PurchasesFalse(100), #SUP: 1495 #CONF: 0.7002341920374707
+Price(78), Editor.Choice: False(102), ==>Content.Rating: Everyone(92), #SUP: 1670 #CONF: 0.7833020637898687
+Price(78), Content.Rating: Everyone(92), ==>Editor.Choice: False(102), #SUP: 1670 #CONF: 1.0
+Price(78), ==>Content.Rating: Everyone(92), Editor.Choice: False(102), #SUP: 1670 #CONF: 0.7822014051522248
+Price(78), In.App.PurchasesFalse(100), ==>Ad.Supported: False(98), #SUP: 1739 #CONF: 0.9339419978517723
+Price(78), Ad.Supported: False(98), ==>In.App.PurchasesFalse(100), #SUP: 1739 #CONF: 0.8904249871991807
+Price(78), ==>Ad.Supported: False(98), In.App.PurchasesFalse(100), #SUP: 1739 #CONF: 0.814519906323185
+Price(78), Editor.Choice: False(102), ==>Ad.Supported: False(98), #SUP: 1950 #CONF: 0.9146341463414634
+Price(78), Ad.Supported: False(98), ==>Editor.Choice: False(102), #SUP: 1950 #CONF: 0.9984639016897081
+Price(78), ==>Ad.Supported: False(98), Editor.Choice: False(102), #SUP: 1950 #CONF: 0.9133489461358314
+Price(78), Editor.Choice: False(102), ==>In.App.PurchasesFalse(100), #SUP: 1859 #CONF: 0.8719512195121951
+Price(78), In.App.PurchasesFalse(100), ==>Editor.Choice: False(102), #SUP: 1859 #CONF: 0.9983888292158969
+Price(78), ==>In.App.PurchasesFalse(100), Editor.Choice: False(102), #SUP: 1859 #CONF: 0.8707259953161592
+Size(79), Ad.Supported: False(98), ==>Content.Rating: Everyone(92), #SUP: 1517 #CONF: 0.9238733252131547
+Size(79), Content.Rating: Everyone(92), ==>Ad.Supported: False(98), #SUP: 1517 #CONF: 0.9540880503144654
+Size(79), ==>Content.Rating: Everyone(92), Ad.Supported: False(98), #SUP: 1517 #CONF: 0.8819767441860465
+Size(79), In.App.PurchasesFalse(100), ==>Content.Rating: Everyone(92), #SUP: 1470 #CONF: 0.9251101321585903
+Size(79), Content.Rating: Everyone(92), ==>In.App.PurchasesFalse(100), #SUP: 1470 #CONF: 0.9245283018867925
+Size(79), ==>Content.Rating: Everyone(92), In.App.PurchasesFalse(100), #SUP: 1470 #CONF: 0.8546511627906976
+Size(79), Editor.Choice: False(102), ==>Content.Rating: Everyone(92), #SUP: 1590 #CONF: 0.9244186046511628
+Size(79), Content.Rating: Everyone(92), ==>Editor.Choice: False(102), #SUP: 1590 #CONF: 1.0
+Size(79), ==>Content.Rating: Everyone(92), Editor.Choice: False(102), #SUP: 1590 #CONF: 0.9244186046511628
+Size(79), In.App.PurchasesFalse(100), ==>Ad.Supported: False(98), #SUP: 1547 #CONF: 0.973568281938326
+Size(79), Ad.Supported: False(98), ==>In.App.PurchasesFalse(100), #SUP: 1547 #CONF: 0.9421437271619976
+Size(79), ==>Ad.Supported: False(98), In.App.PurchasesFalse(100), #SUP: 1547 #CONF: 0.8994186046511627
+Size(79), Editor.Choice: False(102), ==>Ad.Supported: False(98), #SUP: 1642 #CONF: 0.9546511627906977
+Size(79), Ad.Supported: False(98), ==>Editor.Choice: False(102), #SUP: 1642 #CONF: 1.0
+Size(79), ==>Ad.Supported: False(98), Editor.Choice: False(102), #SUP: 1642 #CONF: 0.9546511627906977
+Size(79), Editor.Choice: False(102), ==>In.App.PurchasesFalse(100), #SUP: 1589 #CONF: 0.9238372093023256
+Size(79), In.App.PurchasesFalse(100), ==>Editor.Choice: False(102), #SUP: 1589 #CONF: 1.0
+Size(79), ==>In.App.PurchasesFalse(100), Editor.Choice: False(102), #SUP: 1589 #CONF: 0.9238372093023256
+Size(80), Ad.Supported: False(98), ==>Content.Rating: Everyone(92), #SUP: 1423 #CONF: 0.9180645161290323
+Size(80), Content.Rating: Everyone(92), ==>Ad.Supported: False(98), #SUP: 1423 #CONF: 0.9374176548089591
+Size(80), ==>Content.Rating: Everyone(92), Ad.Supported: False(98), #SUP: 1423 #CONF: 0.8460166468489893
+Size(80), In.App.PurchasesFalse(100), ==>Content.Rating: Everyone(92), #SUP: 1422 #CONF: 0.9086261980830671
+Size(80), Content.Rating: Everyone(92), ==>In.App.PurchasesFalse(100), #SUP: 1422 #CONF: 0.9367588932806324
+Size(80), ==>Content.Rating: Everyone(92), In.App.PurchasesFalse(100), #SUP: 1422 #CONF: 0.845422116527943
+Size(80), Editor.Choice: False(102), ==>Content.Rating: Everyone(92), #SUP: 1518 #CONF: 0.9024970273483948
+Size(80), Content.Rating: Everyone(92), ==>Editor.Choice: False(102), #SUP: 1518 #CONF: 1.0
+Size(80), ==>Content.Rating: Everyone(92), Editor.Choice: False(102), #SUP: 1518 #CONF: 0.9024970273483948
+Size(80), In.App.PurchasesFalse(100), ==>Ad.Supported: False(98), #SUP: 1446 #CONF: 0.923961661341853
+Size(80), Ad.Supported: False(98), ==>In.App.PurchasesFalse(100), #SUP: 1446 #CONF: 0.9329032258064516
+Size(80), ==>Ad.Supported: False(98), In.App.PurchasesFalse(100), #SUP: 1446 #CONF: 0.8596908442330559
+Size(80), Editor.Choice: False(102), ==>Ad.Supported: False(98), #SUP: 1550 #CONF: 0.9215219976218787
+Size(80), Ad.Supported: False(98), ==>Editor.Choice: False(102), #SUP: 1550 #CONF: 1.0
+Size(80), ==>Ad.Supported: False(98), Editor.Choice: False(102), #SUP: 1550 #CONF: 0.9215219976218787
+Size(80), Editor.Choice: False(102), ==>In.App.PurchasesFalse(100), #SUP: 1565 #CONF: 0.9304399524375743
+Size(80), In.App.PurchasesFalse(100), ==>Editor.Choice: False(102), #SUP: 1565 #CONF: 1.0
+Size(80), ==>In.App.PurchasesFalse(100), Editor.Choice: False(102), #SUP: 1565 #CONF: 0.9304399524375743
+Size(81), Editor.Choice: False(102), ==>Content.Rating: Everyone(92), #SUP: 1452 #CONF: 0.8111731843575419
+Size(81), Content.Rating: Everyone(92), ==>Editor.Choice: False(102), #SUP: 1452 #CONF: 1.0
+Size(81), ==>Content.Rating: Everyone(92), Editor.Choice: False(102), #SUP: 1452 #CONF: 0.8102678571428571
+Size(81), In.App.PurchasesFalse(100), ==>Ad.Supported: False(98), #SUP: 1447 #CONF: 0.9287548138639281
+Size(81), Ad.Supported: False(98), ==>In.App.PurchasesFalse(100), #SUP: 1447 #CONF: 0.8780339805825242
+Size(81), ==>Ad.Supported: False(98), In.App.PurchasesFalse(100), #SUP: 1447 #CONF: 0.8074776785714286
+Size(81), Editor.Choice: False(102), ==>Ad.Supported: False(98), #SUP: 1646 #CONF: 0.9195530726256983
+Size(81), Ad.Supported: False(98), ==>Editor.Choice: False(102), #SUP: 1646 #CONF: 0.9987864077669902
+Size(81), ==>Ad.Supported: False(98), Editor.Choice: False(102), #SUP: 1646 #CONF: 0.9185267857142857
+Size(81), Editor.Choice: False(102), ==>In.App.PurchasesFalse(100), #SUP: 1556 #CONF: 0.8692737430167597
+Size(81), In.App.PurchasesFalse(100), ==>Editor.Choice: False(102), #SUP: 1556 #CONF: 0.9987163029525032
+Size(81), ==>In.App.PurchasesFalse(100), Editor.Choice: False(102), #SUP: 1556 #CONF: 0.8683035714285714
+Size(82), Editor.Choice: False(102), ==>Ad.Supported: False(98), #SUP: 1583 #CONF: 0.8923337091319054
+Size(82), Ad.Supported: False(98), ==>Editor.Choice: False(102), #SUP: 1583 #CONF: 0.998108448928121
+Size(82), ==>Ad.Supported: False(98), Editor.Choice: False(102), #SUP: 1583 #CONF: 0.8908272369161508
+Size(82), Editor.Choice: False(102), ==>In.App.PurchasesFalse(100), #SUP: 1453 #CONF: 0.8190529875986471
+Size(82), In.App.PurchasesFalse(100), ==>Editor.Choice: False(102), #SUP: 1453 #CONF: 0.9979395604395604
+Size(82), ==>In.App.PurchasesFalse(100), Editor.Choice: False(102), #SUP: 1453 #CONF: 0.8176702307259426
+Content.Rating: Everyone(92), Ad.Supported: False(98), ==>Minimum.Android: 4(86), #SUP: 3122 #CONF: 0.568981228357937
+Minimum.Android: 4(86), Ad.Supported: False(98), ==>Content.Rating: Everyone(92), #SUP: 3122 #CONF: 0.8446969696969697
+Minimum.Android: 4(86), Content.Rating: Everyone(92), ==>Ad.Supported: False(98), #SUP: 3122 #CONF: 0.9397953040337146
+Content.Rating: Everyone(92), ==>Minimum.Android: 4(86), Ad.Supported: False(98), #SUP: 3122 #CONF: 0.5332194705380017
+Minimum.Android: 4(86), ==>Content.Rating: Everyone(92), Ad.Supported: False(98), #SUP: 3122 #CONF: 0.7764237751803034
+Content.Rating: Everyone(92), In.App.PurchasesFalse(100), ==>Minimum.Android: 4(86), #SUP: 3000 #CONF: 0.5724098454493417
+Minimum.Android: 4(86), In.App.PurchasesFalse(100), ==>Content.Rating: Everyone(92), #SUP: 3000 #CONF: 0.8375209380234506
+Minimum.Android: 4(86), Content.Rating: Everyone(92), ==>In.App.PurchasesFalse(100), #SUP: 3000 #CONF: 0.9030704394942806
+Content.Rating: Everyone(92), ==>Minimum.Android: 4(86), In.App.PurchasesFalse(100), #SUP: 3000 #CONF: 0.5123825789923142
+Minimum.Android: 4(86), ==>Content.Rating: Everyone(92), In.App.PurchasesFalse(100), #SUP: 3000 #CONF: 0.7460830639144491
+Content.Rating: Everyone(92), Editor.Choice: False(102), ==>Minimum.Android: 4(86), #SUP: 3321 #CONF: 0.5673044072429109
+Minimum.Android: 4(86), Editor.Choice: False(102), ==>Content.Rating: Everyone(92), #SUP: 3321 #CONF: 0.826530612244898
+Minimum.Android: 4(86), Content.Rating: Everyone(92), ==>Editor.Choice: False(102), #SUP: 3321 #CONF: 0.9996989765201686
+Content.Rating: Everyone(92), ==>Minimum.Android: 4(86), Editor.Choice: False(102), #SUP: 3321 #CONF: 0.5672075149444918
+Minimum.Android: 4(86), ==>Content.Rating: Everyone(92), Editor.Choice: False(102), #SUP: 3321 #CONF: 0.8259139517532952
+Ad.Supported: False(98), In.App.PurchasesFalse(100), ==>Minimum.Android: 4(86), #SUP: 3350 #CONF: 0.5773871078938297
+Minimum.Android: 4(86), In.App.PurchasesFalse(100), ==>Ad.Supported: False(98), #SUP: 3350 #CONF: 0.9352317141261864
+Minimum.Android: 4(86), Ad.Supported: False(98), ==>In.App.PurchasesFalse(100), #SUP: 3350 #CONF: 0.9063852813852814
+In.App.PurchasesFalse(100), ==>Minimum.Android: 4(86), Ad.Supported: False(98), #SUP: 3350 #CONF: 0.5431258106355382
+Ad.Supported: False(98), ==>Minimum.Android: 4(86), In.App.PurchasesFalse(100), #SUP: 3350 #CONF: 0.5213196389666978
+Minimum.Android: 4(86), ==>Ad.Supported: False(98), In.App.PurchasesFalse(100), #SUP: 3350 #CONF: 0.8331260880378015
+Ad.Supported: False(98), Editor.Choice: False(102), ==>Minimum.Android: 4(86), #SUP: 3693 #CONF: 0.575144058557857
+Minimum.Android: 4(86), Editor.Choice: False(102), ==>Ad.Supported: False(98), #SUP: 3693 #CONF: 0.9191139870582379
+Minimum.Android: 4(86), Ad.Supported: False(98), ==>Editor.Choice: False(102), #SUP: 3693 #CONF: 0.9991883116883117
+Editor.Choice: False(102), ==>Minimum.Android: 4(86), Ad.Supported: False(98), #SUP: 3693 #CONF: 0.5301464254952627
+Ad.Supported: False(98), ==>Minimum.Android: 4(86), Editor.Choice: False(102), #SUP: 3693 #CONF: 0.5746965452847805
+Minimum.Android: 4(86), ==>Ad.Supported: False(98), Editor.Choice: False(102), #SUP: 3693 #CONF: 0.9184282516786869
+In.App.PurchasesFalse(100), Editor.Choice: False(102), ==>Minimum.Android: 4(86), #SUP: 3579 #CONF: 0.5807236735356158
+Minimum.Android: 4(86), Editor.Choice: False(102), ==>In.App.PurchasesFalse(100), #SUP: 3579 #CONF: 0.890741662518666
+Minimum.Android: 4(86), In.App.PurchasesFalse(100), ==>Editor.Choice: False(102), #SUP: 3579 #CONF: 0.9991624790619765
+Editor.Choice: False(102), ==>Minimum.Android: 4(86), In.App.PurchasesFalse(100), #SUP: 3579 #CONF: 0.5137812230835487
+In.App.PurchasesFalse(100), ==>Minimum.Android: 4(86), Editor.Choice: False(102), #SUP: 3579 #CONF: 0.5802529182879378
+Minimum.Android: 4(86), ==>In.App.PurchasesFalse(100), Editor.Choice: False(102), #SUP: 3579 #CONF: 0.8900770952499378
+Ad.Supported: False(98), In.App.PurchasesFalse(100), ==>Content.Rating: Everyone(92), #SUP: 4972 #CONF: 0.8569458807307825
+Content.Rating: Everyone(92), In.App.PurchasesFalse(100), ==>Ad.Supported: False(98), #SUP: 4972 #CONF: 0.9486739171913757
+Content.Rating: Everyone(92), Ad.Supported: False(98), ==>In.App.PurchasesFalse(100), #SUP: 4972 #CONF: 0.9061417896847093
+In.App.PurchasesFalse(100), ==>Content.Rating: Everyone(92), Ad.Supported: False(98), #SUP: 4972 #CONF: 0.8060959792477302
+Ad.Supported: False(98), ==>Content.Rating: Everyone(92), In.App.PurchasesFalse(100), #SUP: 4972 #CONF: 0.7737317149081855
+Content.Rating: Everyone(92), ==>Ad.Supported: False(98), In.App.PurchasesFalse(100), #SUP: 4972 #CONF: 0.8491887275832621
+Ad.Supported: False(98), Editor.Choice: False(102), ==>Content.Rating: Everyone(92), #SUP: 5486 #CONF: 0.8543840523282977
+Content.Rating: Everyone(92), Editor.Choice: False(102), ==>Ad.Supported: False(98), #SUP: 5486 #CONF: 0.9371370003416467
+Content.Rating: Everyone(92), Ad.Supported: False(98), ==>Editor.Choice: False(102), #SUP: 5486 #CONF: 0.9998177510479315
+Editor.Choice: False(102), ==>Content.Rating: Everyone(92), Ad.Supported: False(98), #SUP: 5486 #CONF: 0.7875394774619581
+Ad.Supported: False(98), ==>Content.Rating: Everyone(92), Editor.Choice: False(102), #SUP: 5486 #CONF: 0.8537192654839714
+Content.Rating: Everyone(92), ==>Ad.Supported: False(98), Editor.Choice: False(102), #SUP: 5486 #CONF: 0.9369769427839454
+Ad.Supported: False(98), Last.Update(2021), ==>Content.Rating: Everyone(92), #SUP: 1576 #CONF: 0.8924122310305775
+Content.Rating: Everyone(92), Last.Update(2021), ==>Ad.Supported: False(98), #SUP: 1576 #CONF: 0.9482551143200962
+Last.Update(2021), ==>Content.Rating: Everyone(92), Ad.Supported: False(98), #SUP: 1576 #CONF: 0.8405333333333334
+In.App.PurchasesFalse(100), Editor.Choice: False(102), ==>Content.Rating: Everyone(92), #SUP: 5240 #CONF: 0.8502352750283952
+Content.Rating: Everyone(92), Editor.Choice: False(102), ==>In.App.PurchasesFalse(100), #SUP: 5240 #CONF: 0.8951144516569867
+Content.Rating: Everyone(92), In.App.PurchasesFalse(100), ==>Editor.Choice: False(102), #SUP: 5240 #CONF: 0.9998091967181836
+Editor.Choice: False(102), ==>Content.Rating: Everyone(92), In.App.PurchasesFalse(100), #SUP: 5240 #CONF: 0.7522250933103646
+In.App.PurchasesFalse(100), ==>Content.Rating: Everyone(92), Editor.Choice: False(102), #SUP: 5240 #CONF: 0.8495460440985733
+Content.Rating: Everyone(92), ==>In.App.PurchasesFalse(100), Editor.Choice: False(102), #SUP: 5240 #CONF: 0.8949615713065756
+Editor.Choice: False(102), Last.Update(2020), ==>Content.Rating: Everyone(92), #SUP: 1429 #CONF: 0.8465639810426541
+Content.Rating: Everyone(92), Last.Update(2020), ==>Editor.Choice: False(102), #SUP: 1429 #CONF: 0.9993006993006993
+Last.Update(2020), ==>Content.Rating: Everyone(92), Editor.Choice: False(102), #SUP: 1429 #CONF: 0.8460627590290113
+Editor.Choice: False(102), Last.Update(2021), ==>Content.Rating: Everyone(92), #SUP: 1662 #CONF: 0.8868729989327642
+Content.Rating: Everyone(92), Last.Update(2021), ==>Editor.Choice: False(102), #SUP: 1662 #CONF: 1.0
+Last.Update(2021), ==>Content.Rating: Everyone(92), Editor.Choice: False(102), #SUP: 1662 #CONF: 0.8864
+In.App.PurchasesFalse(100), Editor.Choice: False(102), ==>Ad.Supported: False(98), #SUP: 5797 #CONF: 0.9406133376602304
+Ad.Supported: False(98), Editor.Choice: False(102), ==>In.App.PurchasesFalse(100), #SUP: 5797 #CONF: 0.9028188755645538
+Ad.Supported: False(98), In.App.PurchasesFalse(100), ==>Editor.Choice: False(102), #SUP: 5797 #CONF: 0.9991382281971734
+Editor.Choice: False(102), ==>Ad.Supported: False(98), In.App.PurchasesFalse(100), #SUP: 5797 #CONF: 0.832184898076371
+In.App.PurchasesFalse(100), ==>Ad.Supported: False(98), Editor.Choice: False(102), #SUP: 5797 #CONF: 0.9398508430609598
+Ad.Supported: False(98), ==>In.App.PurchasesFalse(100), Editor.Choice: False(102), #SUP: 5797 #CONF: 0.9021164021164021
+In.App.PurchasesFalse(100), Last.Update(2020), ==>Ad.Supported: False(98), #SUP: 1436 #CONF: 0.9541528239202658
+Ad.Supported: False(98), Last.Update(2020), ==>In.App.PurchasesFalse(100), #SUP: 1436 #CONF: 0.9134860050890585
+Last.Update(2020), ==>Ad.Supported: False(98), In.App.PurchasesFalse(100), #SUP: 1436 #CONF: 0.8502072232089994
+In.App.PurchasesFalse(100), Last.Update(2021), ==>Ad.Supported: False(98), #SUP: 1501 #CONF: 0.9640333975594091
+Ad.Supported: False(98), Last.Update(2021), ==>In.App.PurchasesFalse(100), #SUP: 1501 #CONF: 0.8499433748584372
+Last.Update(2021), ==>Ad.Supported: False(98), In.App.PurchasesFalse(100), #SUP: 1501 #CONF: 0.8005333333333333
+Editor.Choice: False(102), Last.Update(2020), ==>Ad.Supported: False(98), #SUP: 1571 #CONF: 0.9306872037914692
+Ad.Supported: False(98), Last.Update(2020), ==>Editor.Choice: False(102), #SUP: 1571 #CONF: 0.9993638676844784
+Last.Update(2020), ==>Ad.Supported: False(98), Editor.Choice: False(102), #SUP: 1571 #CONF: 0.9301361752516282
+Editor.Choice: False(102), Last.Update(2021), ==>Ad.Supported: False(98), #SUP: 1765 #CONF: 0.9418356456776947
+Ad.Supported: False(98), Last.Update(2021), ==>Editor.Choice: False(102), #SUP: 1765 #CONF: 0.9994337485843715
+Last.Update(2021), ==>Ad.Supported: False(98), Editor.Choice: False(102), #SUP: 1765 #CONF: 0.9413333333333334
+Editor.Choice: False(102), Last.Update(2020), ==>In.App.PurchasesFalse(100), #SUP: 1504 #CONF: 0.8909952606635071
+In.App.PurchasesFalse(100), Last.Update(2020), ==>Editor.Choice: False(102), #SUP: 1504 #CONF: 0.9993355481727575
+Last.Update(2020), ==>In.App.PurchasesFalse(100), Editor.Choice: False(102), #SUP: 1504 #CONF: 0.8904677323860273
+Editor.Choice: False(102), Last.Update(2021), ==>In.App.PurchasesFalse(100), #SUP: 1556 #CONF: 0.8303094983991463
+In.App.PurchasesFalse(100), Last.Update(2021), ==>Editor.Choice: False(102), #SUP: 1556 #CONF: 0.9993577392421323
+Last.Update(2021), ==>In.App.PurchasesFalse(100), Editor.Choice: False(102), #SUP: 1556 #CONF: 0.8298666666666666
+Rating.Count(49), Ad.Supported: False(98), Editor.Choice: False(102), ==>Content.Rating: Everyone(92), #SUP: 1470 #CONF: 0.9181761399125546
+Rating.Count(49), Content.Rating: Everyone(92), Editor.Choice: False(102), ==>Ad.Supported: False(98), #SUP: 1470 #CONF: 0.9514563106796117
+Rating.Count(49), Content.Rating: Everyone(92), Ad.Supported: False(98), ==>Editor.Choice: False(102), #SUP: 1470 #CONF: 1.0
+Rating.Count(49), Editor.Choice: False(102), ==>Content.Rating: Everyone(92), Ad.Supported: False(98), #SUP: 1470 #CONF: 0.8687943262411347
+Rating.Count(49), Ad.Supported: False(98), ==>Content.Rating: Everyone(92), Editor.Choice: False(102), #SUP: 1470 #CONF: 0.9181761399125546
+Rating.Count(49), Content.Rating: Everyone(92), ==>Ad.Supported: False(98), Editor.Choice: False(102), #SUP: 1470 #CONF: 0.9514563106796117
+Rating.Count(49), ==>Content.Rating: Everyone(92), Ad.Supported: False(98), Editor.Choice: False(102), #SUP: 1470 #CONF: 0.8687943262411347
+Rating.Count(49), In.App.PurchasesFalse(100), Editor.Choice: False(102), ==>Content.Rating: Everyone(92), #SUP: 1447 #CONF: 0.9158227848101266
+Rating.Count(49), Content.Rating: Everyone(92), Editor.Choice: False(102), ==>In.App.PurchasesFalse(100), #SUP: 1447 #CONF: 0.9365695792880259
+Rating.Count(49), Content.Rating: Everyone(92), In.App.PurchasesFalse(100), ==>Editor.Choice: False(102), #SUP: 1447 #CONF: 1.0
+Rating.Count(49), Editor.Choice: False(102), ==>Content.Rating: Everyone(92), In.App.PurchasesFalse(100), #SUP: 1447 #CONF: 0.8552009456264775
+Rating.Count(49), In.App.PurchasesFalse(100), ==>Content.Rating: Everyone(92), Editor.Choice: False(102), #SUP: 1447 #CONF: 0.9158227848101266
+Rating.Count(49), Content.Rating: Everyone(92), ==>In.App.PurchasesFalse(100), Editor.Choice: False(102), #SUP: 1447 #CONF: 0.9365695792880259
+Rating.Count(49), ==>Content.Rating: Everyone(92), In.App.PurchasesFalse(100), Editor.Choice: False(102), #SUP: 1447 #CONF: 0.8552009456264775
+Rating.Count(49), In.App.PurchasesFalse(100), Editor.Choice: False(102), ==>Ad.Supported: False(98), #SUP: 1499 #CONF: 0.9487341772151898
+Rating.Count(49), Ad.Supported: False(98), Editor.Choice: False(102), ==>In.App.PurchasesFalse(100), #SUP: 1499 #CONF: 0.9362898188632105
+Rating.Count(49), Ad.Supported: False(98), In.App.PurchasesFalse(100), ==>Editor.Choice: False(102), #SUP: 1499 #CONF: 1.0
+Rating.Count(49), Editor.Choice: False(102), ==>Ad.Supported: False(98), In.App.PurchasesFalse(100), #SUP: 1499 #CONF: 0.8859338061465721
+Rating.Count(49), In.App.PurchasesFalse(100), ==>Ad.Supported: False(98), Editor.Choice: False(102), #SUP: 1499 #CONF: 0.9487341772151898
+Rating.Count(49), Ad.Supported: False(98), ==>In.App.PurchasesFalse(100), Editor.Choice: False(102), #SUP: 1499 #CONF: 0.9362898188632105
+Rating.Count(49), ==>Ad.Supported: False(98), In.App.PurchasesFalse(100), Editor.Choice: False(102), #SUP: 1499 #CONF: 0.8859338061465721
+Rating.Count(50), Ad.Supported: False(98), Editor.Choice: False(102), ==>Content.Rating: Everyone(92), #SUP: 1484 #CONF: 0.8896882494004796
+Rating.Count(50), Content.Rating: Everyone(92), Editor.Choice: False(102), ==>Ad.Supported: False(98), #SUP: 1484 #CONF: 0.9368686868686869
+Rating.Count(50), Content.Rating: Everyone(92), Ad.Supported: False(98), ==>Editor.Choice: False(102), #SUP: 1484 #CONF: 1.0
+Rating.Count(50), Editor.Choice: False(102), ==>Content.Rating: Everyone(92), Ad.Supported: False(98), #SUP: 1484 #CONF: 0.8295136948015651
+Rating.Count(50), Ad.Supported: False(98), ==>Content.Rating: Everyone(92), Editor.Choice: False(102), #SUP: 1484 #CONF: 0.8896882494004796
+Rating.Count(50), Content.Rating: Everyone(92), ==>Ad.Supported: False(98), Editor.Choice: False(102), #SUP: 1484 #CONF: 0.9368686868686869
+Rating.Count(50), ==>Content.Rating: Everyone(92), Ad.Supported: False(98), Editor.Choice: False(102), #SUP: 1484 #CONF: 0.8295136948015651
+Rating.Count(50), In.App.PurchasesFalse(100), Editor.Choice: False(102), ==>Content.Rating: Everyone(92), #SUP: 1462 #CONF: 0.8865979381443299
+Rating.Count(50), Content.Rating: Everyone(92), Editor.Choice: False(102), ==>In.App.PurchasesFalse(100), #SUP: 1462 #CONF: 0.922979797979798
+Rating.Count(50), Content.Rating: Everyone(92), In.App.PurchasesFalse(100), ==>Editor.Choice: False(102), #SUP: 1462 #CONF: 1.0
+Rating.Count(50), Editor.Choice: False(102), ==>Content.Rating: Everyone(92), In.App.PurchasesFalse(100), #SUP: 1462 #CONF: 0.8172163219675797
+Rating.Count(50), In.App.PurchasesFalse(100), ==>Content.Rating: Everyone(92), Editor.Choice: False(102), #SUP: 1462 #CONF: 0.8865979381443299
+Rating.Count(50), Content.Rating: Everyone(92), ==>In.App.PurchasesFalse(100), Editor.Choice: False(102), #SUP: 1462 #CONF: 0.922979797979798
+Rating.Count(50), ==>Content.Rating: Everyone(92), In.App.PurchasesFalse(100), Editor.Choice: False(102), #SUP: 1462 #CONF: 0.8172163219675797
+Rating.Count(50), In.App.PurchasesFalse(100), Editor.Choice: False(102), ==>Ad.Supported: False(98), #SUP: 1548 #CONF: 0.9387507580351728
+Rating.Count(50), Ad.Supported: False(98), Editor.Choice: False(102), ==>In.App.PurchasesFalse(100), #SUP: 1548 #CONF: 0.9280575539568345
+Rating.Count(50), Ad.Supported: False(98), In.App.PurchasesFalse(100), ==>Editor.Choice: False(102), #SUP: 1548 #CONF: 1.0
+Rating.Count(50), Editor.Choice: False(102), ==>Ad.Supported: False(98), In.App.PurchasesFalse(100), #SUP: 1548 #CONF: 0.8652878703186138
+Rating.Count(50), In.App.PurchasesFalse(100), ==>Ad.Supported: False(98), Editor.Choice: False(102), #SUP: 1548 #CONF: 0.9387507580351728
+Rating.Count(50), Ad.Supported: False(98), ==>In.App.PurchasesFalse(100), Editor.Choice: False(102), #SUP: 1548 #CONF: 0.9280575539568345
+Rating.Count(50), ==>Ad.Supported: False(98), In.App.PurchasesFalse(100), Editor.Choice: False(102), #SUP: 1548 #CONF: 0.8652878703186138
+Rating.Count(51), In.App.PurchasesFalse(100), Editor.Choice: False(102), ==>Ad.Supported: False(98), #SUP: 1446 #CONF: 0.9450980392156862
+Rating.Count(51), Ad.Supported: False(98), Editor.Choice: False(102), ==>In.App.PurchasesFalse(100), #SUP: 1446 #CONF: 0.9014962593516209
+Rating.Count(51), Ad.Supported: False(98), In.App.PurchasesFalse(100), ==>Editor.Choice: False(102), #SUP: 1446 #CONF: 0.9993089149965446
+Rating.Count(51), Editor.Choice: False(102), ==>Ad.Supported: False(98), In.App.PurchasesFalse(100), #SUP: 1446 #CONF: 0.8296041308089501
+Rating.Count(51), In.App.PurchasesFalse(100), ==>Ad.Supported: False(98), Editor.Choice: False(102), #SUP: 1446 #CONF: 0.9444807315480078
+Rating.Count(51), Ad.Supported: False(98), ==>In.App.PurchasesFalse(100), Editor.Choice: False(102), #SUP: 1446 #CONF: 0.9009345794392524
+Rating.Count(51), ==>Ad.Supported: False(98), In.App.PurchasesFalse(100), Editor.Choice: False(102), #SUP: 1446 #CONF: 0.8291284403669725
+Released(60), Ad.Supported: False(98), In.App.PurchasesFalse(100), ==>Content.Rating: Everyone(92), #SUP: 1809 #CONF: 0.8577524893314367
+Released(60), Content.Rating: Everyone(92), In.App.PurchasesFalse(100), ==>Ad.Supported: False(98), #SUP: 1809 #CONF: 0.9541139240506329
+Released(60), Content.Rating: Everyone(92), Ad.Supported: False(98), ==>In.App.PurchasesFalse(100), #SUP: 1809 #CONF: 0.9145601617795753
+Released(60), In.App.PurchasesFalse(100), ==>Content.Rating: Everyone(92), Ad.Supported: False(98), #SUP: 1809 #CONF: 0.8101209135691895
+Released(60), Ad.Supported: False(98), ==>Content.Rating: Everyone(92), In.App.PurchasesFalse(100), #SUP: 1809 #CONF: 0.7841352405721717
+Released(60), Content.Rating: Everyone(92), ==>Ad.Supported: False(98), In.App.PurchasesFalse(100), #SUP: 1809 #CONF: 0.8643096034400383
+Released(60), ==>Content.Rating: Everyone(92), Ad.Supported: False(98), In.App.PurchasesFalse(100), #SUP: 1809 #CONF: 0.7250501002004008
+Released(60), Ad.Supported: False(98), Editor.Choice: False(102), ==>Content.Rating: Everyone(92), #SUP: 1978 #CONF: 0.8573905504984829
+Released(60), Content.Rating: Everyone(92), Editor.Choice: False(102), ==>Ad.Supported: False(98), #SUP: 1978 #CONF: 0.945054945054945
+Released(60), Content.Rating: Everyone(92), Ad.Supported: False(98), ==>Editor.Choice: False(102), #SUP: 1978 #CONF: 1.0
+Released(60), Editor.Choice: False(102), ==>Content.Rating: Everyone(92), Ad.Supported: False(98), #SUP: 1978 #CONF: 0.7927855711422845
+Released(60), Ad.Supported: False(98), ==>Content.Rating: Everyone(92), Editor.Choice: False(102), #SUP: 1978 #CONF: 0.8573905504984829
+Released(60), Content.Rating: Everyone(92), ==>Ad.Supported: False(98), Editor.Choice: False(102), #SUP: 1978 #CONF: 0.945054945054945
+Released(60), ==>Content.Rating: Everyone(92), Ad.Supported: False(98), Editor.Choice: False(102), #SUP: 1978 #CONF: 0.7927855711422845
+Released(60), In.App.PurchasesFalse(100), Editor.Choice: False(102), ==>Content.Rating: Everyone(92), #SUP: 1896 #CONF: 0.8490819525302284
+Released(60), Content.Rating: Everyone(92), Editor.Choice: False(102), ==>In.App.PurchasesFalse(100), #SUP: 1896 #CONF: 0.9058767319636885
+Released(60), Content.Rating: Everyone(92), In.App.PurchasesFalse(100), ==>Editor.Choice: False(102), #SUP: 1896 #CONF: 1.0
+Released(60), Editor.Choice: False(102), ==>Content.Rating: Everyone(92), In.App.PurchasesFalse(100), #SUP: 1896 #CONF: 0.7599198396793587
+Released(60), In.App.PurchasesFalse(100), ==>Content.Rating: Everyone(92), Editor.Choice: False(102), #SUP: 1896 #CONF: 0.8490819525302284
+Released(60), Content.Rating: Everyone(92), ==>In.App.PurchasesFalse(100), Editor.Choice: False(102), #SUP: 1896 #CONF: 0.9058767319636885
+Released(60), ==>Content.Rating: Everyone(92), In.App.PurchasesFalse(100), Editor.Choice: False(102), #SUP: 1896 #CONF: 0.7599198396793587
+Released(60), In.App.PurchasesFalse(100), Editor.Choice: False(102), ==>Ad.Supported: False(98), #SUP: 2109 #CONF: 0.9444693237796686
+Released(60), Ad.Supported: False(98), Editor.Choice: False(102), ==>In.App.PurchasesFalse(100), #SUP: 2109 #CONF: 0.9141742522756827
+Released(60), Ad.Supported: False(98), In.App.PurchasesFalse(100), ==>Editor.Choice: False(102), #SUP: 2109 #CONF: 1.0
+Released(60), Editor.Choice: False(102), ==>Ad.Supported: False(98), In.App.PurchasesFalse(100), #SUP: 2109 #CONF: 0.8452905811623247
+Released(60), In.App.PurchasesFalse(100), ==>Ad.Supported: False(98), Editor.Choice: False(102), #SUP: 2109 #CONF: 0.9444693237796686
+Released(60), Ad.Supported: False(98), ==>In.App.PurchasesFalse(100), Editor.Choice: False(102), #SUP: 2109 #CONF: 0.9141742522756827
+Released(60), ==>Ad.Supported: False(98), In.App.PurchasesFalse(100), Editor.Choice: False(102), #SUP: 2109 #CONF: 0.8452905811623247
+Price(77), In.App.PurchasesFalse(100), Editor.Choice: False(102), ==>Ad.Supported: False(98), #SUP: 1475 #CONF: 0.9341355288157062
+Price(77), Ad.Supported: False(98), Editor.Choice: False(102), ==>In.App.PurchasesFalse(100), #SUP: 1475 #CONF: 0.9110562075355157
+Price(77), Ad.Supported: False(98), In.App.PurchasesFalse(100), ==>Editor.Choice: False(102), #SUP: 1475 #CONF: 0.998645903859174
+Price(77), Editor.Choice: False(102), ==>Ad.Supported: False(98), In.App.PurchasesFalse(100), #SUP: 1475 #CONF: 0.8385446276293349
+Price(77), In.App.PurchasesFalse(100), ==>Ad.Supported: False(98), Editor.Choice: False(102), #SUP: 1475 #CONF: 0.9329538266919671
+Price(77), Ad.Supported: False(98), ==>In.App.PurchasesFalse(100), Editor.Choice: False(102), #SUP: 1475 #CONF: 0.9099321406539174
+Price(77), ==>Ad.Supported: False(98), In.App.PurchasesFalse(100), Editor.Choice: False(102), #SUP: 1475 #CONF: 0.8375922771152754
+Price(78), Ad.Supported: False(98), In.App.PurchasesFalse(100), ==>Content.Rating: Everyone(92), #SUP: 1425 #CONF: 0.81943645773433
+Price(78), Content.Rating: Everyone(92), In.App.PurchasesFalse(100), ==>Ad.Supported: False(98), #SUP: 1425 #CONF: 0.9531772575250836
+Price(78), Content.Rating: Everyone(92), Ad.Supported: False(98), ==>In.App.PurchasesFalse(100), #SUP: 1425 #CONF: 0.8967904342353682
+Price(78), In.App.PurchasesFalse(100), ==>Content.Rating: Everyone(92), Ad.Supported: False(98), #SUP: 1425 #CONF: 0.7653061224489796
+Price(78), Ad.Supported: False(98), ==>Content.Rating: Everyone(92), In.App.PurchasesFalse(100), #SUP: 1425 #CONF: 0.7296466973886329
+Price(78), Content.Rating: Everyone(92), ==>Ad.Supported: False(98), In.App.PurchasesFalse(100), #SUP: 1425 #CONF: 0.8532934131736527
+Price(78), ==>Content.Rating: Everyone(92), Ad.Supported: False(98), In.App.PurchasesFalse(100), #SUP: 1425 #CONF: 0.667447306791569
+Price(78), Ad.Supported: False(98), Editor.Choice: False(102), ==>Content.Rating: Everyone(92), #SUP: 1589 #CONF: 0.8148717948717948
+Price(78), Content.Rating: Everyone(92), Editor.Choice: False(102), ==>Ad.Supported: False(98), #SUP: 1589 #CONF: 0.951497005988024
+Price(78), Content.Rating: Everyone(92), Ad.Supported: False(98), ==>Editor.Choice: False(102), #SUP: 1589 #CONF: 1.0
+Price(78), Editor.Choice: False(102), ==>Content.Rating: Everyone(92), Ad.Supported: False(98), #SUP: 1589 #CONF: 0.7453095684803002
+Price(78), Ad.Supported: False(98), ==>Content.Rating: Everyone(92), Editor.Choice: False(102), #SUP: 1589 #CONF: 0.8136200716845878
+Price(78), Content.Rating: Everyone(92), ==>Ad.Supported: False(98), Editor.Choice: False(102), #SUP: 1589 #CONF: 0.951497005988024
+Price(78), ==>Content.Rating: Everyone(92), Ad.Supported: False(98), Editor.Choice: False(102), #SUP: 1589 #CONF: 0.7442622950819672
+Price(78), In.App.PurchasesFalse(100), Editor.Choice: False(102), ==>Content.Rating: Everyone(92), #SUP: 1495 #CONF: 0.8041958041958042
+Price(78), Content.Rating: Everyone(92), Editor.Choice: False(102), ==>In.App.PurchasesFalse(100), #SUP: 1495 #CONF: 0.8952095808383234
+Price(78), Content.Rating: Everyone(92), In.App.PurchasesFalse(100), ==>Editor.Choice: False(102), #SUP: 1495 #CONF: 1.0
+Price(78), Editor.Choice: False(102), ==>Content.Rating: Everyone(92), In.App.PurchasesFalse(100), #SUP: 1495 #CONF: 0.7012195121951219
+Price(78), In.App.PurchasesFalse(100), ==>Content.Rating: Everyone(92), Editor.Choice: False(102), #SUP: 1495 #CONF: 0.8029001074113856
+Price(78), Content.Rating: Everyone(92), ==>In.App.PurchasesFalse(100), Editor.Choice: False(102), #SUP: 1495 #CONF: 0.8952095808383234
+Price(78), ==>Content.Rating: Everyone(92), In.App.PurchasesFalse(100), Editor.Choice: False(102), #SUP: 1495 #CONF: 0.7002341920374707
+Price(78), In.App.PurchasesFalse(100), Editor.Choice: False(102), ==>Ad.Supported: False(98), #SUP: 1736 #CONF: 0.933835395373857
+Price(78), Ad.Supported: False(98), Editor.Choice: False(102), ==>In.App.PurchasesFalse(100), #SUP: 1736 #CONF: 0.8902564102564102
+Price(78), Ad.Supported: False(98), In.App.PurchasesFalse(100), ==>Editor.Choice: False(102), #SUP: 1736 #CONF: 0.9982748706152962
+Price(78), Editor.Choice: False(102), ==>Ad.Supported: False(98), In.App.PurchasesFalse(100), #SUP: 1736 #CONF: 0.8142589118198874
+Price(78), In.App.PurchasesFalse(100), ==>Ad.Supported: False(98), Editor.Choice: False(102), #SUP: 1736 #CONF: 0.9323308270676691
+Price(78), Ad.Supported: False(98), ==>In.App.PurchasesFalse(100), Editor.Choice: False(102), #SUP: 1736 #CONF: 0.8888888888888888
+Price(78), ==>Ad.Supported: False(98), In.App.PurchasesFalse(100), Editor.Choice: False(102), #SUP: 1736 #CONF: 0.8131147540983606
+Size(79), Ad.Supported: False(98), In.App.PurchasesFalse(100), ==>Content.Rating: Everyone(92), #SUP: 1430 #CONF: 0.9243697478991597
+Size(79), Content.Rating: Everyone(92), In.App.PurchasesFalse(100), ==>Ad.Supported: False(98), #SUP: 1430 #CONF: 0.9727891156462585
+Size(79), Content.Rating: Everyone(92), Ad.Supported: False(98), ==>In.App.PurchasesFalse(100), #SUP: 1430 #CONF: 0.942649967040211
+Size(79), In.App.PurchasesFalse(100), ==>Content.Rating: Everyone(92), Ad.Supported: False(98), #SUP: 1430 #CONF: 0.8999370673379484
+Size(79), Ad.Supported: False(98), ==>Content.Rating: Everyone(92), In.App.PurchasesFalse(100), #SUP: 1430 #CONF: 0.8708891595615104
+Size(79), Content.Rating: Everyone(92), ==>Ad.Supported: False(98), In.App.PurchasesFalse(100), #SUP: 1430 #CONF: 0.89937106918239
+Size(79), ==>Content.Rating: Everyone(92), Ad.Supported: False(98), In.App.PurchasesFalse(100), #SUP: 1430 #CONF: 0.8313953488372093
+Size(79), Ad.Supported: False(98), Editor.Choice: False(102), ==>Content.Rating: Everyone(92), #SUP: 1517 #CONF: 0.9238733252131547
+Size(79), Content.Rating: Everyone(92), Editor.Choice: False(102), ==>Ad.Supported: False(98), #SUP: 1517 #CONF: 0.9540880503144654
+Size(79), Content.Rating: Everyone(92), Ad.Supported: False(98), ==>Editor.Choice: False(102), #SUP: 1517 #CONF: 1.0
+Size(79), Editor.Choice: False(102), ==>Content.Rating: Everyone(92), Ad.Supported: False(98), #SUP: 1517 #CONF: 0.8819767441860465
+Size(79), Ad.Supported: False(98), ==>Content.Rating: Everyone(92), Editor.Choice: False(102), #SUP: 1517 #CONF: 0.9238733252131547
+Size(79), Content.Rating: Everyone(92), ==>Ad.Supported: False(98), Editor.Choice: False(102), #SUP: 1517 #CONF: 0.9540880503144654
+Size(79), ==>Content.Rating: Everyone(92), Ad.Supported: False(98), Editor.Choice: False(102), #SUP: 1517 #CONF: 0.8819767441860465
+Size(79), In.App.PurchasesFalse(100), Editor.Choice: False(102), ==>Content.Rating: Everyone(92), #SUP: 1470 #CONF: 0.9251101321585903
+Size(79), Content.Rating: Everyone(92), Editor.Choice: False(102), ==>In.App.PurchasesFalse(100), #SUP: 1470 #CONF: 0.9245283018867925
+Size(79), Content.Rating: Everyone(92), In.App.PurchasesFalse(100), ==>Editor.Choice: False(102), #SUP: 1470 #CONF: 1.0
+Size(79), Editor.Choice: False(102), ==>Content.Rating: Everyone(92), In.App.PurchasesFalse(100), #SUP: 1470 #CONF: 0.8546511627906976
+Size(79), In.App.PurchasesFalse(100), ==>Content.Rating: Everyone(92), Editor.Choice: False(102), #SUP: 1470 #CONF: 0.9251101321585903
+Size(79), Content.Rating: Everyone(92), ==>In.App.PurchasesFalse(100), Editor.Choice: False(102), #SUP: 1470 #CONF: 0.9245283018867925
+Size(79), ==>Content.Rating: Everyone(92), In.App.PurchasesFalse(100), Editor.Choice: False(102), #SUP: 1470 #CONF: 0.8546511627906976
+Size(79), In.App.PurchasesFalse(100), Editor.Choice: False(102), ==>Ad.Supported: False(98), #SUP: 1547 #CONF: 0.973568281938326
+Size(79), Ad.Supported: False(98), Editor.Choice: False(102), ==>In.App.PurchasesFalse(100), #SUP: 1547 #CONF: 0.9421437271619976
+Size(79), Ad.Supported: False(98), In.App.PurchasesFalse(100), ==>Editor.Choice: False(102), #SUP: 1547 #CONF: 1.0
+Size(79), Editor.Choice: False(102), ==>Ad.Supported: False(98), In.App.PurchasesFalse(100), #SUP: 1547 #CONF: 0.8994186046511627
+Size(79), In.App.PurchasesFalse(100), ==>Ad.Supported: False(98), Editor.Choice: False(102), #SUP: 1547 #CONF: 0.973568281938326
+Size(79), Ad.Supported: False(98), ==>In.App.PurchasesFalse(100), Editor.Choice: False(102), #SUP: 1547 #CONF: 0.9421437271619976
+Size(79), ==>Ad.Supported: False(98), In.App.PurchasesFalse(100), Editor.Choice: False(102), #SUP: 1547 #CONF: 0.8994186046511627
+Size(80), Ad.Supported: False(98), Editor.Choice: False(102), ==>Content.Rating: Everyone(92), #SUP: 1423 #CONF: 0.9180645161290323
+Size(80), Content.Rating: Everyone(92), Editor.Choice: False(102), ==>Ad.Supported: False(98), #SUP: 1423 #CONF: 0.9374176548089591
+Size(80), Content.Rating: Everyone(92), Ad.Supported: False(98), ==>Editor.Choice: False(102), #SUP: 1423 #CONF: 1.0
+Size(80), Editor.Choice: False(102), ==>Content.Rating: Everyone(92), Ad.Supported: False(98), #SUP: 1423 #CONF: 0.8460166468489893
+Size(80), Ad.Supported: False(98), ==>Content.Rating: Everyone(92), Editor.Choice: False(102), #SUP: 1423 #CONF: 0.9180645161290323
+Size(80), Content.Rating: Everyone(92), ==>Ad.Supported: False(98), Editor.Choice: False(102), #SUP: 1423 #CONF: 0.9374176548089591
+Size(80), ==>Content.Rating: Everyone(92), Ad.Supported: False(98), Editor.Choice: False(102), #SUP: 1423 #CONF: 0.8460166468489893
+Size(80), In.App.PurchasesFalse(100), Editor.Choice: False(102), ==>Content.Rating: Everyone(92), #SUP: 1422 #CONF: 0.9086261980830671
+Size(80), Content.Rating: Everyone(92), Editor.Choice: False(102), ==>In.App.PurchasesFalse(100), #SUP: 1422 #CONF: 0.9367588932806324
+Size(80), Content.Rating: Everyone(92), In.App.PurchasesFalse(100), ==>Editor.Choice: False(102), #SUP: 1422 #CONF: 1.0
+Size(80), Editor.Choice: False(102), ==>Content.Rating: Everyone(92), In.App.PurchasesFalse(100), #SUP: 1422 #CONF: 0.845422116527943
+Size(80), In.App.PurchasesFalse(100), ==>Content.Rating: Everyone(92), Editor.Choice: False(102), #SUP: 1422 #CONF: 0.9086261980830671
+Size(80), Content.Rating: Everyone(92), ==>In.App.PurchasesFalse(100), Editor.Choice: False(102), #SUP: 1422 #CONF: 0.9367588932806324
+Size(80), ==>Content.Rating: Everyone(92), In.App.PurchasesFalse(100), Editor.Choice: False(102), #SUP: 1422 #CONF: 0.845422116527943
+Size(80), In.App.PurchasesFalse(100), Editor.Choice: False(102), ==>Ad.Supported: False(98), #SUP: 1446 #CONF: 0.923961661341853
+Size(80), Ad.Supported: False(98), Editor.Choice: False(102), ==>In.App.PurchasesFalse(100), #SUP: 1446 #CONF: 0.9329032258064516
+Size(80), Ad.Supported: False(98), In.App.PurchasesFalse(100), ==>Editor.Choice: False(102), #SUP: 1446 #CONF: 1.0
+Size(80), Editor.Choice: False(102), ==>Ad.Supported: False(98), In.App.PurchasesFalse(100), #SUP: 1446 #CONF: 0.8596908442330559
+Size(80), In.App.PurchasesFalse(100), ==>Ad.Supported: False(98), Editor.Choice: False(102), #SUP: 1446 #CONF: 0.923961661341853
+Size(80), Ad.Supported: False(98), ==>In.App.PurchasesFalse(100), Editor.Choice: False(102), #SUP: 1446 #CONF: 0.9329032258064516
+Size(80), ==>Ad.Supported: False(98), In.App.PurchasesFalse(100), Editor.Choice: False(102), #SUP: 1446 #CONF: 0.8596908442330559
+Size(81), In.App.PurchasesFalse(100), Editor.Choice: False(102), ==>Ad.Supported: False(98), #SUP: 1445 #CONF: 0.9286632390745502
+Size(81), Ad.Supported: False(98), Editor.Choice: False(102), ==>In.App.PurchasesFalse(100), #SUP: 1445 #CONF: 0.8778857837181046
+Size(81), Ad.Supported: False(98), In.App.PurchasesFalse(100), ==>Editor.Choice: False(102), #SUP: 1445 #CONF: 0.9986178299930891
+Size(81), Editor.Choice: False(102), ==>Ad.Supported: False(98), In.App.PurchasesFalse(100), #SUP: 1445 #CONF: 0.8072625698324022
+Size(81), In.App.PurchasesFalse(100), ==>Ad.Supported: False(98), Editor.Choice: False(102), #SUP: 1445 #CONF: 0.9274711168164314
+Size(81), Ad.Supported: False(98), ==>In.App.PurchasesFalse(100), Editor.Choice: False(102), #SUP: 1445 #CONF: 0.8768203883495146
+Size(81), ==>Ad.Supported: False(98), In.App.PurchasesFalse(100), Editor.Choice: False(102), #SUP: 1445 #CONF: 0.8063616071428571
+Content.Rating: Everyone(92), Ad.Supported: False(98), In.App.PurchasesFalse(100), ==>Minimum.Android: 4(86), #SUP: 2846 #CONF: 0.5724054706355591
+Minimum.Android: 4(86), Ad.Supported: False(98), In.App.PurchasesFalse(100), ==>Content.Rating: Everyone(92), #SUP: 2846 #CONF: 0.8495522388059702
+Minimum.Android: 4(86), Content.Rating: Everyone(92), In.App.PurchasesFalse(100), ==>Ad.Supported: False(98), #SUP: 2846 #CONF: 0.9486666666666667
+Minimum.Android: 4(86), Content.Rating: Everyone(92), Ad.Supported: False(98), ==>In.App.PurchasesFalse(100), #SUP: 2846 #CONF: 0.9115951313260731
+Content.Rating: Everyone(92), In.App.PurchasesFalse(100), ==>Minimum.Android: 4(86), Ad.Supported: False(98), #SUP: 2846 #CONF: 0.5430261400496088
+Content.Rating: Everyone(92), Ad.Supported: False(98), ==>Minimum.Android: 4(86), In.App.PurchasesFalse(100), #SUP: 2846 #CONF: 0.5186805175870238
+Minimum.Android: 4(86), In.App.PurchasesFalse(100), ==>Content.Rating: Everyone(92), Ad.Supported: False(98), #SUP: 2846 #CONF: 0.7945281965382468
+Minimum.Android: 4(86), Ad.Supported: False(98), ==>Content.Rating: Everyone(92), In.App.PurchasesFalse(100), #SUP: 2846 #CONF: 0.770021645021645
+Minimum.Android: 4(86), Content.Rating: Everyone(92), ==>Ad.Supported: False(98), In.App.PurchasesFalse(100), #SUP: 2846 #CONF: 0.8567128236002408
+Minimum.Android: 4(86), ==>Content.Rating: Everyone(92), Ad.Supported: False(98), In.App.PurchasesFalse(100), #SUP: 2846 #CONF: 0.7077841333001741
+Content.Rating: Everyone(92), Ad.Supported: False(98), Editor.Choice: False(102), ==>Minimum.Android: 4(86), #SUP: 3121 #CONF: 0.5689026613197229
+Minimum.Android: 4(86), Ad.Supported: False(98), Editor.Choice: False(102), ==>Content.Rating: Everyone(92), #SUP: 3121 #CONF: 0.8451123747630652
+Minimum.Android: 4(86), Content.Rating: Everyone(92), Editor.Choice: False(102), ==>Ad.Supported: False(98), #SUP: 3121 #CONF: 0.9397771755495333
+Minimum.Android: 4(86), Content.Rating: Everyone(92), Ad.Supported: False(98), ==>Editor.Choice: False(102), #SUP: 3121 #CONF: 0.9996796925048046
+Content.Rating: Everyone(92), Editor.Choice: False(102), ==>Minimum.Android: 4(86), Ad.Supported: False(98), #SUP: 3121 #CONF: 0.5331397335155449
+Content.Rating: Everyone(92), Ad.Supported: False(98), ==>Minimum.Android: 4(86), Editor.Choice: False(102), #SUP: 3121 #CONF: 0.5687989794058684
+Minimum.Android: 4(86), Editor.Choice: False(102), ==>Content.Rating: Everyone(92), Ad.Supported: False(98), #SUP: 3121 #CONF: 0.7767546042807367
+Minimum.Android: 4(86), Ad.Supported: False(98), ==>Content.Rating: Everyone(92), Editor.Choice: False(102), #SUP: 3121 #CONF: 0.8444264069264069
+Minimum.Android: 4(86), Content.Rating: Everyone(92), ==>Ad.Supported: False(98), Editor.Choice: False(102), #SUP: 3121 #CONF: 0.9394942805538832
+Content.Rating: Everyone(92), ==>Minimum.Android: 4(86), Ad.Supported: False(98), Editor.Choice: False(102), #SUP: 3121 #CONF: 0.5330486763450043
+Minimum.Android: 4(86), ==>Content.Rating: Everyone(92), Ad.Supported: False(98), Editor.Choice: False(102), #SUP: 3121 #CONF: 0.7761750808256652
+Content.Rating: Everyone(92), In.App.PurchasesFalse(100), Editor.Choice: False(102), ==>Minimum.Android: 4(86), #SUP: 2999 #CONF: 0.5723282442748091
+Minimum.Android: 4(86), In.App.PurchasesFalse(100), Editor.Choice: False(102), ==>Content.Rating: Everyone(92), #SUP: 2999 #CONF: 0.8379435596535345
+Minimum.Android: 4(86), Content.Rating: Everyone(92), Editor.Choice: False(102), ==>In.App.PurchasesFalse(100), #SUP: 2999 #CONF: 0.9030412526347485
+Minimum.Android: 4(86), Content.Rating: Everyone(92), In.App.PurchasesFalse(100), ==>Editor.Choice: False(102), #SUP: 2999 #CONF: 0.9996666666666667
+Content.Rating: Everyone(92), Editor.Choice: False(102), ==>Minimum.Android: 4(86), In.App.PurchasesFalse(100), #SUP: 2999 #CONF: 0.5122992825418518
+Content.Rating: Everyone(92), In.App.PurchasesFalse(100), ==>Minimum.Android: 4(86), Editor.Choice: False(102), #SUP: 2999 #CONF: 0.5722190421675253
+Minimum.Android: 4(86), Editor.Choice: False(102), ==>Content.Rating: Everyone(92), In.App.PurchasesFalse(100), #SUP: 2999 #CONF: 0.7463912394225983
+Minimum.Android: 4(86), In.App.PurchasesFalse(100), ==>Content.Rating: Everyone(92), Editor.Choice: False(102), #SUP: 2999 #CONF: 0.8372417643774428
+Minimum.Android: 4(86), Content.Rating: Everyone(92), ==>In.App.PurchasesFalse(100), Editor.Choice: False(102), #SUP: 2999 #CONF: 0.9027694160144492
+Content.Rating: Everyone(92), ==>Minimum.Android: 4(86), In.App.PurchasesFalse(100), Editor.Choice: False(102), #SUP: 2999 #CONF: 0.5122117847993168
+Minimum.Android: 4(86), ==>Content.Rating: Everyone(92), In.App.PurchasesFalse(100), Editor.Choice: False(102), #SUP: 2999 #CONF: 0.745834369559811
+Ad.Supported: False(98), In.App.PurchasesFalse(100), Editor.Choice: False(102), ==>Minimum.Android: 4(86), #SUP: 3347 #CONF: 0.5773676039330689
+Minimum.Android: 4(86), In.App.PurchasesFalse(100), Editor.Choice: False(102), ==>Ad.Supported: False(98), #SUP: 3347 #CONF: 0.9351774238614138
+Minimum.Android: 4(86), Ad.Supported: False(98), Editor.Choice: False(102), ==>In.App.PurchasesFalse(100), #SUP: 3347 #CONF: 0.9063092336853507
+Minimum.Android: 4(86), Ad.Supported: False(98), In.App.PurchasesFalse(100), ==>Editor.Choice: False(102), #SUP: 3347 #CONF: 0.9991044776119403
+In.App.PurchasesFalse(100), Editor.Choice: False(102), ==>Minimum.Android: 4(86), Ad.Supported: False(98), #SUP: 3347 #CONF: 0.5430796689923738
+Ad.Supported: False(98), Editor.Choice: False(102), ==>Minimum.Android: 4(86), In.App.PurchasesFalse(100), #SUP: 3347 #CONF: 0.5212583709702538
+Ad.Supported: False(98), In.App.PurchasesFalse(100), ==>Minimum.Android: 4(86), Editor.Choice: False(102), #SUP: 3347 #CONF: 0.5768700448121338
+Minimum.Android: 4(86), Editor.Choice: False(102), ==>Ad.Supported: False(98), In.App.PurchasesFalse(100), #SUP: 3347 #CONF: 0.8330014932802389
+Minimum.Android: 4(86), In.App.PurchasesFalse(100), ==>Ad.Supported: False(98), Editor.Choice: False(102), #SUP: 3347 #CONF: 0.9343941931881631
+Minimum.Android: 4(86), Ad.Supported: False(98), ==>In.App.PurchasesFalse(100), Editor.Choice: False(102), #SUP: 3347 #CONF: 0.9055735930735931
+In.App.PurchasesFalse(100), ==>Minimum.Android: 4(86), Ad.Supported: False(98), Editor.Choice: False(102), #SUP: 3347 #CONF: 0.542639429312581
+Ad.Supported: False(98), ==>Minimum.Android: 4(86), In.App.PurchasesFalse(100), Editor.Choice: False(102), #SUP: 3347 #CONF: 0.5208527855586679
+Minimum.Android: 4(86), ==>Ad.Supported: False(98), In.App.PurchasesFalse(100), Editor.Choice: False(102), #SUP: 3347 #CONF: 0.8323800049738871
+Ad.Supported: False(98), In.App.PurchasesFalse(100), Editor.Choice: False(102), ==>Content.Rating: Everyone(92), #SUP: 4971 #CONF: 0.8575125064688632
+Content.Rating: Everyone(92), In.App.PurchasesFalse(100), Editor.Choice: False(102), ==>Ad.Supported: False(98), #SUP: 4971 #CONF: 0.9486641221374046
+Content.Rating: Everyone(92), Ad.Supported: False(98), Editor.Choice: False(102), ==>In.App.PurchasesFalse(100), #SUP: 4971 #CONF: 0.9061246810061976
+Content.Rating: Everyone(92), Ad.Supported: False(98), In.App.PurchasesFalse(100), ==>Editor.Choice: False(102), #SUP: 4971 #CONF: 0.9997988736926791
+In.App.PurchasesFalse(100), Editor.Choice: False(102), ==>Content.Rating: Everyone(92), Ad.Supported: False(98), #SUP: 4971 #CONF: 0.8065877007950674
+Ad.Supported: False(98), Editor.Choice: False(102), ==>Content.Rating: Everyone(92), In.App.PurchasesFalse(100), #SUP: 4971 #CONF: 0.7741784768727612
+Ad.Supported: False(98), In.App.PurchasesFalse(100), ==>Content.Rating: Everyone(92), Editor.Choice: False(102), #SUP: 4971 #CONF: 0.8567735263702172
+Content.Rating: Everyone(92), Editor.Choice: False(102), ==>Ad.Supported: False(98), In.App.PurchasesFalse(100), #SUP: 4971 #CONF: 0.8491629654936795
+Content.Rating: Everyone(92), In.App.PurchasesFalse(100), ==>Ad.Supported: False(98), Editor.Choice: False(102), #SUP: 4971 #CONF: 0.9484831139095592
+Content.Rating: Everyone(92), Ad.Supported: False(98), ==>In.App.PurchasesFalse(100), Editor.Choice: False(102), #SUP: 4971 #CONF: 0.9059595407326407
+Editor.Choice: False(102), ==>Content.Rating: Everyone(92), Ad.Supported: False(98), In.App.PurchasesFalse(100), #SUP: 4971 #CONF: 0.7136089577950043
+In.App.PurchasesFalse(100), ==>Content.Rating: Everyone(92), Ad.Supported: False(98), Editor.Choice: False(102), #SUP: 4971 #CONF: 0.8059338521400778
+Ad.Supported: False(98), ==>Content.Rating: Everyone(92), In.App.PurchasesFalse(100), Editor.Choice: False(102), #SUP: 4971 #CONF: 0.7735760971055089
+Content.Rating: Everyone(92), ==>Ad.Supported: False(98), In.App.PurchasesFalse(100), Editor.Choice: False(102), #SUP: 4971 #CONF: 0.8490179333902648
+Ad.Supported: False(98), Editor.Choice: False(102), Last.Update(2021), ==>Content.Rating: Everyone(92), #SUP: 1576 #CONF: 0.8929178470254957
+Content.Rating: Everyone(92), Editor.Choice: False(102), Last.Update(2021), ==>Ad.Supported: False(98), #SUP: 1576 #CONF: 0.9482551143200962
+Content.Rating: Everyone(92), Ad.Supported: False(98), Last.Update(2021), ==>Editor.Choice: False(102), #SUP: 1576 #CONF: 1.0
+Editor.Choice: False(102), Last.Update(2021), ==>Content.Rating: Everyone(92), Ad.Supported: False(98), #SUP: 1576 #CONF: 0.8409818569903948
+Ad.Supported: False(98), Last.Update(2021), ==>Content.Rating: Everyone(92), Editor.Choice: False(102), #SUP: 1576 #CONF: 0.8924122310305775
+Content.Rating: Everyone(92), Last.Update(2021), ==>Ad.Supported: False(98), Editor.Choice: False(102), #SUP: 1576 #CONF: 0.9482551143200962
+Last.Update(2021), ==>Content.Rating: Everyone(92), Ad.Supported: False(98), Editor.Choice: False(102), #SUP: 1576 #CONF: 0.8405333333333334
+In.App.PurchasesFalse(100), Editor.Choice: False(102), Last.Update(2020), ==>Ad.Supported: False(98), #SUP: 1435 #CONF: 0.9541223404255319
+Ad.Supported: False(98), Editor.Choice: False(102), Last.Update(2020), ==>In.App.PurchasesFalse(100), #SUP: 1435 #CONF: 0.913430935709739
+Ad.Supported: False(98), In.App.PurchasesFalse(100), Last.Update(2020), ==>Editor.Choice: False(102), #SUP: 1435 #CONF: 0.9993036211699164
+Editor.Choice: False(102), Last.Update(2020), ==>Ad.Supported: False(98), In.App.PurchasesFalse(100), #SUP: 1435 #CONF: 0.8501184834123223
+In.App.PurchasesFalse(100), Last.Update(2020), ==>Ad.Supported: False(98), Editor.Choice: False(102), #SUP: 1435 #CONF: 0.9534883720930233
+Ad.Supported: False(98), Last.Update(2020), ==>In.App.PurchasesFalse(100), Editor.Choice: False(102), #SUP: 1435 #CONF: 0.9128498727735369
+Last.Update(2020), ==>Ad.Supported: False(98), In.App.PurchasesFalse(100), Editor.Choice: False(102), #SUP: 1435 #CONF: 0.8496151568975725
+In.App.PurchasesFalse(100), Editor.Choice: False(102), Last.Update(2021), ==>Ad.Supported: False(98), #SUP: 1500 #CONF: 0.9640102827763496
+Ad.Supported: False(98), Editor.Choice: False(102), Last.Update(2021), ==>In.App.PurchasesFalse(100), #SUP: 1500 #CONF: 0.8498583569405099
+Ad.Supported: False(98), In.App.PurchasesFalse(100), Last.Update(2021), ==>Editor.Choice: False(102), #SUP: 1500 #CONF: 0.9993337774816788
+Editor.Choice: False(102), Last.Update(2021), ==>Ad.Supported: False(98), In.App.PurchasesFalse(100), #SUP: 1500 #CONF: 0.80042689434365
+In.App.PurchasesFalse(100), Last.Update(2021), ==>Ad.Supported: False(98), Editor.Choice: False(102), #SUP: 1500 #CONF: 0.9633911368015414
+Ad.Supported: False(98), Last.Update(2021), ==>In.App.PurchasesFalse(100), Editor.Choice: False(102), #SUP: 1500 #CONF: 0.8493771234428086
+Last.Update(2021), ==>Ad.Supported: False(98), In.App.PurchasesFalse(100), Editor.Choice: False(102), #SUP: 1500 #CONF: 0.8
+Released(60), Ad.Supported: False(98), In.App.PurchasesFalse(100), Editor.Choice: False(102), ==>Content.Rating: Everyone(92), #SUP: 1809 #CONF: 0.8577524893314367
+Released(60), Content.Rating: Everyone(92), In.App.PurchasesFalse(100), Editor.Choice: False(102), ==>Ad.Supported: False(98), #SUP: 1809 #CONF: 0.9541139240506329
+Released(60), Content.Rating: Everyone(92), Ad.Supported: False(98), Editor.Choice: False(102), ==>In.App.PurchasesFalse(100), #SUP: 1809 #CONF: 0.9145601617795753
+Released(60), Content.Rating: Everyone(92), Ad.Supported: False(98), In.App.PurchasesFalse(100), ==>Editor.Choice: False(102), #SUP: 1809 #CONF: 1.0
+Released(60), In.App.PurchasesFalse(100), Editor.Choice: False(102), ==>Content.Rating: Everyone(92), Ad.Supported: False(98), #SUP: 1809 #CONF: 0.8101209135691895
+Released(60), Ad.Supported: False(98), Editor.Choice: False(102), ==>Content.Rating: Everyone(92), In.App.PurchasesFalse(100), #SUP: 1809 #CONF: 0.7841352405721717
+Released(60), Ad.Supported: False(98), In.App.PurchasesFalse(100), ==>Content.Rating: Everyone(92), Editor.Choice: False(102), #SUP: 1809 #CONF: 0.8577524893314367
+Released(60), Content.Rating: Everyone(92), Editor.Choice: False(102), ==>Ad.Supported: False(98), In.App.PurchasesFalse(100), #SUP: 1809 #CONF: 0.8643096034400383
+Released(60), Content.Rating: Everyone(92), In.App.PurchasesFalse(100), ==>Ad.Supported: False(98), Editor.Choice: False(102), #SUP: 1809 #CONF: 0.9541139240506329
+Released(60), Content.Rating: Everyone(92), Ad.Supported: False(98), ==>In.App.PurchasesFalse(100), Editor.Choice: False(102), #SUP: 1809 #CONF: 0.9145601617795753
+Released(60), Editor.Choice: False(102), ==>Content.Rating: Everyone(92), Ad.Supported: False(98), In.App.PurchasesFalse(100), #SUP: 1809 #CONF: 0.7250501002004008
+Released(60), In.App.PurchasesFalse(100), ==>Content.Rating: Everyone(92), Ad.Supported: False(98), Editor.Choice: False(102), #SUP: 1809 #CONF: 0.8101209135691895
+Released(60), Ad.Supported: False(98), ==>Content.Rating: Everyone(92), In.App.PurchasesFalse(100), Editor.Choice: False(102), #SUP: 1809 #CONF: 0.7841352405721717
+Released(60), Content.Rating: Everyone(92), ==>Ad.Supported: False(98), In.App.PurchasesFalse(100), Editor.Choice: False(102), #SUP: 1809 #CONF: 0.8643096034400383
+Released(60), ==>Content.Rating: Everyone(92), Ad.Supported: False(98), In.App.PurchasesFalse(100), Editor.Choice: False(102), #SUP: 1809 #CONF: 0.7250501002004008
+Price(78), Ad.Supported: False(98), In.App.PurchasesFalse(100), Editor.Choice: False(102), ==>Content.Rating: Everyone(92), #SUP: 1425 #CONF: 0.820852534562212
+Price(78), Content.Rating: Everyone(92), In.App.PurchasesFalse(100), Editor.Choice: False(102), ==>Ad.Supported: False(98), #SUP: 1425 #CONF: 0.9531772575250836
+Price(78), Content.Rating: Everyone(92), Ad.Supported: False(98), Editor.Choice: False(102), ==>In.App.PurchasesFalse(100), #SUP: 1425 #CONF: 0.8967904342353682
+Price(78), Content.Rating: Everyone(92), Ad.Supported: False(98), In.App.PurchasesFalse(100), ==>Editor.Choice: False(102), #SUP: 1425 #CONF: 1.0
+Price(78), In.App.PurchasesFalse(100), Editor.Choice: False(102), ==>Content.Rating: Everyone(92), Ad.Supported: False(98), #SUP: 1425 #CONF: 0.7665411511565358
+Price(78), Ad.Supported: False(98), Editor.Choice: False(102), ==>Content.Rating: Everyone(92), In.App.PurchasesFalse(100), #SUP: 1425 #CONF: 0.7307692307692307
+Price(78), Ad.Supported: False(98), In.App.PurchasesFalse(100), ==>Content.Rating: Everyone(92), Editor.Choice: False(102), #SUP: 1425 #CONF: 0.81943645773433
+Price(78), Content.Rating: Everyone(92), Editor.Choice: False(102), ==>Ad.Supported: False(98), In.App.PurchasesFalse(100), #SUP: 1425 #CONF: 0.8532934131736527
+Price(78), Content.Rating: Everyone(92), In.App.PurchasesFalse(100), ==>Ad.Supported: False(98), Editor.Choice: False(102), #SUP: 1425 #CONF: 0.9531772575250836
+Price(78), Content.Rating: Everyone(92), Ad.Supported: False(98), ==>In.App.PurchasesFalse(100), Editor.Choice: False(102), #SUP: 1425 #CONF: 0.8967904342353682
+Price(78), Editor.Choice: False(102), ==>Content.Rating: Everyone(92), Ad.Supported: False(98), In.App.PurchasesFalse(100), #SUP: 1425 #CONF: 0.6683864915572233
+Price(78), In.App.PurchasesFalse(100), ==>Content.Rating: Everyone(92), Ad.Supported: False(98), Editor.Choice: False(102), #SUP: 1425 #CONF: 0.7653061224489796
+Price(78), Ad.Supported: False(98), ==>Content.Rating: Everyone(92), In.App.PurchasesFalse(100), Editor.Choice: False(102), #SUP: 1425 #CONF: 0.7296466973886329
+Price(78), Content.Rating: Everyone(92), ==>Ad.Supported: False(98), In.App.PurchasesFalse(100), Editor.Choice: False(102), #SUP: 1425 #CONF: 0.8532934131736527
+Price(78), ==>Content.Rating: Everyone(92), Ad.Supported: False(98), In.App.PurchasesFalse(100), Editor.Choice: False(102), #SUP: 1425 #CONF: 0.667447306791569
+Size(79), Ad.Supported: False(98), In.App.PurchasesFalse(100), Editor.Choice: False(102), ==>Content.Rating: Everyone(92), #SUP: 1430 #CONF: 0.9243697478991597
+Size(79), Content.Rating: Everyone(92), In.App.PurchasesFalse(100), Editor.Choice: False(102), ==>Ad.Supported: False(98), #SUP: 1430 #CONF: 0.9727891156462585
+Size(79), Content.Rating: Everyone(92), Ad.Supported: False(98), Editor.Choice: False(102), ==>In.App.PurchasesFalse(100), #SUP: 1430 #CONF: 0.942649967040211
+Size(79), Content.Rating: Everyone(92), Ad.Supported: False(98), In.App.PurchasesFalse(100), ==>Editor.Choice: False(102), #SUP: 1430 #CONF: 1.0
+Size(79), In.App.PurchasesFalse(100), Editor.Choice: False(102), ==>Content.Rating: Everyone(92), Ad.Supported: False(98), #SUP: 1430 #CONF: 0.8999370673379484
+Size(79), Ad.Supported: False(98), Editor.Choice: False(102), ==>Content.Rating: Everyone(92), In.App.PurchasesFalse(100), #SUP: 1430 #CONF: 0.8708891595615104
+Size(79), Ad.Supported: False(98), In.App.PurchasesFalse(100), ==>Content.Rating: Everyone(92), Editor.Choice: False(102), #SUP: 1430 #CONF: 0.9243697478991597
+Size(79), Content.Rating: Everyone(92), Editor.Choice: False(102), ==>Ad.Supported: False(98), In.App.PurchasesFalse(100), #SUP: 1430 #CONF: 0.89937106918239
+Size(79), Content.Rating: Everyone(92), In.App.PurchasesFalse(100), ==>Ad.Supported: False(98), Editor.Choice: False(102), #SUP: 1430 #CONF: 0.9727891156462585
+Size(79), Content.Rating: Everyone(92), Ad.Supported: False(98), ==>In.App.PurchasesFalse(100), Editor.Choice: False(102), #SUP: 1430 #CONF: 0.942649967040211
+Size(79), Editor.Choice: False(102), ==>Content.Rating: Everyone(92), Ad.Supported: False(98), In.App.PurchasesFalse(100), #SUP: 1430 #CONF: 0.8313953488372093
+Size(79), In.App.PurchasesFalse(100), ==>Content.Rating: Everyone(92), Ad.Supported: False(98), Editor.Choice: False(102), #SUP: 1430 #CONF: 0.8999370673379484
+Size(79), Ad.Supported: False(98), ==>Content.Rating: Everyone(92), In.App.PurchasesFalse(100), Editor.Choice: False(102), #SUP: 1430 #CONF: 0.8708891595615104
+Size(79), Content.Rating: Everyone(92), ==>Ad.Supported: False(98), In.App.PurchasesFalse(100), Editor.Choice: False(102), #SUP: 1430 #CONF: 0.89937106918239
+Size(79), ==>Content.Rating: Everyone(92), Ad.Supported: False(98), In.App.PurchasesFalse(100), Editor.Choice: False(102), #SUP: 1430 #CONF: 0.8313953488372093
+Content.Rating: Everyone(92), Ad.Supported: False(98), In.App.PurchasesFalse(100), Editor.Choice: False(102), ==>Minimum.Android: 4(86), #SUP: 2845 #CONF: 0.5723194528263931
+Minimum.Android: 4(86), Ad.Supported: False(98), In.App.PurchasesFalse(100), Editor.Choice: False(102), ==>Content.Rating: Everyone(92), #SUP: 2845 #CONF: 0.8500149387511204
+Minimum.Android: 4(86), Content.Rating: Everyone(92), In.App.PurchasesFalse(100), Editor.Choice: False(102), ==>Ad.Supported: False(98), #SUP: 2845 #CONF: 0.94864954984995
+Minimum.Android: 4(86), Content.Rating: Everyone(92), Ad.Supported: False(98), Editor.Choice: False(102), ==>In.App.PurchasesFalse(100), #SUP: 2845 #CONF: 0.9115668055110542
+Minimum.Android: 4(86), Content.Rating: Everyone(92), Ad.Supported: False(98), In.App.PurchasesFalse(100), ==>Editor.Choice: False(102), #SUP: 2845 #CONF: 0.999648629655657
+Content.Rating: Everyone(92), In.App.PurchasesFalse(100), Editor.Choice: False(102), ==>Minimum.Android: 4(86), Ad.Supported: False(98), #SUP: 2845 #CONF: 0.5429389312977099
+Content.Rating: Everyone(92), Ad.Supported: False(98), Editor.Choice: False(102), ==>Minimum.Android: 4(86), In.App.PurchasesFalse(100), #SUP: 2845 #CONF: 0.518592781625957
+Content.Rating: Everyone(92), Ad.Supported: False(98), In.App.PurchasesFalse(100), ==>Minimum.Android: 4(86), Editor.Choice: False(102), #SUP: 2845 #CONF: 0.5722043443282381
+Minimum.Android: 4(86), In.App.PurchasesFalse(100), Editor.Choice: False(102), ==>Content.Rating: Everyone(92), Ad.Supported: False(98), #SUP: 2845 #CONF: 0.7949147806649902
+Minimum.Android: 4(86), Ad.Supported: False(98), Editor.Choice: False(102), ==>Content.Rating: Everyone(92), In.App.PurchasesFalse(100), #SUP: 2845 #CONF: 0.7703763877606282
+Minimum.Android: 4(86), Ad.Supported: False(98), In.App.PurchasesFalse(100), ==>Content.Rating: Everyone(92), Editor.Choice: False(102), #SUP: 2845 #CONF: 0.8492537313432836
+Minimum.Android: 4(86), Content.Rating: Everyone(92), Editor.Choice: False(102), ==>Ad.Supported: False(98), In.App.PurchasesFalse(100), #SUP: 2845 #CONF: 0.8566696778078892
+Minimum.Android: 4(86), Content.Rating: Everyone(92), In.App.PurchasesFalse(100), ==>Ad.Supported: False(98), Editor.Choice: False(102), #SUP: 2845 #CONF: 0.9483333333333334
+Minimum.Android: 4(86), Content.Rating: Everyone(92), Ad.Supported: False(98), ==>In.App.PurchasesFalse(100), Editor.Choice: False(102), #SUP: 2845 #CONF: 0.9112748238308777
+Content.Rating: Everyone(92), In.App.PurchasesFalse(100), ==>Minimum.Android: 4(86), Ad.Supported: False(98), Editor.Choice: False(102), #SUP: 2845 #CONF: 0.5428353367677924
+Content.Rating: Everyone(92), Ad.Supported: False(98), ==>Minimum.Android: 4(86), In.App.PurchasesFalse(100), Editor.Choice: False(102), #SUP: 2845 #CONF: 0.5184982686349553
+Minimum.Android: 4(86), Editor.Choice: False(102), ==>Content.Rating: Everyone(92), Ad.Supported: False(98), In.App.PurchasesFalse(100), #SUP: 2845 #CONF: 0.7080637132901941
+Minimum.Android: 4(86), In.App.PurchasesFalse(100), ==>Content.Rating: Everyone(92), Ad.Supported: False(98), Editor.Choice: False(102), #SUP: 2845 #CONF: 0.794249022892239
+Minimum.Android: 4(86), Ad.Supported: False(98), ==>Content.Rating: Everyone(92), In.App.PurchasesFalse(100), Editor.Choice: False(102), #SUP: 2845 #CONF: 0.7697510822510822
+Minimum.Android: 4(86), Content.Rating: Everyone(92), ==>Ad.Supported: False(98), In.App.PurchasesFalse(100), Editor.Choice: False(102), #SUP: 2845 #CONF: 0.8564118001204094
+Minimum.Android: 4(86), ==>Content.Rating: Everyone(92), Ad.Supported: False(98), In.App.PurchasesFalse(100), Editor.Choice: False(102), #SUP: 2845 #CONF: 0.7075354389455359
