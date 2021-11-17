@@ -184,7 +184,7 @@ install_levels <- c("0", "1", "5", "10",
                     "50000000", "100000000", "500000000", "1000000000",
                     "5000000000", "10000000000")
 
-for(i in 1:length(levels(clean_dataset$Installs))){
+for(i in 1:length(install_levels)){
   postprocessing_info <- paste0(postprocessing_info, universal_k+i, "\n", "Installs: ", install_levels[i], "\n")
 }
 

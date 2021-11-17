@@ -62,7 +62,6 @@ public class Prep {
                         buffered_writer.append(Integer.toString(value) + " ");
                     }
                 }
-                System.out.println("done row");
                 buffered_writer.append("\n");
             }
             buffered_writer.close();

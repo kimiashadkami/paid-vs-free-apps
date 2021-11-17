@@ -40,10 +40,10 @@ public class Main {
         int row_num4 = prep.prepData(str7, str8);
 
         MIS mis = new MIS();
-        mis.generateMIS(mis1, (int) (row_num1 * 0.20));
-        mis.generateMIS(mis2, (int) (row_num2 * 0.20));
-        mis.generateMIS(mis3, (int) (row_num3 * 0.20));
-        mis.generateMIS(mis4, (int) (row_num4 * 0.20));
+        mis.generateMIS(mis1, (int) (row_num1));
+        mis.generateMIS(mis2, (int) (row_num2));
+        mis.generateMIS(mis3, (int) (row_num3));
+        mis.generateMIS(mis4, (int) (row_num4));
     }
 
 }
