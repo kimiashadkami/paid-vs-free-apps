@@ -1,1 +1,7 @@
 /target/
+*.txt
+*.rds
+*.csv
+*.xlsx
+*.Rhistory
+*.RData
