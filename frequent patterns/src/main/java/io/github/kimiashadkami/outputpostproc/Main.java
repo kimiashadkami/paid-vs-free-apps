@@ -6,51 +6,37 @@ public class Main {
     
     public static void main(String[] args) {
 
-        String post_processing_txt = "D:/eclipse/workspace/paid-vs-free-apps/"
+        String const_path = "D:/eclipse/workspace/paid-vs-free-apps/"
                 + "frequent patterns (data prep + SPMF + post processing)/"
-                + "src/main/resources/postprocessing.txt";
+                + "src/main/resources";
+
+        String post_processing_txt = const_path + "/postprocessing.txt";
 
         // free, high-rated
-        String frequent_patterns1 = "D:/eclipse/workspace/paid-vs-free-apps/"
-                + "frequent patterns (data prep + SPMF + post processing)/"
-                + "src/main/resources/output/free_high_rated_fp_cfp.txt";
+        String frequent_patterns1 = const_path + "/output/free_high_rated_fp_cfp.txt";
 
-        String output1 = "D:/eclipse/workspace/paid-vs-free-apps/"
-                + "frequent patterns (data prep + SPMF + post processing)/"
-                + "src/main/resources/postprocess/free_high_rated_fp_postprocess.txt";
+        String output1 = const_path + "/postprocess/free_high_rated_fp_postprocess.txt";
 
         run(post_processing_txt, frequent_patterns1, output1);
 
         // paid, high-rated
-        String frequent_patterns2 = "D:/eclipse/workspace/paid-vs-free-apps/"
-                + "frequent patterns (data prep + SPMF + post processing)/"
-                + "src/main/resources/output/paid_high_rated_fp_cfp.txt";
+        String frequent_patterns2 = const_path + "/output/paid_high_rated_fp_cfp.txt";
 
-        String output2 = "D:/eclipse/workspace/paid-vs-free-apps/"
-                + "frequent patterns (data prep + SPMF + post processing)/"
-                + "src/main/resources/postprocess/paid_high_rated_fp_postprocess.txt";
+        String output2 = const_path + "/postprocess/paid_high_rated_fp_postprocess.txt";
 
         run(post_processing_txt, frequent_patterns2, output2);
 
         // no outliers, free, high-rated
-        String frequent_patterns3 = "D:/eclipse/workspace/paid-vs-free-apps/"
-                + "frequent patterns (data prep + SPMF + post processing)/"
-                + "src/main/resources/output/no_outliers_free_high_rated_fp_cfp.txt";
+        String frequent_patterns3 = const_path + "/output/no_outliers_free_high_rated_fp_cfp.txt";
 
-        String output3 = "D:/eclipse/workspace/paid-vs-free-apps/"
-                + "frequent patterns (data prep + SPMF + post processing)/"
-                + "src/main/resources/postprocess/no_outliers_free_high_rated_fp_postprocess.txt";
+        String output3 = const_path + "/postprocess/no_outliers_free_high_rated_fp_postprocess.txt";
 
         run(post_processing_txt, frequent_patterns3, output3);
 
         // no outliers, paid, high-rated
-        String frequent_patterns4 = "D:/eclipse/workspace/paid-vs-free-apps/"
-                + "frequent patterns (data prep + SPMF + post processing)/"
-                + "src/main/resources/output/no_outliers_paid_high_rated_fp_cfp.txt";
+        String frequent_patterns4 = const_path + "/output/no_outliers_paid_high_rated_fp_cfp.txt";
 
-        String output4 = "D:/eclipse/workspace/paid-vs-free-apps/"
-                + "frequent patterns (data prep + SPMF + post processing)/"
-                + "src/main/resources/postprocess/no_outliers_paid_high_rated_fp_postprocess.txt";
+        String output4 = const_path + "/postprocess/no_outliers_paid_high_rated_fp_postprocess.txt";
 
         run(post_processing_txt, frequent_patterns4, output4);
     }
