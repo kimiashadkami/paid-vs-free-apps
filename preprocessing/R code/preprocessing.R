@@ -17,7 +17,7 @@ clean_dataset <- na.omit(dataset)
 clean_dataset <- clean_dataset[!duplicated(clean_dataset), ]
 
 #saving the data, please put in your own directory
-write.csv(clean_dataset, file="clean_dataset.csv")
+write.csv(clean_dataset, file="clean_dataset.csv", row.names = FALSE)
 
 #feature selection (phase 1), free, high rated apps
 free_high_rated <- clean_dataset[(clean_dataset$Free == "True" ) & (clean_dataset$Rating >= 4) & (clean_dataset$Rating.Count > 10), ]
@@ -63,13 +63,13 @@ nrow(no_outliers_paid_high_rated)
 
 #######################saving datasets#######################
 
-write.csv(free_high_rated, file="free_high_rated.csv")
+write.csv(free_high_rated, file="free_high_rated.csv", row.names = FALSE)
 
-write.csv(paid_high_rated, file="paid_high_rated.csv")
+write.csv(paid_high_rated, file="paid_high_rated.csv", row.names = FALSE)
 
-write.csv(no_outliers_free_high_rated, file="no_outliers_free_high_rated.csv")
+write.csv(no_outliers_free_high_rated, file="no_outliers_free_high_rated.csv", row.names = FALSE)
 
-write.csv(no_outliers_paid_high_rated, file="no_outliers_paid_high_rated.csv")
+write.csv(no_outliers_paid_high_rated, file="no_outliers_paid_high_rated.csv", row.names = FALSE)
 
 #######################discretization for SPMF#######################
 postprocessing_info <- ""
@@ -381,7 +381,7 @@ cat("\n")
 #no outlier paid
 cat("no outliers paid high-rated")
 cat("\n")
-no_outliers_paid_high_rated$Size <- preprocessing_size(no_outliers_paid_high_rated, 10)
+no_outliers_paid_high_rated$Size <- preprocessing_size(no_outliers_paid_high_rated, universal_k)
 
 sink();
 
@@ -403,7 +403,7 @@ preprocessing_minandroid <- function(dt_minandroid, k6){
   dt_minandroid$Minimum.Android <- as.factor(dt_minandroid$Minimum.Android)
   
   dt_minandroid$Minimum.Android <- revalue(x = dt_minandroid$Minimum.Android,
-                                           c("-1" = k6+1, "2" = k6+2, "3" = k6+3, "4" = k6+4, "5" = k6+5, "6" = k6+6, "7" = k6+7, "8" = k6+8))
+                                           c("-1" = k6+1, "1" = k6+2, "2" = k6+3, "3" = k6+4, "4" = k6+5, "5" = k6+6, "6" = k6+7, "7" = k6+8, "8" = k6+9))
 }
 
 #free
@@ -418,7 +418,7 @@ no_outliers_free_high_rated$Minimum.Android <- preprocessing_minandroid(no_outli
 #no outlier paid
 no_outliers_paid_high_rated$Minimum.Android <- preprocessing_minandroid(no_outliers_paid_high_rated, universal_k)
 
-minandroid_levels <- c("-1", "2", "3", "4", "5", "6", "7", "8")
+minandroid_levels <- c("-1", "1", "2", "3", "4", "5", "6", "7", "8")
 
 for(i in 1:length(minandroid_levels)){
   postprocessing_info <- paste0(postprocessing_info, universal_k+i, "\n", "Minimum.Android: ", minandroid_levels[i], "\n")
@@ -581,54 +581,56 @@ sink("postprocessing.txt")
 cat(postprocessing_info)
 sink()
 
+library("xlsx")
+
 #free
-write.csv(free_high_rated, file="free_high_rated2.csv")
+write.csv(free_high_rated, file="free_high_rated2.csv", row.names = FALSE)
 drops1 <- c("App.Id", "App.Name", "Free", "Developer.Id", "Developer.Website", "Developer.Email", "Privacy.Policy")
 free_high_rated <- free_high_rated[ , !(names(free_high_rated) %in% drops1) ]
-write.csv(free_high_rated, file="free_high_rated_spmf.csv")
+write.csv(free_high_rated, file="free_high_rated_spmf.csv", row.names = FALSE)
 
 #paid
-write.csv(paid_high_rated, file="paid_high_rated2.csv")
+write.csv(paid_high_rated, file="paid_high_rated2.csv", row.names = FALSE)
 drops2 <- c("App.Id", "App.Name", "Currency", "Developer.Id", "Developer.Website", "Developer.Email", "Privacy.Policy")
 paid_high_rated <- paid_high_rated[ , !(names(paid_high_rated) %in% drops2) ]
-write.csv(paid_high_rated, file="paid_high_rated_spmf.csv")
+write.csv(paid_high_rated, file="paid_high_rated_spmf.csv", row.names = FALSE)
 
 #different price ranges
 paid_high_rated_price1 <- paid_high_rated[paid_high_rated$Price == price1, ]
-write.csv(paid_high_rated_price1, file="paid_high_rated_price1.csv")
+write.csv(paid_high_rated_price1, file="paid_high_rated_price1.csv", row.names = FALSE)
 
 paid_high_rated_price2 <- paid_high_rated[paid_high_rated$Price == price2, ]
-write.csv(paid_high_rated_price2, file="paid_high_rated_price2.csv")
+write.csv(paid_high_rated_price2, file="paid_high_rated_price2.csv", row.names = FALSE)
 
 paid_high_rated_price3 <- paid_high_rated[paid_high_rated$Price == price3, ]
-write.csv(paid_high_rated_price3, file="paid_high_rated_price3.csv")
+write.csv(paid_high_rated_price3, file="paid_high_rated_price3.csv", row.names = FALSE)
 
 paid_high_rated_price4 <- paid_high_rated[paid_high_rated$Price == price4, ]
-write.csv(paid_high_rated_price4, file="paid_high_rated_price4.csv")
+write.csv(paid_high_rated_price4, file="paid_high_rated_price4.csv", row.names = FALSE)
 
 #no outliers free
-write.csv(no_outliers_free_high_rated, file="no_outliers_free_high_rated2.csv")
+write.csv(no_outliers_free_high_rated, file="no_outliers_free_high_rated2.csv", row.names = FALSE)
 drops3 <- c("App.Id", "App.Name", "Free", "Developer.Id", "Developer.Website", "Developer.Email", "Privacy.Policy")
 no_outliers_free_high_rated <- no_outliers_free_high_rated[ , !(names(no_outliers_free_high_rated) %in% drops3) ]
-write.csv(no_outliers_free_high_rated, file="no_outliers_free_high_rated_spmf.csv")
+write.csv(no_outliers_free_high_rated, file="no_outliers_free_high_rated_spmf.csv", row.names = FALSE)
 
 #no outliers paid
-write.csv(no_outliers_paid_high_rated, file="no_outliers_paid_high_rated2.csv")
+write.csv(no_outliers_paid_high_rated, file="no_outliers_paid_high_rated2.csv", row.names = FALSE)
 drops4 <- c("App.Id", "App.Name", "Currency", "Developer.Id", "Developer.Website", "Developer.Email", "Privacy.Policy")
 no_outliers_paid_high_rated <- no_outliers_paid_high_rated[ , !(names(no_outliers_paid_high_rated) %in% drops4) ]
-write.csv(no_outliers_paid_high_rated, file="no_outliers_paid_high_rated_spmf.csv")
+write.csv(no_outliers_paid_high_rated, file="no_outliers_paid_high_rated_spmf.csv", row.names = FALSE)
 
 #different price ranges
 no_outliers_paid_high_rated_price1 <- no_outliers_paid_high_rated[no_outliers_paid_high_rated$Price == price1, ]
-write.csv(no_outliers_paid_high_rated_price1, file="no_outliers_paid_high_rated_price1.csv")
+write.csv(no_outliers_paid_high_rated_price1, file="no_outliers_paid_high_rated_price1.csv", row.names = FALSE)
 
 no_outliers_paid_high_rated_price2 <- no_outliers_paid_high_rated[no_outliers_paid_high_rated$Price == price2, ]
-write.csv(no_outliers_paid_high_rated_price2, file="no_outliers_paid_high_rated_price2.csv")
+write.csv(no_outliers_paid_high_rated_price2, file="no_outliers_paid_high_rated_price2.csv", row.names = FALSE)
 
 no_outliers_paid_high_rated_price3 <- no_outliers_paid_high_rated[no_outliers_paid_high_rated$Price == price3, ]
-write.csv(no_outliers_paid_high_rated_price3, file="no_outliers_paid_high_rated_price3.csv")
+write.csv(no_outliers_paid_high_rated_price3, file="no_outliers_paid_high_rated_price3.csv", row.names = FALSE)
 
 no_outliers_paid_high_rated_price4 <- no_outliers_paid_high_rated[no_outliers_paid_high_rated$Price == price4, ]
-write.csv(no_outliers_paid_high_rated_price4, file="no_outliers_paid_high_rated_price4.csv")
+write.csv(no_outliers_paid_high_rated_price4, file="no_outliers_paid_high_rated_price4.csv", row.names = FALSE)
 
 #it needs to be the same type otherwise when it is returning the column it will be null, if e.g. it is returning a factor for a numeric :)

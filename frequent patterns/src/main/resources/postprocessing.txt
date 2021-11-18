@@ -1,186 +1,209 @@
-1
-Category: Action
-2
-Category: Adventure
-3
-Category: Arcade
-4
-Category: Art & Design
-5
-Category: Auto & Vehicles
-6
-Category: Beauty
-7
-Category: Board
-8
-Category: Books & Reference
-9
-Category: Business
-10
-Category: Card
-11
-Category: Casino
-12
-Category: Casual
-13
-Category: Comics
-14
-Category: Communication
-15
-Category: Dating
-16
-Category: Education
-17
-Category: Educational
-18
-Category: Entertainment
-19
-Category: Events
-20
-Category: Finance
-21
-Category: Food & Drink
-22
-Category: Health & Fitness
-23
-Category: House & Home
-24
-Category: Libraries & Demo
-25
-Category: Lifestyle
-26
-Category: Maps & Navigation
-27
-Category: Medical
-28
-Category: Music
-29
-Category: Music & Audio
-30
-Category: News & Magazines
-31
-Category: Parenting
-32
-Category: Personalization
-33
-Category: Photography
-34
-Category: Productivity
-35
-Category: Puzzle
-36
-Category: Racing
-37
-Category: Role Playing
-38
-Category: Shopping
-39
-Category: Simulation
 40
-Category: Social
+Rating: 4
 41
-Category: Sports
+Rating: 4.1
 42
-Category: Strategy
+Rating: 4.2
 43
-Category: Tools
+Rating: 4.3
 44
-Category: Travel & Local
+Rating: 4.4
 45
-Category: Trivia
+Rating: 4.5
 46
-Category: Video Players & Editors
+Rating: 4.6
 47
-Category: Weather
+Rating: 4.7
 48
-Category: Word
-49 50 51 52
-Rating.Count
+Rating: 4.8
+49
+Rating: 4.9
+50
+Rating: 5
+51
+Category: Action
+52
+Category: Adventure
 53
-Installs: 0
+Category: Arcade
 54
-Installs: 1
+Category: Art & Design
 55
-Installs: 5
+Category: Auto & Vehicles
 56
-Installs: 10
+Category: Beauty
 57
-Installs: 50
+Category: Board
 58
-Installs: 100
+Category: Books & Reference
 59
-Installs: 500
+Category: Business
 60
-Installs: 1000
+Category: Card
 61
-Installs: 5000
+Category: Casino
 62
-Installs: 10000
+Category: Casual
 63
-Installs: 50000
+Category: Comics
 64
-Installs: 100000
+Category: Communication
 65
-Installs: 500000
+Category: Dating
 66
-Installs: 1000000
+Category: Education
 67
-Installs: 5000000
+Category: Educational
 68
-Installs: 10000000
+Category: Entertainment
 69
-Installs: 50000000
+Category: Events
 70
-Installs: 100000000
+Category: Finance
 71
-Installs: 500000000
+Category: Food & Drink
 72
-Installs: 1000000000
+Category: Health & Fitness
 73
-Installs: 5000000000
+Category: House & Home
 74
-Installs: 10000000000
-75 76 77 78
-Price
-79 80 81 82
-Size
+Category: Libraries & Demo
+75
+Category: Lifestyle
+76
+Category: Maps & Navigation
+77
+Category: Medical
+78
+Category: Music
+79
+Category: Music & Audio
+80
+Category: News & Magazines
+81
+Category: Parenting
+82
+Category: Personalization
 83
-Minimum.Android: -1
+Category: Photography
 84
-Minimum.Android: 2
+Category: Productivity
 85
-Minimum.Android: 3
+Category: Puzzle
 86
-Minimum.Android: 4
+Category: Racing
 87
-Minimum.Android: 5
+Category: Role Playing
 88
-Minimum.Android: 6
+Category: Shopping
 89
-Minimum.Android: 7
+Category: Simulation
 90
-Minimum.Android: 8
+Category: Social
 91
-Content.Rating: Adults only 18+
+Category: Sports
 92
-Content.Rating: Everyone
+Category: Strategy
 93
-Content.Rating: Everyone 10+
+Category: Tools
 94
-Content.Rating: Mature 17+
+Category: Travel & Local
 95
-Content.Rating: Teen
+Category: Trivia
 96
-Content.Rating: Unrated
+Category: Video Players & Editors
 97
-Ad.Supported: True
+Category: Weather
 98
+Category: Word
+99 100 101 102
+Rating.Count103
+Installs: 0
+104
+Installs: 1
+105
+Installs: 5
+106
+Installs: 10
+107
+Installs: 50
+108
+Installs: 100
+109
+Installs: 500
+110
+Installs: 1000
+111
+Installs: 5000
+112
+Installs: 10000
+113
+Installs: 50000
+114
+Installs: 100000
+115
+Installs: 500000
+116
+Installs: 1000000
+117
+Installs: 5000000
+118
+Installs: 10000000
+119
+Installs: 50000000
+120
+Installs: 100000000
+121
+Installs: 500000000
+122
+Installs: 1000000000
+123
+Installs: 5000000000
+124
+Installs: 10000000000
+125 126 127 128
+Price
+129 130 131 132
+Size
+133
+Minimum.Android: -1
+134
+Minimum.Android: 1
+135
+Minimum.Android: 2
+136
+Minimum.Android: 3
+137
+Minimum.Android: 4
+138
+Minimum.Android: 5
+139
+Minimum.Android: 6
+140
+Minimum.Android: 7
+141
+Minimum.Android: 8
+142
+Content.Rating: Adults only 18+
+143
+Content.Rating: Everyone
+144
+Content.Rating: Everyone 10+
+145
+Content.Rating: Mature 17+
+146
+Content.Rating: Teen
+147
+Content.Rating: Unrated
+148
+Ad.Supported: True
+149
 Ad.Supported: False
-99
-In.App.PurchasesTrue
-100
-In.App.PurchasesFalse
-101
+150
+In.App.Purchases: True
+151
+In.App.Purchases: False
+152
 Editor.Choice: True
-102
+153
 Editor.Choice: False
