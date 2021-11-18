@@ -23,7 +23,7 @@ public class Prep {
             File file = new File(dir_read);
             FileInputStream file_input_stream = new FileInputStream(file);
 
-            // refering to the .csv files
+            // referring to the .csv files
             XSSFWorkbook xss_workbook = new XSSFWorkbook(file_input_stream);
             XSSFSheet xss_sheet = xss_workbook.getSheetAt(0);
 
