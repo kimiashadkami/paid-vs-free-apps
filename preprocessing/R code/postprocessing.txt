@@ -1,0 +1,143 @@
+1
+Category: Action
+2
+Category: Adventure
+3
+Category: Arcade
+4
+Category: Art & Design
+5
+Category: Auto & Vehicles
+6
+Category: Beauty
+7
+Category: Board
+8
+Category: Books & Reference
+9
+Category: Business
+10
+Category: Card
+11
+Category: Casino
+12
+Category: Casual
+13
+Category: Comics
+14
+Category: Communication
+15
+Category: Dating
+16
+Category: Education
+17
+Category: Educational
+18
+Category: Entertainment
+19
+Category: Events
+20
+Category: Finance
+21
+Category: Food & Drink
+22
+Category: Health & Fitness
+23
+Category: House & Home
+24
+Category: Libraries & Demo
+25
+Category: Lifestyle
+26
+Category: Maps & Navigation
+27
+Category: Medical
+28
+Category: Music
+29
+Category: Music & Audio
+30
+Category: News & Magazines
+31
+Category: Parenting
+32
+Category: Personalization
+33
+Category: Photography
+34
+Category: Productivity
+35
+Category: Puzzle
+36
+Category: Racing
+37
+Category: Role Playing
+38
+Category: Shopping
+39
+Category: Simulation
+40
+Category: Social
+41
+Category: Sports
+42
+Category: Strategy
+43
+Category: Tools
+44
+Category: Travel & Local
+45
+Category: Trivia
+46
+Category: Video Players & Editors
+47
+Category: Weather
+48
+Category: Word
+49 50 51 52
+Rating.Count53
+Installs: 0
+52
+Installs: 
+75 76 77 78
+Price79 80 81 82
+Size83
+-1
+84
+2
+85
+3
+86
+4
+87
+5
+88
+6
+89
+7
+90
+8
+91
+Content.RatingAdults only 18+
+92
+Content.RatingEveryone
+93
+Content.RatingEveryone 10+
+94
+Content.RatingMature 17+
+95
+Content.RatingTeen
+96
+Content.RatingUnrated
+97
+Ad.Supported: True
+98
+Ad.Supported: False
+99
+In.App.PurchasesTrue
+100
+In.App.PurchasesFalse
+101
+Editor.Choice: True
+102
+Editor.Choice: False
