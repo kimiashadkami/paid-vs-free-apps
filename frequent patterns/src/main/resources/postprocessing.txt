@@ -117,7 +117,8 @@ Category: Weather
 98
 Category: Word
 99 100 101 102
-Rating.Count103
+Rating.Count
+103
 Installs: 0
 104
 Installs: 1

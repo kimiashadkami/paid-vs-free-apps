@@ -82,39 +82,39 @@ public class Main {
 
         // generating MIS
         MIS mis = new MIS();
-        // mis.generateMIS(free_mis, prep.getRowNum(free_xlsx));
-        // mis.generateMIS(paid_mis, prep.getRowNum(paid_xlsx));
-        // mis.generateMIS(no_outliers_free_mis, prep.getRowNum(no_outliers_free_xlsx));
-        // mis.generateMIS(no_outliers_paid_mis, prep.getRowNum(no_outliers_paid_xlsx));
-        //
-        // // different price ranges
-        // mis.generateMIS(price1_mis, prep.getRowNum(price1_xlsx));
-        // mis.generateMIS(price2_mis, prep.getRowNum(price2_xlsx));
-        // mis.generateMIS(price3_mis, prep.getRowNum(price3_xlsx));
-        // mis.generateMIS(price4_mis, prep.getRowNum(price4_xlsx));
-        //
-        // mis.generateMIS(no_outliers_price1_mis, prep.getRowNum(no_outliers_price1_xlsx));
-        // mis.generateMIS(no_outliers_price2_mis, prep.getRowNum(no_outliers_price2_xlsx));
-        // mis.generateMIS(no_outliers_price3_mis, prep.getRowNum(no_outliers_price3_xlsx));
-        // mis.generateMIS(no_outliers_price4_mis, prep.getRowNum(no_outliers_price4_xlsx));
+        mis.generateMIS(free_mis, prep.getRowNum(free_xlsx));
+        mis.generateMIS(paid_mis, prep.getRowNum(paid_xlsx));
+        mis.generateMIS(no_outliers_free_mis, prep.getRowNum(no_outliers_free_xlsx));
+        mis.generateMIS(no_outliers_paid_mis, prep.getRowNum(no_outliers_paid_xlsx));
+
+        // different price ranges
+        mis.generateMIS(price1_mis, prep.getRowNum(price1_xlsx));
+        mis.generateMIS(price2_mis, prep.getRowNum(price2_xlsx));
+        mis.generateMIS(price3_mis, prep.getRowNum(price3_xlsx));
+        mis.generateMIS(price4_mis, prep.getRowNum(price4_xlsx));
+
+        mis.generateMIS(no_outliers_price1_mis, prep.getRowNum(no_outliers_price1_xlsx));
+        mis.generateMIS(no_outliers_price2_mis, prep.getRowNum(no_outliers_price2_xlsx));
+        mis.generateMIS(no_outliers_price3_mis, prep.getRowNum(no_outliers_price3_xlsx));
+        mis.generateMIS(no_outliers_price4_mis, prep.getRowNum(no_outliers_price4_xlsx));
 
         // unified MIS
 
         // 50%
-        mis.generateUnifiedMIS(free_mis, (int) prep.getRowNum(free_xlsx) / 2);
-        mis.generateUnifiedMIS(paid_mis, (int) prep.getRowNum(paid_xlsx) / 2);
-        mis.generateUnifiedMIS(no_outliers_free_mis, (int) prep.getRowNum(no_outliers_free_xlsx) / 2);
-        mis.generateUnifiedMIS(no_outliers_paid_mis, (int) prep.getRowNum(no_outliers_paid_xlsx) / 2);
-
-        mis.generateUnifiedMIS(price1_mis, (int) prep.getRowNum(price1_xlsx) / 2);
-        mis.generateUnifiedMIS(price2_mis, (int) prep.getRowNum(price2_xlsx) / 2);
-        mis.generateUnifiedMIS(price3_mis, (int) prep.getRowNum(price3_xlsx) / 2);
-        mis.generateUnifiedMIS(price4_mis, (int) prep.getRowNum(price4_xlsx) / 2);
-
-        mis.generateUnifiedMIS(no_outliers_price1_mis, (int) prep.getRowNum(no_outliers_price1_xlsx) / 2);
-        mis.generateUnifiedMIS(no_outliers_price2_mis, (int) prep.getRowNum(no_outliers_price2_xlsx) / 2);
-        mis.generateUnifiedMIS(no_outliers_price3_mis, (int) prep.getRowNum(no_outliers_price3_xlsx) / 2);
-        mis.generateUnifiedMIS(no_outliers_price4_mis, (int) prep.getRowNum(no_outliers_price4_xlsx) / 2);
+        // mis.generateUnifiedMIS(free_mis, (int) prep.getRowNum(free_xlsx) / 2);
+        // mis.generateUnifiedMIS(paid_mis, (int) prep.getRowNum(paid_xlsx) / 2);
+        // mis.generateUnifiedMIS(no_outliers_free_mis, (int) prep.getRowNum(no_outliers_free_xlsx) / 2);
+        // mis.generateUnifiedMIS(no_outliers_paid_mis, (int) prep.getRowNum(no_outliers_paid_xlsx) / 2);
+        //
+        // mis.generateUnifiedMIS(price1_mis, (int) prep.getRowNum(price1_xlsx) / 2);
+        // mis.generateUnifiedMIS(price2_mis, (int) prep.getRowNum(price2_xlsx) / 2);
+        // mis.generateUnifiedMIS(price3_mis, (int) prep.getRowNum(price3_xlsx) / 2);
+        // mis.generateUnifiedMIS(price4_mis, (int) prep.getRowNum(price4_xlsx) / 2);
+        //
+        // mis.generateUnifiedMIS(no_outliers_price1_mis, (int) prep.getRowNum(no_outliers_price1_xlsx) / 2);
+        // mis.generateUnifiedMIS(no_outliers_price2_mis, (int) prep.getRowNum(no_outliers_price2_xlsx) / 2);
+        // mis.generateUnifiedMIS(no_outliers_price3_mis, (int) prep.getRowNum(no_outliers_price3_xlsx) / 2);
+        // mis.generateUnifiedMIS(no_outliers_price4_mis, (int) prep.getRowNum(no_outliers_price4_xlsx) / 2);
 
         // 25%
         // mis.generateUnifiedMIS(free_mis, (int) prep.getRowNum(free_xlsx) / 4);

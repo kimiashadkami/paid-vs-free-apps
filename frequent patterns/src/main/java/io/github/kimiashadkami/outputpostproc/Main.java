@@ -6,8 +6,7 @@ public class Main {
     
     public static void main(String[] args) {
 
-        String const_path = "D:/eclipse/workspace/paid-vs-free-apps/frequent patterns"
-                + "/src/main/resources";
+        String const_path = "D:/eclipse/workspace/paid-vs-free-apps/frequent patterns/src/main/resources";
                 
         String post_processing_txt = const_path + "/postprocessing.txt";
 
@@ -17,7 +16,7 @@ public class Main {
         run(post_processing_txt, free_fp, free_fp_postprocess);
 
         // paid, high-rated
-        String paid_fp = const_path + "/output/paid_high_rated_fp_.txt";
+        String paid_fp = const_path + "/output/paid_high_rated_fp.txt";
         String paid_fp_postprocess = const_path + "/postprocess/paid_high_rated_fp_postprocess.txt";
         run(post_processing_txt, paid_fp, paid_fp_postprocess);
 
