@@ -28,17 +28,17 @@ public class MainTestCFPGrowth_saveToFile {
         System.out.println("paid-high-rated");
         run(paid, paid_fp, paid_mis);
 
-        String no_outlier_free = const_path + "/no_outliers_free_high_rated_spmf.txt";
-        String no_outlier_free_fp = const_path + "/output/no_outliers_free_high_rated_fp.txt";
-        String no_outlier_free_mis = const_path + "/no_outliers_free_high_rated_MIS.txt";
-        System.out.println("no-outliers free-high-rated");
-        run(no_outlier_free, no_outlier_free_fp, no_outlier_free_mis);
-
-        String no_outlier_paid = const_path + "/no_outliers_paid_high_rated_spmf.txt";
-        String no_outlier_paid_fp = const_path + "/output/no_outliers_paid_high_rated_fp.txt";
-        String no_outlier_paid_mis = const_path + "/no_outliers_paid_high_rated_MIS.txt";
-        System.out.println("no-outliers paid-high-rated");
-        run(no_outlier_paid, no_outlier_paid_fp, no_outlier_paid_mis);
+        // String no_outlier_free = const_path + "/no_outliers_free_high_rated_spmf.txt";
+        // String no_outlier_free_fp = const_path + "/output/no_outliers_free_high_rated_fp.txt";
+        // String no_outlier_free_mis = const_path + "/no_outliers_free_high_rated_MIS.txt";
+        // System.out.println("no-outliers free-high-rated");
+        // run(no_outlier_free, no_outlier_free_fp, no_outlier_free_mis);
+        //
+        // String no_outlier_paid = const_path + "/no_outliers_paid_high_rated_spmf.txt";
+        // String no_outlier_paid_fp = const_path + "/output/no_outliers_paid_high_rated_fp.txt";
+        // String no_outlier_paid_mis = const_path + "/no_outliers_paid_high_rated_MIS.txt";
+        // System.out.println("no-outliers paid-high-rated");
+        // run(no_outlier_paid, no_outlier_paid_fp, no_outlier_paid_mis);
 
         // different price ranges
         String price1 = const_path + "/paid_high_rated_price1.txt";
@@ -65,29 +65,29 @@ public class MainTestCFPGrowth_saveToFile {
         System.out.println("price4");
         run(price4, price4_fp, price4_mis);
 
-        String no_outliers_price1 = const_path + "/no_outliers_paid_high_rated_price1.txt";
-        String no_outliers_price1_fp = const_path + "/output/no_outliers_price1_fp.txt";
-        String no_outliers_price1_mis = const_path + "/no_outliers_price1_MIS.txt";
-        System.out.println("no outliers price1");
-        run(no_outliers_price1, no_outliers_price1_fp, no_outliers_price1_mis);
-
-        String no_outliers_price2 = const_path + "/no_outliers_paid_high_rated_price2.txt";
-        String no_outliers_price2_fp = const_path + "/output/no_outliers_price2_fp.txt";
-        String no_outliers_price2_mis = const_path + "/no_outliers_price2_MIS.txt";
-        System.out.println("no outliers price2");
-        run(no_outliers_price2, no_outliers_price2_fp, no_outliers_price2_mis);
-
-        String no_outliers_price3 = const_path + "/no_outliers_paid_high_rated_price3.txt";
-        String no_outliers_price3_fp = const_path + "/output/no_outliers_price3_fp.txt";
-        String no_outliers_price3_mis = const_path + "/no_outliers_price3_MIS.txt";
-        System.out.println("no outliers price3");
-        run(no_outliers_price3, no_outliers_price3_fp, no_outliers_price3_mis);
-
-        String no_outliers_price4 = const_path + "/no_outliers_paid_high_rated_price4.txt";
-        String no_outliers_price4_fp = const_path + "/output/no_outliers_price4_fp.txt";
-        String no_outliers_price4_mis = const_path + "/no_outliers_price4_MIS.txt";
-        System.out.println("no outliers price4");
-        run(no_outliers_price4, no_outliers_price4_fp, no_outliers_price4_mis);
+        // String no_outliers_price1 = const_path + "/no_outliers_paid_high_rated_price1.txt";
+        // String no_outliers_price1_fp = const_path + "/output/no_outliers_price1_fp.txt";
+        // String no_outliers_price1_mis = const_path + "/no_outliers_price1_MIS.txt";
+        // System.out.println("no outliers price1");
+        // run(no_outliers_price1, no_outliers_price1_fp, no_outliers_price1_mis);
+        //
+        // String no_outliers_price2 = const_path + "/no_outliers_paid_high_rated_price2.txt";
+        // String no_outliers_price2_fp = const_path + "/output/no_outliers_price2_fp.txt";
+        // String no_outliers_price2_mis = const_path + "/no_outliers_price2_MIS.txt";
+        // System.out.println("no outliers price2");
+        // run(no_outliers_price2, no_outliers_price2_fp, no_outliers_price2_mis);
+        //
+        // String no_outliers_price3 = const_path + "/no_outliers_paid_high_rated_price3.txt";
+        // String no_outliers_price3_fp = const_path + "/output/no_outliers_price3_fp.txt";
+        // String no_outliers_price3_mis = const_path + "/no_outliers_price3_MIS.txt";
+        // System.out.println("no outliers price3");
+        // run(no_outliers_price3, no_outliers_price3_fp, no_outliers_price3_mis);
+        //
+        // String no_outliers_price4 = const_path + "/no_outliers_paid_high_rated_price4.txt";
+        // String no_outliers_price4_fp = const_path + "/output/no_outliers_price4_fp.txt";
+        // String no_outliers_price4_mis = const_path + "/no_outliers_price4_MIS.txt";
+        // System.out.println("no outliers price4");
+        // run(no_outliers_price4, no_outliers_price4_fp, no_outliers_price4_mis);
     }
 
     public static void run(String database, String output, String MISfile) throws FileNotFoundException, IOException {

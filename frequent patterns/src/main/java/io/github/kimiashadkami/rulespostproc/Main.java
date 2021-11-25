@@ -20,16 +20,16 @@ public class Main {
         run(post_processing_txt, paid_rules, paid_rules_postprocess);
 
         // no outliers, free, high-rated
-        String no_outliers_free_rules = const_path + "/output/no_outliers_free_high_rated_rules.txt";
-        String no_outliers_free_rules_postprocess = const_path
-                + "/postprocess/no_outliers_free_high_rated_rules_postprocess.txt";
-        run(post_processing_txt, no_outliers_free_rules, no_outliers_free_rules_postprocess);
+        // String no_outliers_free_rules = const_path + "/output/no_outliers_free_high_rated_rules.txt";
+        // String no_outliers_free_rules_postprocess = const_path
+        // + "/postprocess/no_outliers_free_high_rated_rules_postprocess.txt";
+        // run(post_processing_txt, no_outliers_free_rules, no_outliers_free_rules_postprocess);
 
         // no outliers, paid, high-rated
-        String no_outliers_paid_rules = const_path + "/output/no_outliers_paid_high_rated_rules.txt";
-        String no_outliers_paid_rules_postprocess = const_path
-                + "/postprocess/no_outliers_paid_high_rated_rules_postprocess.txt";
-        run(post_processing_txt, no_outliers_paid_rules, no_outliers_paid_rules_postprocess);
+        // String no_outliers_paid_rules = const_path + "/output/no_outliers_paid_high_rated_rules.txt";
+        // String no_outliers_paid_rules_postprocess = const_path
+        // + "/postprocess/no_outliers_paid_high_rated_rules_postprocess.txt";
+        // run(post_processing_txt, no_outliers_paid_rules, no_outliers_paid_rules_postprocess);
 
         // different price ranges
         String price1_rules = const_path + "/output/price1_rules.txt";
@@ -48,25 +48,25 @@ public class Main {
         String price4_rules_postprocess = const_path + "/postprocess/price4_rules_postprocess.txt";
         run(post_processing_txt, price4_rules, price4_rules_postprocess);
 
-        String no_outliers_price1_rules = const_path + "/output/no_outliers_price1_rules.txt";
-        String no_outliers_price1_rules_postprocess = const_path
-                + "/postprocess/no_outliers_price1_rules_postprocess.txt";
-        run(post_processing_txt, no_outliers_price1_rules, no_outliers_price1_rules_postprocess);
-
-        String no_outliers_price2_rules = const_path + "/output/no_outliers_price2_rules.txt";
-        String no_outliers_price2_rules_postprocess = const_path
-                + "/postprocess/no_outliers_price2_rules_postprocess.txt";
-        run(post_processing_txt, no_outliers_price2_rules, no_outliers_price2_rules_postprocess);
-
-        String no_outliers_price3_rules = const_path + "/output/no_outliers_price3_rules.txt";
-        String no_outliers_price3_rules_postprocess = const_path
-                + "/postprocess/no_outliers_price3_rules_postprocess.txt";
-        run(post_processing_txt, no_outliers_price3_rules, no_outliers_price3_rules_postprocess);
-
-        String no_outliers_price4_rules = const_path + "/output/no_outliers_price4_rules.txt";
-        String no_outliers_price4_rules_postprocess = const_path
-                + "/postprocess/no_outliers_price4_rules_postprocess.txt";
-        run(post_processing_txt, no_outliers_price4_rules, no_outliers_price4_rules_postprocess);
+        // String no_outliers_price1_rules = const_path + "/output/no_outliers_price1_rules.txt";
+        // String no_outliers_price1_rules_postprocess = const_path
+        // + "/postprocess/no_outliers_price1_rules_postprocess.txt";
+        // run(post_processing_txt, no_outliers_price1_rules, no_outliers_price1_rules_postprocess);
+        //
+        // String no_outliers_price2_rules = const_path + "/output/no_outliers_price2_rules.txt";
+        // String no_outliers_price2_rules_postprocess = const_path
+        // + "/postprocess/no_outliers_price2_rules_postprocess.txt";
+        // run(post_processing_txt, no_outliers_price2_rules, no_outliers_price2_rules_postprocess);
+        //
+        // String no_outliers_price3_rules = const_path + "/output/no_outliers_price3_rules.txt";
+        // String no_outliers_price3_rules_postprocess = const_path
+        // + "/postprocess/no_outliers_price3_rules_postprocess.txt";
+        // run(post_processing_txt, no_outliers_price3_rules, no_outliers_price3_rules_postprocess);
+        //
+        // String no_outliers_price4_rules = const_path + "/output/no_outliers_price4_rules.txt";
+        // String no_outliers_price4_rules_postprocess = const_path
+        // + "/postprocess/no_outliers_price4_rules_postprocess.txt";
+        // run(post_processing_txt, no_outliers_price4_rules, no_outliers_price4_rules_postprocess);
     }
 
     public static void run(String post_processing_txt, String frequent_patterns, String output) {
