@@ -581,8 +581,6 @@ sink("postprocessing.txt")
 cat(postprocessing_info)
 sink()
 
-library("xlsx")
-
 #free
 write.csv(free_high_rated, file="free_high_rated2.csv", row.names = FALSE)
 drops1 <- c("App.Id", "App.Name", "Free", "Developer.Id", "Developer.Website", "Developer.Email", "Privacy.Policy")
