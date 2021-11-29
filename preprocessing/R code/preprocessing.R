@@ -135,7 +135,7 @@ print(quantile_paid_ratingcount)
 cat("\n")
 sink()
 
-postprocessing_info <- paste0(postprocessing_info, universal_k+1, " ", universal_k+2, " ", universal_k+3, " ", universal_k+4, "\n", "Rating.Count")
+postprocessing_info <- paste0(postprocessing_info, universal_k+1, " ", universal_k+2, " ", universal_k+3, " ", universal_k+4, "\n", "Rating.Count", "\n")
 
 universal_k <- universal_k + 4
 

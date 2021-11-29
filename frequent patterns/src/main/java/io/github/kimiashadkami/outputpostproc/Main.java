@@ -20,18 +20,6 @@ public class Main {
         String paid_fp_postprocess = const_path + "/postprocess/paid_high_rated_fp_postprocess.txt";
         run(post_processing_txt, paid_fp, paid_fp_postprocess);
 
-        // no outliers, free, high-rated
-        // String no_outliers_free_fp = const_path + "/output/no_outliers_free_high_rated_fp.txt";
-        // String no_outliers_free_fp_postprocess = const_path
-        // + "/postprocess/no_outliers_free_high_rated_postprocess.txt";
-        // run(post_processing_txt, no_outliers_free_fp, no_outliers_free_fp_postprocess);
-
-        // no outliers, paid, high-rated
-        // String no_outliers_paid_fp = const_path + "/output/no_outliers_paid_high_rated_fp.txt";
-        // String no_outliers_paid_fp_postprocess = const_path
-        // + "/postprocess/no_outliers_paid_high_rated_fp_postprocess.txt";
-        // run(post_processing_txt, no_outliers_paid_fp, no_outliers_paid_fp_postprocess);
-        
         //different price ranges
         String price1_fp = const_path + "/output/price1_fp.txt";
         String price1_fp_postprocess = const_path + "/postprocess/price1_fp.txt";
@@ -48,23 +36,6 @@ public class Main {
         String price4_fp = const_path + "/output/price4_fp.txt";
         String price4_fp_postprocess = const_path + "/postprocess/price4_fp.txt";
         run(post_processing_txt, price4_fp, price4_fp_postprocess);
-
-        // no outliers, different price ranges
-        // String no_outliers_price1_fp = const_path + "/output/no_outliers_price1_fp.txt";
-        // String no_outliers_price1_fp_postprocess = const_path + "/postprocess/no_outliers_price1_fp.txt";
-        // run(post_processing_txt, no_outliers_price1_fp, no_outliers_price1_fp_postprocess);
-        //
-        // String no_outliers_price2_fp = const_path + "/output/no_outliers_price2_fp.txt";
-        // String no_outliers_price2_fp_postprocess = const_path + "/postprocess/no_outliers_price2_fp.txt";
-        // run(post_processing_txt, no_outliers_price2_fp, no_outliers_price2_fp_postprocess);
-        //
-        // String no_outliers_price3_fp = const_path + "/output/no_outliers_price3_fp.txt";
-        // String no_outliers_price3_fp_postprocess = const_path + "/postprocess/no_outliers_price3_fp.txt";
-        // run(post_processing_txt, no_outliers_price3_fp, no_outliers_price3_fp_postprocess);
-        //
-        // String no_outliers_price4_fp = const_path + "/output/no_outliers_price4_fp.txt";
-        // String no_outliers_price4_fp_postprocess = const_path + "/postprocess/no_outliers_price4_fp.txt";
-        // run(post_processing_txt, no_outliers_price4_fp, no_outliers_price4_fp_postprocess);
     }
 
     public static void run(String post_processing_txt, String frequent_patterns, String output) {
