@@ -30,46 +30,11 @@ paid_high_rated <- clean_dataset[(clean_dataset$Free == "False" ) & (clean_datas
 drops <- c("Minimum.Installs", "Maximum.Installs", "Free", "Scraped.Time")
 paid_high_rated <- paid_high_rated[ , !(names(paid_high_rated) %in% drops) ]
 
-#outliers
-
-###rating: 0
-free_outliers_rating <- boxplot.stats(free_high_rated$Rating)$out
-length(free_outliers_rating)
-
-paid_outliers_rating <- boxplot.stats(paid_high_rated$Rating)$out
-length(paid_outliers_rating)
-
-###rating count
-free_outliers_ratingcount <- boxplot.stats(free_high_rated$Rating.Count)$out
-length(free_outliers_ratingcount)
-
-paid_outliers_ratingcount <- boxplot.stats(paid_high_rated$Rating.Count)$out
-length(paid_outliers_ratingcount)
-
-###price
-outliers_price <- boxplot.stats(paid_high_rated$Price)$out
-length(outliers_price)
-
-#dataset with no outliers
-no_outliers_free_high_rated <- free_high_rated[!(free_high_rated$Rating %in% c(free_outliers_rating) | 
-                                                  free_high_rated$Rating.Count %in% c(free_outliers_ratingcount)), ]
-nrow(free_high_rated)
-nrow(no_outliers_free_high_rated)
-
-no_outliers_paid_high_rated <- paid_high_rated[!(paid_high_rated$Rating %in% c(paid_outliers_rating) | 
-                                                  paid_high_rated$Rating.Count %in% c(paid_outliers_ratingcount)), ]
-nrow(paid_high_rated)
-nrow(no_outliers_paid_high_rated)
-
 #######################saving datasets#######################
 
 write.csv(free_high_rated, file="free_high_rated.csv", row.names = FALSE)
 
 write.csv(paid_high_rated, file="paid_high_rated.csv", row.names = FALSE)
-
-write.csv(no_outliers_free_high_rated, file="no_outliers_free_high_rated.csv", row.names = FALSE)
-
-write.csv(no_outliers_paid_high_rated, file="no_outliers_paid_high_rated.csv", row.names = FALSE)
 
 #######################discretization for SPMF#######################
 postprocessing_info <- ""
@@ -81,16 +46,13 @@ preprocessing_rating <- function(dt_rating){
 
 free_high_rated$Rating <- preprocessing_rating(free_high_rated)
 paid_high_rated$Rating <- preprocessing_rating(paid_high_rated)
-no_outliers_free_high_rated$Rating <- preprocessing_rating(no_outliers_free_high_rated)
-no_outliers_paid_high_rated$Rating <- preprocessing_rating(no_outliers_paid_high_rated)
-
 
 for(i in 40:50){
   postprocessing_info <- paste0(postprocessing_info, i, "\n", "Rating: ", i/10, "\n")
 }
 
 
-universal_k <- 50
+universal_k = 50
 
 #category, factor to numeric values
 require(plyr)
@@ -113,13 +75,6 @@ free_high_rated$Category <- preprocessing_category(free_high_rated, universal_k)
 
 #paid
 paid_high_rated$Category <- preprocessing_category(paid_high_rated, universal_k)
-
-#no outlier free
-no_outliers_free_high_rated$Category <- preprocessing_category(no_outliers_free_high_rated, universal_k)
-
-#no outlier paid
-no_outliers_paid_high_rated$Category <- preprocessing_category(no_outliers_paid_high_rated, universal_k)
-
 
 categories <- c("Action", "Adventure", "Arcade", "Art & Design", "Auto & Vehicles", "Beauty", "Board", "Books & Reference", "Business",
                 "Card", "Casino", "Casual", "Comics", "Communication", "Dating", "Education", "Educational", "Entertainment", "Events", 
@@ -168,14 +123,6 @@ free_high_rated$Rating.Count = preprocessing_ratingcount(free_high_rated, univer
 quantile_paid_ratingcount <- quantile(paid_high_rated$Rating.Count)
 paid_high_rated$Rating.Count = preprocessing_ratingcount(paid_high_rated, universal_k)
 
-#no outlier free
-quantile_no_outlier_free_ratingcount <- quantile(no_outliers_free_high_rated$Rating.Count)
-no_outliers_free_high_rated$Rating.Count = preprocessing_ratingcount(no_outliers_free_high_rated, universal_k)
-
-#no outlier paid
-quantile_no_outlier_paid_ratingcount <- quantile(no_outliers_paid_high_rated$Rating.Count)
-no_outliers_paid_high_rated$Rating.Count = preprocessing_ratingcount(no_outliers_paid_high_rated, universal_k)
-
 #writing the quantiles
 sink("ratingcount_quantiles.txt")
 cat("free high-rated")
@@ -185,14 +132,6 @@ cat("\n")
 cat("paid high_rated")
 cat("\n")
 print(quantile_paid_ratingcount)
-cat("\n")
-cat("no outlier free high-rated")
-cat("\n")
-print(quantile_no_outlier_free_ratingcount)
-cat("\n")
-cat("no outlier paid high-rated")
-cat("\n")
-print(quantile_no_outlier_paid_ratingcount)
 cat("\n")
 sink()
 
@@ -224,14 +163,6 @@ free_high_rated <- free_high_rated[(free_high_rated$Installs > universal_k+6 ), 
 #paid
 paid_high_rated$Installs <- preprocessing_installs(paid_high_rated, universal_k)
 paid_high_rated <- paid_high_rated[(paid_high_rated$Installs > universal_k+6 ), ]
-
-#no outlier free
-no_outliers_free_high_rated$Installs <- preprocessing_installs(no_outliers_free_high_rated, universal_k)
-no_outliers_free_high_rated <- no_outliers_free_high_rated[(no_outliers_free_high_rated$Installs > universal_k+6 ), ]
-
-#no outlier paid
-no_outliers_paid_high_rated$Installs <- preprocessing_installs(no_outliers_paid_high_rated, universal_k)
-no_outliers_paid_high_rated <- no_outliers_paid_high_rated[(no_outliers_paid_high_rated$Installs > universal_k+6 ), ]
 
 install_levels <- c("0", "1", "5", "10",
                     "50", "100", "500", "1000",
@@ -279,10 +210,6 @@ preprocessing_price <- function(dt_price, k4){
 quantile_paid_price <- quantile(paid_high_rated$Price)
 paid_high_rated$Price <- preprocessing_price(paid_high_rated, universal_k)
 
-#no outlier
-quantile_no_outlier_paid_price <- quantile(no_outliers_paid_high_rated$Price)
-no_outliers_paid_high_rated$Price <- preprocessing_price(no_outliers_paid_high_rated, universal_k)
-
 price1 <- universal_k+1
 price2 <- universal_k+2
 price3 <- universal_k+3
@@ -293,10 +220,6 @@ sink("price_quantiles.txt")
 cat("paid high_rated")
 cat("\n")
 print(quantile_paid_price)
-cat("\n")
-cat("no outlier paid high-rated")
-cat("\n")
-print(quantile_no_outlier_paid_price)
 cat("\n")
 sink()
 
@@ -372,17 +295,6 @@ cat("\n")
 paid_high_rated$Size <- preprocessing_size(paid_high_rated, universal_k)
 cat("\n")
 
-#no outlier free
-cat("no outliers free high-rated")
-cat("\n")
-no_outliers_free_high_rated$Size <- preprocessing_size(no_outliers_free_high_rated, universal_k)
-cat("\n")
-
-#no outlier paid
-cat("no outliers paid high-rated")
-cat("\n")
-no_outliers_paid_high_rated$Size <- preprocessing_size(no_outliers_paid_high_rated, universal_k)
-
 sink();
 
 postprocessing_info <- paste0(postprocessing_info, universal_k+1, " ", universal_k+2, " ", universal_k+3, " ", universal_k+4, "\n", "Size", "\n")
@@ -412,12 +324,6 @@ free_high_rated$Minimum.Android <- preprocessing_minandroid(free_high_rated, uni
 #paid
 paid_high_rated$Minimum.Android <- preprocessing_minandroid(paid_high_rated, universal_k)
 
-#no outliers free
-no_outliers_free_high_rated$Minimum.Android <- preprocessing_minandroid(no_outliers_free_high_rated, universal_k)
-
-#no outlier paid
-no_outliers_paid_high_rated$Minimum.Android <- preprocessing_minandroid(no_outliers_paid_high_rated, universal_k)
-
 minandroid_levels <- c("-1", "1", "2", "3", "4", "5", "6", "7", "8")
 
 for(i in 1:length(minandroid_levels)){
@@ -443,12 +349,6 @@ free_high_rated$Released <- preprocessing_release(free_high_rated)
 #paid
 paid_high_rated$Released <- preprocessing_release(paid_high_rated)
 
-#no outliers free
-no_outliers_free_high_rated$Released <- preprocessing_release(no_outliers_free_high_rated)
-
-#no outliers paid
-no_outliers_paid_high_rated$Released <- preprocessing_release(no_outliers_paid_high_rated)
-
 #last.update, date to years
 preprocessing_lastupdate <- function(dt_lastupdate){
   lastupdate <- which(colnames(dt_lastupdate) == "Last.Updated")
@@ -467,12 +367,6 @@ free_high_rated$Last.Updated <- preprocessing_lastupdate(free_high_rated)
 #paid
 paid_high_rated$Last.Updated <- preprocessing_lastupdate(paid_high_rated)
 
-#no outliers free
-no_outliers_free_high_rated$Last.Updated <- preprocessing_lastupdate(no_outliers_free_high_rated)
-
-#no outliers paid
-no_outliers_paid_high_rated$Last.Updated <- preprocessing_lastupdate(no_outliers_paid_high_rated)
-
 #content.rating, factor levels to numeric values
 #"Adults only 18+" "Everyone"        "Everyone 10+"    "Mature 17+"      "Teen"            "Unrated"
 preprocessing_contentrating <- function(dt_contentrating, k7){
@@ -487,12 +381,6 @@ free_high_rated$Content.Rating <- preprocessing_contentrating(free_high_rated, u
 
 #paid
 paid_high_rated$Content.Rating <- preprocessing_contentrating(paid_high_rated, universal_k)
-
-#no outliers free
-no_outliers_free_high_rated$Content.Rating <- preprocessing_contentrating(no_outliers_free_high_rated, universal_k)
-
-#no outliers paid
-no_outliers_paid_high_rated$Content.Rating <- preprocessing_contentrating(no_outliers_paid_high_rated, universal_k)
 
 contentrating_levels <- c("Adults only 18+", "Everyone", "Everyone 10+", "Mature 17+", "Teen", "Unrated")
 for(i in 1:length(contentrating_levels)){
@@ -513,12 +401,6 @@ free_high_rated$Ad.Supported <- preprocessing_ad(free_high_rated, universal_k)
 #paid
 paid_high_rated$Ad.Supported <- preprocessing_ad(paid_high_rated, universal_k)
 
-#no outliers free
-no_outliers_free_high_rated$Ad.Supported <- preprocessing_ad(no_outliers_free_high_rated, universal_k)
-
-#no outliers paid
-no_outliers_paid_high_rated$Ad.Supported <- preprocessing_ad(no_outliers_paid_high_rated, universal_k)
-
 adsupported_levels <- c("True", "False")
 for(i in 1:length(adsupported_levels)){
   postprocessing_info <- paste0(postprocessing_info, universal_k+i, "\n", "Ad.Supported: ", adsupported_levels[i], "\n")
@@ -538,12 +420,6 @@ free_high_rated$In.App.Purchases <- preprocessing_inapp(free_high_rated, univers
 #paid
 paid_high_rated$In.App.Purchases <- preprocessing_inapp(paid_high_rated, universal_k)
 
-#no outliers free
-no_outliers_free_high_rated$In.App.Purchases <- preprocessing_inapp(no_outliers_free_high_rated, universal_k)
-
-#no outliers paid
-no_outliers_paid_high_rated$In.App.Purchases <- preprocessing_inapp(no_outliers_paid_high_rated, universal_k)
-
 inapp_levels <- c("True", "False")
 for(i in 1:length(inapp_levels)){
   postprocessing_info <- paste0(postprocessing_info, universal_k+i, "\n", "In.App.Purchases: ", inapp_levels[i], "\n")
@@ -562,12 +438,6 @@ free_high_rated$Editors.Choice <- preprocessing_editor(free_high_rated, universa
 
 #paid
 paid_high_rated$Editors.Choice <- preprocessing_editor(paid_high_rated, universal_k)
-
-#no outliers free
-no_outliers_free_high_rated$Editors.Choice <- preprocessing_editor(no_outliers_free_high_rated, universal_k)
-
-#no outliers paid
-no_outliers_paid_high_rated$Editors.Choice <- preprocessing_editor(no_outliers_paid_high_rated, universal_k)
 
 editorchoice_levels <- c("True", "False")
 for(i in 1:length(editorchoice_levels)){
@@ -605,30 +475,5 @@ write.csv(paid_high_rated_price3, file="paid_high_rated_price3.csv", row.names =
 
 paid_high_rated_price4 <- paid_high_rated[paid_high_rated$Price == price4, ]
 write.csv(paid_high_rated_price4, file="paid_high_rated_price4.csv", row.names = FALSE)
-
-#no outliers free
-write.csv(no_outliers_free_high_rated, file="no_outliers_free_high_rated2.csv", row.names = FALSE)
-drops3 <- c("App.Id", "App.Name", "Free", "Developer.Id", "Developer.Website", "Developer.Email", "Privacy.Policy")
-no_outliers_free_high_rated <- no_outliers_free_high_rated[ , !(names(no_outliers_free_high_rated) %in% drops3) ]
-write.csv(no_outliers_free_high_rated, file="no_outliers_free_high_rated_spmf.csv", row.names = FALSE)
-
-#no outliers paid
-write.csv(no_outliers_paid_high_rated, file="no_outliers_paid_high_rated2.csv", row.names = FALSE)
-drops4 <- c("App.Id", "App.Name", "Currency", "Developer.Id", "Developer.Website", "Developer.Email", "Privacy.Policy")
-no_outliers_paid_high_rated <- no_outliers_paid_high_rated[ , !(names(no_outliers_paid_high_rated) %in% drops4) ]
-write.csv(no_outliers_paid_high_rated, file="no_outliers_paid_high_rated_spmf.csv", row.names = FALSE)
-
-#different price ranges
-no_outliers_paid_high_rated_price1 <- no_outliers_paid_high_rated[no_outliers_paid_high_rated$Price == price1, ]
-write.csv(no_outliers_paid_high_rated_price1, file="no_outliers_paid_high_rated_price1.csv", row.names = FALSE)
-
-no_outliers_paid_high_rated_price2 <- no_outliers_paid_high_rated[no_outliers_paid_high_rated$Price == price2, ]
-write.csv(no_outliers_paid_high_rated_price2, file="no_outliers_paid_high_rated_price2.csv", row.names = FALSE)
-
-no_outliers_paid_high_rated_price3 <- no_outliers_paid_high_rated[no_outliers_paid_high_rated$Price == price3, ]
-write.csv(no_outliers_paid_high_rated_price3, file="no_outliers_paid_high_rated_price3.csv", row.names = FALSE)
-
-no_outliers_paid_high_rated_price4 <- no_outliers_paid_high_rated[no_outliers_paid_high_rated$Price == price4, ]
-write.csv(no_outliers_paid_high_rated_price4, file="no_outliers_paid_high_rated_price4.csv", row.names = FALSE)
 
 #it needs to be the same type otherwise when it is returning the column it will be null, if e.g. it is returning a factor for a numeric :)
