@@ -1,4 +1,4 @@
-function visualize(data){
+function visualize(data, str){
     //calculating the quanity for each category
     const temp_data = new Map();
     for(let i = 51; i < 99; i++){
@@ -51,14 +51,13 @@ function visualize(data){
         "name": "Other",
         "value": parseInt(subset_sum*100/sum)
     });
-    console.log(vis_data_top);
 
     //visualizing
 
     // Copyright 2021 Observable, Inc.
     // Released under the ISC license.
     // https://observablehq.com/@d3/pie-chart
-    function PieChart(data, piechart, {
+    function PieChart(data, strname, {
         name = ([x]) => x,  // given d in data, returns the (ordinal) label
         value = ([, y]) => y, // given d in data, returns the (quantitative) value
         title, // given d in data, returns the title text
@@ -105,13 +104,16 @@ function visualize(data){
         const arcs = d3.pie().padAngle(padAngle).sort(null).value(i => V[i])(I);
         const arc = d3.arc().innerRadius(innerRadius).outerRadius(outerRadius);
         const arcLabel = d3.arc().innerRadius(labelRadius).outerRadius(labelRadius);
+
+        const container = d3.select("#"+strname)
         
-        const svg = d3.select("#"+piechart)
+        const svg = d3.select("#svg-"+strname)
+            .attr("id", strname)
             .attr("width", width)
             .attr("height", height)
             .attr("viewBox", [-width / 2, -height / 2, width, height])
             .attr("style", "max-width: 100%; height: auto; height: intrinsic;");
-    
+
         svg.append("g")
             .attr("stroke", stroke)
             .attr("stroke-width", strokeWidth)
@@ -142,15 +144,38 @@ function visualize(data){
             .attr("y", (_, i) => `${i * 1.1}em`)
             .attr("font-weight", (_, i) => i ? null : "bold")
             .text(d => d + "%");
-    
+
         return Object.assign(svg.node(), {scales: {color}});
       }
 
-    PieChart(vis_data, "my-svg", {
+    //generate cards
+    const container = d3.select(".my-row")
+    container.append("div")
+        .attr("class", "card my-card")
+        .attr("id", "card-"+str)
+        .append("div")
+        .attr("class", "card-body")
+        .append("h5")
+        .attr("class", "card-title")
+        .text(str)
+    
+    container
+        .select("#card-"+str)
+        .select(".card-body")
+        .append("svg")
+        .attr("id", "svg-"+str)
+
+    container.select("#card-"+str)
+    .select(".card-body")
+    .append("a")
+    .attr("href", "#")
+    .attr("class", "btn btn-primary")
+    .text("more")
+
+    PieChart(vis_data_top, str, {
         name: d => d.name,
         value: d => d.value,
         width: 700,
         height: 700
     })
-       
 }

@@ -37,10 +37,10 @@ free_size132 <- free_data[(free_data$Size == 132), ]
 write.csv(free_size132, file="free_size132.csv", row.names = FALSE)
 
 #last update
-free_lastupdate2020 <- free_data[(free_data$Last.Updated == 2020), ]
+free_lastupdate2020 <- free_data[(free_data$Last.Updated == 92020), ]
 write.csv(free_lastupdate2020, file="free_lastupdate2020.csv", row.names = FALSE)
 
-free_lastupdate2021 <- free_data[(free_data$Last.Updated == 2021), ]
+free_lastupdate2021 <- free_data[(free_data$Last.Updated == 92021), ]
 write.csv(free_lastupdate2021, file="free_lastupdate2021.csv", row.names = FALSE)
 
 #in-app purchases + ad support + min android + content rating
@@ -132,10 +132,10 @@ price2_ratingcount102 <- price2_data[(price2_data$Rating.Count == 102), ]
 write.csv(price2_ratingcount102, file="price2_ratingcount102.csv", row.names = FALSE)
 
 #last update
-price2_lastupdate2020 <- price2_data[(price2_data$Last.Updated == 2020), ]
+price2_lastupdate2020 <- price2_data[(price2_data$Last.Updated == 92020), ]
 write.csv(price2_lastupdate2020, file="price2_lastupdate2020.csv", row.names = FALSE)
 
-price2_lastupdate2021 <- price2_data[(price2_data$Last.Updated == 2021), ]
+price2_lastupdate2021 <- price2_data[(price2_data$Last.Updated == 92021), ]
 write.csv(price2_lastupdate2021, file="price2_lastupdate2021.csv", row.names = FALSE)
 
 #size
@@ -152,10 +152,10 @@ write.csv(price2_contentrating_minandroid, file="price2_contentrating_minandroid
 
 ###################price 3, high-rated, frequent patterns###################
 #last update
-price3_lastupdate2020 <- price3_data[(price3_data$Last.Updated == 2020), ]
+price3_lastupdate2020 <- price3_data[(price3_data$Last.Updated == 92020), ]
 write.csv(price3_lastupdate2020, file="price3_lastupdate2020.csv", row.names = FALSE)
 
-price3_lastupdate2021 <- price3_data[(price3_data$Last.Updated == 2021), ]
+price3_lastupdate2021 <- price3_data[(price3_data$Last.Updated == 92021), ]
 write.csv(price3_lastupdate2021, file="price3_lastupdate2021.csv", row.names = FALSE)
 
 #size

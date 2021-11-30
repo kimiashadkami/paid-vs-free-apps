@@ -23,32 +23,26 @@
         <!--end nav-->
         <!--main body-->
         <div class="my-main-container container-fluid">
-            <script type="text/javascript">
-                d3.csv("../../data/free_installs110.csv")
-                  .then(function(data) {
-                    console.log("success in getting data");
-                    visualize(data);
-                  })
-                  .catch(function(error) {
-                    console.log(error);
-                  });
-                  d3.csv("../../data/price1_installs110.csv")
-                  .then(function(data) {
-                    console.log("success in getting data");
-                    visualize(data);
-                  })
-                  .catch(function(error) {
-                    console.log(error);
-                  });
+            <div class="row my-row">
+
+            </div>
+              <script type="text/javascript">
+                var files = ["free_installs110",
+                            "free_lastupdate2020",
+                            "free_lastupdate2021",
+                            "free_longpattern",
+                            "free_ratingcount100"
+                        ];
+                for(let f = 0; f < files.length; f++){
+                    d3.csv("../../data/"+ files[f] + ".csv")
+                    .then(function(data) {
+                        visualize(data, files[f]);
+                    })
+                    .catch(function(error) {
+                        console.log(error);
+                    });
+                }
               </script>
-              <div class="card my-card">
-                <div class="card-body">
-                  <h5 class="card-title">Pie Chart 1</h5>
-                  <svg id="my-svg" class = "col-xl-6 col-lg-6 col-md-6 col-sm col-xs vis-col"></svg>
-                  <a href="#" class="btn btn-primary">more</a>
-                </div>
-              </div>
-              </svg>
         </div>
         <!--end main body-->
         <!--footer-->

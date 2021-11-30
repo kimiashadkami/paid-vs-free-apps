@@ -4,5 +4,7 @@
 
 .my-card{
     margin-top: 2vh;
-    width: 20rem;
+    margin-bottom: 2vh;
+    margin-left: 2vw;
+    width: 21rem;
 }
