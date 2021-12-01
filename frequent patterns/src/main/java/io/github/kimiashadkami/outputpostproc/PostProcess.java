@@ -40,7 +40,7 @@ public class PostProcess {
         return hashmap;
     }
 
-    public void postprocess(String dir_read, HashMap<String, String> hashmap, String dir_write) {
+    public void postprocess(String dir_read, HashMap<String, String> hashmap, String dir_write, int total) {
 
         File file = new File(dir_read);
 
@@ -83,6 +83,23 @@ public class PostProcess {
                 }
 
                 buffered_writer.append(str.substring(hashtag_index));
+
+                // the number
+                int charat = hashtag_index + 6;
+                System.out.println("h " + hashtag_index);
+                int end = str.length();
+                end--;
+                System.out.println("end " + end);
+                String str_num = str.substring(charat);
+                System.out.println("str_num " + str_num);
+                System.out.println("str " + str);
+                int num = Integer.parseInt(str_num);
+
+                // write the percentage
+                int percentage = num * 100 / total;
+                String str_percentage = String.valueOf(percentage);
+                buffered_writer.append(" [" + str_percentage + "%]");
+
                 buffered_writer.append("\n");
             }
             scanner.close();
