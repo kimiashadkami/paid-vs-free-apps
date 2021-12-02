@@ -24,15 +24,9 @@
         <!--main body-->
         <div class="my-main-container container-fluid">
             <div class="row my-row">
-
             </div>
               <script type="text/javascript">
-                var files = ["free_installs110",
-                            "free_lastupdate2020",
-                            "free_lastupdate2021",
-                            "free_longpattern",
-                            "free_ratingcount100"
-                        ];
+                var files = ["free_installs110", "free_installs1100"];
                 for(let f = 0; f < files.length; f++){
                     d3.csv("../../data/"+ files[f] + ".csv")
                     .then(function(data) {
