@@ -50,7 +50,7 @@
                 for(let f = 0; f < files.length; f++){
                     d3.csv("../../data/patterns data points/"+ files[f] + ".csv")
                     .then(function(data) {
-                        visualize(data, files[f]);
+                        visualize_category(data, files[f], 1);
                     })
                     .catch(function(error) {
                         console.log(error);
