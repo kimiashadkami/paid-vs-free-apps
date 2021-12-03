@@ -26,7 +26,7 @@
             <div class="row my-row">
             </div>
               <script type="text/javascript">
-                var files = ["free_high_rated_apps_ad_supported_TRUE",
+              var files = ["free_high_rated_apps_ad_supported_TRUE",
                             "free_high_rated_apps_ad_supported_TRUE_in-app_purchases_FALSE",
                             "free_high_rated_apps_ad_supported_FALSE_in-app_purchases_FALSE",
                             "free_high_rated_apps_ad_supported_TRUE_minimum_android_4",
@@ -51,6 +51,16 @@
                     d3.csv("../../data/patterns data points/"+ files[f] + ".csv")
                     .then(function(data) {
                         visualize_category(data, files[f], 1);
+                    })
+                    .catch(function(error) {
+                        console.log(error);
+                    });
+                }
+                var patterns_files = ["Last_Update_2021", "Minimum_Android_4"]
+                for(let p = 0; p < patterns_files.length; p++){
+                    d3.csv("../../data/patterns data points/" + patterns_files[p] + ".csv")
+                    .then(function(data) {
+                        visualize_pattern(data, patterns_files[p]);
                     })
                     .catch(function(error) {
                         console.log(error);
