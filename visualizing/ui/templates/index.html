@@ -29,7 +29,13 @@
               var files = ["free_high_rated_apps_ad_supported_TRUE_in-app_purchases_FALSE",
                             "free_high_rated_apps_last_updated_2020",
                             "free_high_rated_apps_last_updated_2021",
-                            "free_high_rated_apps_minimum_android_4"];
+                            "free_high_rated_apps_minimum_android_4",
+                            "paid_high_rated_apps_size_131",
+                            "paid_high_rated_apps_price_127",
+                            "paid_high_rated_apps_last_update_2021",
+                            "paid_high_rated_apps_last_update_2021_content_rating_everyone",
+                            "paid_high_rated_apps_minimum_android_4",
+                            "paid_high_rated_apps_min_android_4_content_rating_everyone"];
                 for(let f = 0; f < files.length; f++){
                     d3.csv("../../data/patterns data points/"+ files[f] + ".csv")
                     .then(function(data) {

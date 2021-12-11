@@ -39,9 +39,9 @@ write.csv(free_min_android_4, file="free_high_rated_apps_minimum_android_4.csv",
 paid_size_131 <- paid_data[(paid_data$Size == 131), ]
 write.csv(paid_size_131, file="paid_high_rated_apps_size_131.csv", row.names = FALSE)
 
-#rating count 100
-paid_ratingcount_100 <- paid_data[(paid_data$Rating.Count == 100), ]
-write.csv(paid_ratingcount_100, file="paid_high_rated_apps_rating_count_100.csv", row.names = FALSE)
+#price 127
+paid_price_127 <- paid_data[(paid_data$Price == 127), ]
+write.csv(paid_price_127, file="paid_high_rated_apps_price_127.csv", row.names = FALSE)
 
 #last update 2021
 paid_lastupdate_2021 <- paid_data[(paid_data$Last.Updated == 92021), ]
@@ -51,17 +51,13 @@ write.csv(paid_lastupdate_2021, file="paid_high_rated_apps_last_update_2021.csv"
 paid_lastupdate_2021_contentrating <- paid_data[(paid_data$Last.Updated == 92021) & (paid_data$Content.Rating == 143), ]
 write.csv(paid_lastupdate_2021_contentrating, file="paid_high_rated_apps_last_update_2021_content_rating_everyone.csv", row.names = FALSE)
 
-#price 127
-paid_price_127 <- paid_data[(paid_data$Price == 127), ]
-write.csv(paid_price_127, file="paid_high_rated_apps_price_127.csv", row.names = FALSE)
+#minimum android 4
+paid_min_android_4 <- paid_datas[(paid_data$Minimum.Android == 137), ]
+write.csv(paid_min_android_4, file="paid_high_rated_apps_minimum_android_4.csv", row.names = FALSE)
 
-#ad supported: false, in-app purchacase: false
-# paid_ad_supported_inapp_purchases <- paid_data[(paid_data$Ad.Supported == 149) & (paid_data$In.App.Purchases == 151), ]
-# write.csv(paid_ad_supported_inapp_purchases, file="paid_high_rated_apps_ad_supported_FALSE_inapp_purchases_FALSE.csv", row.names = FALSE)
-
-#ad supported: false, rating count: 100
-# paid_ad_supported_rating_count <- paid_data[(paid_data$Ad.Supported == 149) & (paid_data$Rating.Count == 100), ]
-# write.csv(paid_ad_supported_rating_count, file="paid_high_rated_apps_ad_supported_FALSE_rating_count_100.csv", row.names = FALSE)
+#minimum android 4 and content rating everyone
+paid_min_android_4_contentrating <- paid_data[(paid_data$Minimum.Android == 137) & (paid_data$Content.Rating == 143), ]
+write.csv(paid_min_android_4_contentrating, file="paid_high_rated_apps_min_android_4_content_rating_everyone.csv", row.names = FALSE)
 
 ###################price 1, high-rated, frequent patterns###################
 #rating count
