@@ -26,27 +26,10 @@
             <div class="row my-row">
             </div>
               <script type="text/javascript">
-              var files = ["free_high_rated_apps_ad_supported_TRUE",
-                            "free_high_rated_apps_ad_supported_TRUE_in-app_purchases_FALSE",
-                            "free_high_rated_apps_ad_supported_FALSE_in-app_purchases_FALSE",
-                            "free_high_rated_apps_ad_supported_TRUE_minimum_android_4",
-                            "paid_high_rated_apps_size_131",
-                            "paid_high_rated_apps_rating_count_100",
-                            "paid_high_rated_apps_last_update_2021",
-                            "paid_high_rated_apps_last_update_2021_content_rating_everyone",
-                            "paid_high_rated_apps_price_127",
-                            "price_range_1_high_rated_apps_rating_count_100",
-                            "price_range_1_high_rated_apps_content_rating_minimum_android_4",
-                            "price_range_2_high_rated_apps_ratingcount_100",
-                            "price_range_2_high_rated_apps_last_updated_2020",
-                            "price_range_2_high_rated_apps_last_updated_2021",
-                            "price_range_2_high_rated_apps_size_131",
-                            "price_range_3_high_rated_last_updated_2020",
-                            "price_range_3_high_rated_last_updated_2021",
-                            "price_range_3_high_rated_ratingcount_100",
-                            "price_range_3_high_rated_contentrating_everyone_minimum_android_4",
-                            "price_range_4_high_rated_size_131",
-                            "price_range_4_high_rated_last_updated_2021"];
+              var files = ["free_high_rated_apps_ad_supported_TRUE_in-app_purchases_FALSE",
+                            "free_high_rated_apps_last_updated_2020",
+                            "free_high_rated_apps_last_updated_2021",
+                            "free_high_rated_apps_minimum_android_4"];
                 for(let f = 0; f < files.length; f++){
                     d3.csv("../../data/patterns data points/"+ files[f] + ".csv")
                     .then(function(data) {

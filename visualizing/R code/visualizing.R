@@ -18,33 +18,21 @@ setwd("D:/eclipse/workspace/paid-vs-free-apps/visualizing/data/patterns data poi
 getwd()
 
 ###################free, high-rated, frequent patterns###################
-#last update 2020
-# free_lastupdate2020 <- free_data[(free_data$Last.Updated == 92020), ]
-# write.csv(free_lastupdate2020, file="free_high_rated_apps_last_updated_2020.csv", row.names = FALSE)
-
-#last update 2021
-# free_lastupdate2021 <- free_data[(free_data$Last.Updated == 92021), ]
-# write.csv(free_lastupdate2021, file="free_high_rated_apps_last_updated_2020.csv", row.names = FALSE)
-
-#ad-supported: true
-free_ad_supported_true <- free_data[(free_data$Ad.Supported == 148), ]
-write.csv(free_ad_supported_true, file="free_high_rated_apps_ad_supported_TRUE.csv", row.names = FALSE)
-
 #ad-supported: true, in-app purchases: false
 free_ad_supported_true_in_app_purchases_false <- free_data[(free_data$Ad.Supported == 148) & (free_data$In.App.Purchases = 151), ]
 write.csv(free_ad_supported_true_in_app_purchases_false, file="free_high_rated_apps_ad_supported_TRUE_in-app_purchases_FALSE.csv", row.names = FALSE)
 
-#ad-supported: false, in-app purchases: false
-free_ad_supported_false_in_app_purchases_false <- free_data[(free_data$Ad.Supported == 149) & (free_data$In.App.Purchases = 151), ]
-write.csv(free_ad_supported_false_in_app_purchases_false, file="free_high_rated_apps_ad_supported_FALSE_in-app_purchases_FALSE.csv", row.names = FALSE)
+#last update 2020
+free_lastupdate2020 <- free_data[(free_data$Last.Updated == 92020), ]
+write.csv(free_lastupdate2020, file="free_high_rated_apps_last_updated_2020.csv", row.names = FALSE)
 
-#ad-supported: true, minimum android: 4
-free_ad_supported_true_min_android_4 <- free_data[(free_data$Ad.Supported == 148) & (free_data$Minimum.Android == 137), ]
-write.csv(free_ad_supported_true_min_android_4, file="free_high_rated_apps_ad_supported_TRUE_minimum_android_4.csv", row.names = FALSE)
+#last update 2021
+free_lastupdate2021 <- free_data[(free_data$Last.Updated == 92021), ]
+write.csv(free_lastupdate2021, file="free_high_rated_apps_last_updated_2021.csv", row.names = FALSE)
 
-#ad-supported: true, content rating: everyone
-free_ad_supported_true_content_ratin <- free_data[(free_data$Ad.Supported == 148) & (free_data$Content.Rating = 143), ]
-write.csv(free_ad_supported_true_min_android_4, file="free_high_rated_apps_ad_supported_TRUE_minimum_android_4.csv", row.names = FALSE)
+#minimum android: 4
+free_min_android_4 <- free_data[(free_data$Minimum.Android == 137), ]
+write.csv(free_min_android_4, file="free_high_rated_apps_minimum_android_4.csv", row.names = FALSE)
 
 ###################paid, high-rated, frequent patterns###################
 #size 131
