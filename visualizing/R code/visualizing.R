@@ -52,7 +52,7 @@ paid_lastupdate_2021_contentrating <- paid_data[(paid_data$Last.Updated == 92021
 write.csv(paid_lastupdate_2021_contentrating, file="paid_high_rated_apps_last_update_2021_content_rating_everyone.csv", row.names = FALSE)
 
 #minimum android 4
-paid_min_android_4 <- paid_datas[(paid_data$Minimum.Android == 137), ]
+paid_min_android_4 <- paid_data[(paid_data$Minimum.Android == 137), ]
 write.csv(paid_min_android_4, file="paid_high_rated_apps_minimum_android_4.csv", row.names = FALSE)
 
 #minimum android 4 and content rating everyone

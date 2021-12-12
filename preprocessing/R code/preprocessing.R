@@ -251,7 +251,11 @@ preprocessing_size <- function(dt_size, k5){
       dt_size[i,size] <- as.character(temp) 
     }
     else if(last_char == "G" || last_char == "g"){
-      dt_size[i, size] <- "-2"
+      temp <- dt_size[i,size]
+      temp <- substr(temp, 1, nchar(temp)-1)
+      temp <- as.numeric(temp)
+      temp <- temp*1000000000
+      dt_size[i,size] <- as.character(temp) 
     }
   }
   dt_size$Size <- as.numeric(dt_size$Size)
