@@ -25,7 +25,7 @@ We use the publicly available data on Kaggle which can be found here https://www
 
 ### Frequent Pattern Mining
 
-- CFP-Growth++[1] from the SPMF(https://www.philippe-fournier-viger.com/spmf/) Java open source library
+- FPClose[1] from the SPMF(https://www.philippe-fournier-viger.com/spmf/) Java open source library
 
 ### Post Processing
 
@@ -33,5 +33,31 @@ We use the publicly available data on Kaggle which can be found here https://www
 
 ## Biblography
 
-[1] R. Uday Kiran and P. Krishna Reddy. 2011. Novel techniques to reduce search space in multiple minimum supports-based frequent pattern mining algorithms. In EDBT 2011, 14th International Conference on Extending Database Technology, Uppsala, Sweden, March 21-24, 2011, Proceedings, Anastasia Ailamaki, Sihem AmerYahia, Jignesh M. Patel, Tore Risch, Pierre Senellart, and Julia Stoyanovich (Eds.). ACM, 11–20. https://doi.org/10.1145/1951365.1951370
+[1]  G. Grahne and J. Zhu. 2005. Fast algorithms for frequent itemset mining using FP-trees. IEEE Transactions on Knowledge and Data Engineering 17, 10 (2005), 1347–1362. https://doi.org/10.1109/TKDE.2005.16
+
+## Tutorials and websites I used
+### R
+- https://stackoverflow.com/questions/28513444/how-to-tell-what-packages-you-have-used-in-r
+- https://stackoverflow.com/questions/32556967/understanding-r-is-na-and-blank-cells
+- https://www.tutorialspoint.com/r/r_csv_files.htm
+- https://stackoverflow.com/questions/43855752/r-using-if-statement-to-compare-factors-with-different-levels
+- https://www.datasciencemadesimple.com/delete-or-drop-rows-in-r-with-conditions-2/
+- https://statsandr.com/blog/outliers-detection-in-r/
+- https://www.journaldev.com/44068/sink-function-in-r
+- https://www.delftstack.com/howto/r/remove-last-character-in-r/#use-the-substr-function-to-remove-the-last-characters-in-r
+
+### JavaScript
+- https://stackoverflow.com/questions/2250953/how-do-i-create-javascript-array-json-format-dynamically/35610656
+- https://stackoverflow.com/questions/1078118/how-do-i-iterate-over-a-json-structure
+- https://observablehq.com/@d3/horizontal-bar-chart
+- https://stackoverflow.com/questions/58701387/d3-js-select-node-element-based-on-attributes-value-using-selectall
+
+### Latex/Overleaf
+- https://stackoverflow.com/questions/3068555/how-to-insert-manual-line-breaks-inside-latex-tables
+- https://tex.stackexchange.com/questions/161431/how-to-solve-longtable-is-not-in-1-column-mode-error
+- https://www.overleaf.com/learn/latex/Errors/Extra_alignment_tab_has_been_changed_to_%5Ccr
+- https://www.overleaf.com/learn/latex/Errors/Misplaced_alignment_tab_character_%26
+
+### Eclipse and Github
+- https://www.youtube.com/watch?v=LPT7v69guVY
 
