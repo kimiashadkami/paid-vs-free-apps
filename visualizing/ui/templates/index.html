@@ -35,7 +35,14 @@
                             "paid_high_rated_apps_last_update_2021",
                             "paid_high_rated_apps_last_update_2021_content_rating_everyone",
                             "paid_high_rated_apps_minimum_android_4",
-                            "paid_high_rated_apps_min_android_4_content_rating_everyone"];
+                            "paid_high_rated_apps_min_android_4_content_rating_everyone",
+                            "price_range_1_high_rated_apps_minimum_android_4",
+                            "price_range_2_high_rated_apps_last_updated_2021",
+                            "price_range_2_high_rated_apps_minimum_android_4",
+                            "price_range_3_high_rated_last_updated_2021",
+                            "price_range_3_high_rated_minimum_android_4",
+                            "price_range_4_high_rated_apps_minimum_android_4",
+                            "price_range_4_high_rated_last_updated_2021"];
                 for(let f = 0; f < files.length; f++){
                     d3.csv("../../data/patterns data points/"+ files[f] + ".csv")
                     .then(function(data) {
@@ -45,7 +52,7 @@
                         console.log(error);
                     });
                 }
-                var patterns_files = ["Last_Update_2021", "Minimum_Android_4"]
+                var patterns_files = ["last_update_2021", "minimum_android_4"]
                 for(let p = 0; p < patterns_files.length; p++){
                     d3.csv("../../data/patterns data points/" + patterns_files[p] + ".csv")
                     .then(function(data) {

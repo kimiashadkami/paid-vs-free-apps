@@ -60,52 +60,94 @@ paid_min_android_4_contentrating <- paid_data[(paid_data$Minimum.Android == 137)
 write.csv(paid_min_android_4_contentrating, file="paid_high_rated_apps_min_android_4_content_rating_everyone.csv", row.names = FALSE)
 
 ###################price 1, high-rated, frequent patterns###################
-#rating count
-price1_ratingcount_100 <- price1_data[(price1_data$Rating.Count == 100), ]
-write.csv(price1_ratingcount_100, file="price_range_1_high_rated_apps_rating_count_100.csv", row.names = FALSE)
-
-#content rating + min android
-price1_contentrating_minandroid_4 <- price1_data[(price1_data$Content.Rating == 143) & (price1_data$Minimum.Android == 137), ]
-write.csv(price1_contentrating_minandroid_4, file="price_range_1_high_rated_apps_content_rating_minimum_android_4.csv", row.names = FALSE)
+#min android
+price1_minandroid_4 <- price1_data[(price1_data$Minimum.Android == 137), ]
+write.csv(price1_minandroid_4, file="price_range_1_high_rated_apps_minimum_android_4.csv", row.names = FALSE)
 
 ###################price 2, high-rated, frequent patterns###################
-#rating count
-price2_ratingcount_100 <- price2_data[(price2_data$Rating.Count == 100), ]
-write.csv(price2_ratingcount_100, file="price_range_2_high_rated_apps_ratingcount_100.csv", row.names = FALSE)
-
-#last update
-price2_lastupdate_2020 <- price2_data[(price2_data$Last.Updated == 92020), ]
-write.csv(price2_lastupdate_2020, file="price_range_2_high_rated_apps_last_updated_2020.csv", row.names = FALSE)
-
+#last update 2021
 price2_lastupdate_2021 <- price2_data[(price2_data$Last.Updated == 92021), ]
 write.csv(price2_lastupdate_2021, file="price_range_2_high_rated_apps_last_updated_2021.csv", row.names = FALSE)
 
-#size
-price2_size_131 <- price2_data[(price2_data$Size == 131), ]
-write.csv(price2_size_131, file="price_range_2_high_rated_apps_size_131.csv", row.names = FALSE)
+#min android
+price2_minandroid_4 <- price2_data[(price2_data$Minimum.Android == 137), ]
+write.csv(price2_minandroid_4, file="price_range_2_high_rated_apps_minimum_android_4.csv", row.names = FALSE)
 
 ###################price 3, high-rated, frequent patterns###################
-#last update 2020
-price3_lastupdate_2020 <- price3_data[(price3_data$Last.Updated == 92020), ]
-write.csv(price3_lastupdate_2020, file="price_range_3_high_rated_last_updated_2020.csv", row.names = FALSE)
-
-#last update 2020
+#last update 2021
 price3_lastupdate_2021 <- price3_data[(price3_data$Last.Updated == 92021), ]
 write.csv(price3_lastupdate_2021, file="price_range_3_high_rated_last_updated_2021.csv", row.names = FALSE)
 
-#rating count
-price3_ratingcount_100 <- price3_data[(price3_data$Rating.Count == 100), ]
-write.csv(price3_ratingcount_100, file="price_range_3_high_rated_ratingcount_100.csv", row.names = FALSE)
-
-#content rating + min android
-price3_contentrating_minandroid_4 <- price3_data[(price3_data$Content.Rating == 143) & (price3_data$Minimum.Android == 137), ]
-write.csv(price3_contentrating_minandroid_4, file="price_range_3_high_rated_contentrating_everyone_minimum_android_4.csv", row.names = FALSE)
+#min android
+price3_minandroid_4 <- price3_data[(price3_data$Minimum.Android == 137), ]
+write.csv(price3_minandroid_4, file="price_range_3_high_rated_minimum_android_4.csv", row.names = FALSE)
 
 ###################price 4, high-rated, frequent patterns###################
-#size 131
-price4_size_131 <- price4_data[(price4_data$Size == 131), ]
-write.csv(price4_size_131, file="price_range_4_high_rated_size_131.csv", row.names = FALSE)
-
 #last update 2021
 price4_lastupdate_2021 <- price4_data[(price4_data$Last.Updated == 92021), ]
 write.csv(price4_lastupdate_2021, file="price_range_4_high_rated_last_updated_2021.csv", row.names = FALSE)
+
+#min android
+price4_minandroid_4 <- price4_data[(price4_data$Minimum.Android == 137), ]
+write.csv(price4_minandroid_4, file="price_range_4_high_rated_apps_minimum_android_4.csv", row.names = FALSE)
+
+###################comparing###################
+#last update 2021
+
+#free
+lastupdate2021_free <- free_data[(free_data$Last.Updated == 92021), ]
+sum1 = nrow(lastupdate2021_free)/nrow(free_data)  
+
+#paid
+lastupdate2021_paid <- paid_data[(paid_data$Last.Updated == 92021), ]
+sum2 = nrow(lastupdate2021_paid)/nrow(paid_data)
+
+#price1
+lastupdate2021_price1 <- price1_data[(price1_data$Last.Updated == 92021), ]
+sum3 = nrow(lastupdate2021_price1)/nrow(price1_data)
+
+#price2
+lastupdate2021_price2 <- price2_data[(price2_data$Last.Updated == 92021), ]
+sum4 = nrow(lastupdate2021_price2)/nrow(price2_data)
+
+#price3
+lastupdate2021_price3 <- price3_data[(price3_data$Last.Updated == 92021), ]
+sum5 = nrow(lastupdate2021_price3)/nrow(price3_data)
+
+#price4
+lastupdate2021_price4 <- price4_data[(price4_data$Last.Updated == 92021), ]
+sum6 = nrow(lastupdate2021_price4)/nrow(price4_data)
+
+lastupdate_data <- data.frame(dataset = c("free", "paid", "[0.89, 1.99) USD", "[1.99, 2.99)USD", "[2.99, 4.99) USD", "[4.99, 399.99) USD"),
+                              frequency = c(sum1, sum2, sum3, sum4, sum5, sum6));
+write.csv(lastupdate_data, file="last_update_2021.csv", row.names = FALSE)
+
+#min android
+
+#free
+minandroid4_free <- free_data[(free_data$Minimum.Android == 137), ]
+min1 = nrow(minandroid4_free)/nrow(free_data)  
+
+#paid
+minandroid4_paid <- paid_data[(paid_data$Minimum.Android == 137), ]
+min2 = nrow(minandroid4_paid)/nrow(paid_data)
+
+#price1
+minandroid4_price1 <- price1_data[(price1_data$Minimum.Android == 137), ]
+min3 = nrow(minandroid4_price1)/nrow(price1_data)
+
+#price2
+minandroid4_price2 <- price2_data[(price2_data$Minimum.Android == 137), ]
+min4 = nrow(minandroid4_price2)/nrow(price2_data)
+
+#price3
+minandroid4_price3 <- price3_data[(price3_data$Minimum.Android == 137), ]
+min5 = nrow(minandroid4_price3)/nrow(price3_data)
+
+#price4
+minandroid4_price4 <- price4_data[(price4_data$Minimum.Android == 137), ]
+min6 = nrow(minandroid4_price4)/nrow(price4_data)
+
+minandroid4_data <- data.frame(dataset = c("free", "paid", "[0.89, 1.99) USD", "[1.99, 2.99)USD", "[2.99, 4.99) USD", "[4.99, 399.99) USD"),
+                              frequency = c(min1, min2, min3, min4, min5, min6));
+write.csv(minandroid4_data, file="minimum_android_4.csv", row.names = FALSE)
